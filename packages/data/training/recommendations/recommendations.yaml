@@ -9,17 +9,9 @@
   text:
     en: |
       Ondrej came to help us with deployment Docker and Gitlab CI. Ondrej is very good in his field and I can just reccomend him. We did lot of thing in very short time, and we would'n be able to do it without him. I recommend him.
+    de: Das ist perfekt!
     cs: |
       Poté, co jsem absolvoval Ondrovo školení Dockeru, nám přišel na VŠE pomoct s nasazením Dockeru a Gitlabu CI do našeho workflow. Je vidět, že v tom co dělá se vyzná a považuji jeho zastávku u nás za velký přínos. Během krátkého času jsme zvládli spoustu práce, na kterou jsem následně navázal a dostal jsem do Dockeru během dalších pár dní další aplikace, a to absolutně bez problémů. Vřele doporučuji. :)
-    de: |
-      Deutschland, Deutschland über alles,
-      Über alles in der Welt,
-      Wenn es stets zu Schutz und Trutze
-      Brüderlich zusammenhält.
-      Von der Maas bis an die Memel,
-      Von der Etsch bis an den Belt,
-      Deutschland, Deutschland über alles,
-      Über alles in der Welt!
 - id: spel
   name: Jiří Horák
   role:

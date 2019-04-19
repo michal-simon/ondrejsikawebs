@@ -13,9 +13,12 @@ import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
+import UpcomingSessions from '@app/course-landing/components/UpcomingSessions'
+import Head from 'next/head'
 
 let site = {
-  lang: 'cs'
+  lang: 'cs',
+  course: 'docker',
 }
 
 const Index = () => (
@@ -34,6 +37,7 @@ const Index = () => (
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">Kontaktovat</HeaderLink>
     </Header>
     <div className="container container-width">
+      <UpcomingSessions lang={site.lang}/>
     <TextFrame>
         <ReactMarkdown source={`
 ### Co je to Docker
