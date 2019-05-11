@@ -3,17 +3,17 @@ const StatisticBar = (props) => (
       <div className='container'>
         <div className='row'>
           <div className='col-4'>
-            <h2 className='text-center text-white text-huge'>{props.NumberOfPeople}</h2>
-            <p className='text-white text-center'>{props.NumberOfPeopleHeader}</p>
+            <h2 className='text-center text-white mb-0 text-huge'>{props.NumberOfPeople}</h2>
+            <p className='text-white text-center statistic-bottom'>{props.NumberOfPeopleHeader}</p>
 
           </div>
           <div className='col-4'>
-            <h2 className='text-white text-center text-huge'>{props.NumberOfCompanies}</h2>
-            <p className='text-white text-center'>{props.NumberOfCompaniesHeader}</p>
+            <h2 className='text-white text-center mb-0 text-huge '>{props.NumberOfCompanies}</h2>
+            <p className='text-white text-center statistic-bottom'>{props.NumberOfCompaniesHeader}</p>
           </div>
           <div className='col-4'>
-            <h2 className='text-center text-white text-huge'>{props.NumberOfLectures}</h2>
-            <p className='text-white text-center'>{props.NumberOfLecturesHeader}</p>
+            <h2 className='text-center text-white mb-0 text-huge'>{props.NumberOfLectures}</h2>
+            <p className='text-white text-center statistic-bottom'>{props.NumberOfLecturesHeader}</p>
           </div>
         </div>
       </div>

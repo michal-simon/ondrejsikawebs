@@ -30,11 +30,11 @@ const Index = () => (
     </MainBar>
     <StatisticBar
     NumberOfPeople='666'
-    NumberOfPeopleHeader='Počet odškolených lidi:'
+    NumberOfPeopleHeader='Počet odškolených lidi'
     NumberOfCompanies='44'
-    NumberOfCompaniesHeader='Počet firem ve spolupráci:'
+    NumberOfCompaniesHeader='Počet firem ve spolupráci'
     NumberOfLectures='55'
-    NumberOfLecturesHeader='Počet uskutečněných školení:'
+    NumberOfLecturesHeader='Počet uskutečněných školení'
     ></StatisticBar>
 
     <div className="container">
@@ -42,11 +42,11 @@ const Index = () => (
         LectureImgHeader='Kurzy co školím'/>
       <TextWithImg
         TextWithImgHeader='O mně'>
-        Jmenuji se Ondřej, pracuji jako software engineer na Slush Poolu (težba Bitcoinu) a vývojem softwaru se zabývam od roku 2009. Od roku 2013 školím.
+        Jmenuji se Ondřej, vývojem softwaru se zabývam od roku 2009. Posledních 5 let jsem byl na pozici software engineera na Slush Poolu (težba Bitcoinu) a nadále s nim spolupracuji. Od roku 2013 školím.
         <br/><br/>
-        Všechny kurzy stavím na svých dlouholetých znalostech a zkušenostech z vývoje, testovaní a provozování softwarových projektů od malých webu po velké globalní projekty.
+        Všechny kurzy stavím na svých dlouholetých znalostech a zkušenostech z vývoje, testovaní a provozování softwarových projektů od malých webů, po velké globalní projekty.
         <br/><br/>
-        Nástroje jako <a href='/git'>Git</a>, <a href='/docker'>Docker</a>, <a href='/kubernetes'>Kubernetes</a>, <a href='/ansible'>Ansible</a> nebo <a href='/gitlab-ci'>CI</a> používám na denní bázi, vše co školím jsem použil v reálných projektech a mám s technologií osobní zkušenost. Všechny kurzy jsem schopen upravit na míru vašim požadavkům a všechny probíhají formou workshopu – věřím, že si něco vyzkoušet na vlastní kůži je ta nejefektivnější cesta se něco naučit.
+        Nástroje jako <a href='/git'>Git</a>, <a href='/docker'>Docker</a>, <a href='/kubernetes'>Kubernetes</a>, <a href='/ansible'>Ansible</a> nebo <a href='/gitlab-ci'>CI</a> používám na denní bázi, vše co školím jsem použil v reálných projektech a mám s technologií osobní zkušenost. Všechny kurzy jsem schopen upravit na míru vašim požadavkům a všechny probíhají formou workshopu.
         <br/><br/>
         Všechny kurzy a školení dělám v českém nebo anglickém jazyce.
         <br/><br/>

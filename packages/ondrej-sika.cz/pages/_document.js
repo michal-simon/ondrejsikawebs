@@ -7,6 +7,7 @@ import References from '@app/ondrej-sika.cz/components/References';
 
 import Navbar from '@app/ondrej-sika.cz/components/Navbar';
 import Footer from '@app/ondrej-sika.cz/components/Footer';
+import BootstrapJS from '@app/common/components/BootstrapJS';
 
 class OndrejSikaDocument extends Document {
   // static async getInitialProps(ctx) {
@@ -33,9 +34,9 @@ class OndrejSikaDocument extends Document {
           <div className='content'>
           <Main />
           </div>
-          <NextScript />
+          <BootstrapJS />
           <Footer></Footer>
-          
+          <NextScript />
         </body>
       </Html>
     );
