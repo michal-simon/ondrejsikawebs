@@ -1,6 +1,6 @@
 const References = (props) => (
   <div>
-    <div className='container border mb-4'>
+    <div className='container border mb-4 mt-4'>
       <div className='row pt-3'>
         <div className='col-1 pt-2 d-none d-lg-block d-xl-block'>
           <img src='/static/putin.jpg' className='img-fluid rounded-circle'/>

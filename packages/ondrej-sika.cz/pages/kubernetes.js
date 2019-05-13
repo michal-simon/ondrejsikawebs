@@ -20,33 +20,34 @@ const Index = () => (
     <Head>
     </Head>
     <Header
-      websiteHeader='Školení Git'
+      websiteHeader='Školení Kubernetes'
       inquiryBtn='Nezávazně poptat školení'
-      logo='/static/git.svg'>
+      logo='/static/kubernetes.png'>
     </Header>
     <div className='container'>
       <TextArea
-      TextHeader='Co je to Git'
-      TextParagraph='Git je moderní verzovaci nástroj, který se stal defaco standatem mezi vývojáři. Git vám nabízí jednoduchou kolaboraci na projektu s více lidmi a práci na více částech současně, aniž by jste si zasahovali do rozdělaných projektů nebo je jinak narušovali. Spolupráci na vývoji projektu dále zlepšuje Gitlab, což je kolaborativni platforma na návrh, vývoj a provozování software.'></TextArea>
+      TextHeader='Co je to Kubernetes'
+      TextParagraph='Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kontejnerů a jsou podporovány velkými hráči na trhu (Google, Amazon, Microsoft) skrz Cloud Native Computing Foundation. Kuberneres pro provoz používají všechny velikosti firem, od startupu po korporace.'></TextArea>
       <TextArea
       TextHeader='Jak školení probíhá'
-      TextParagraph='Na školení formou workshopu si vysvětlíme proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practise.'></TextArea>
+      TextParagraph='Školeni probíhá formou workshopů, vše si prakticky vyzkoušíme a osaháme. Ukážeme jak spustit Kuberneres lokálně (pro vývoj) a na cloudové platformě Digital Ocean. '/>
       <TextArea
       TextHeader='Co Vás naučím'
       >
       <ReactMarkdown source={`
-- Instalace a konfigurace GITu
-- Vytvořit nový repozitář
-- Základní ovládání GITu
-- Práce v jedné větvi
-- Práce ve větvích - merge, rebase (silná stránka Gitu)
-- Práce se vzdálenými repozitáři
-- Záchrana smazaných dat z repozitáře`}/>
+- Teoretický úvod do Kubernetes
+- Instalace Minikube a kubectl (pro ty kteří nenainstalovali doma)
+- Popis Kubernetes komponent
+- Deployment do Kubernetes
+- Práce s právy v Kubernetes clusteru
+- Teoretický úvod do Helm balíčku
+- Instalace / Deployment pomocí Helmu
+- Psaní vlastního Helm balíčku`}/>
       </TextArea>
 
     <TextArea
       TextHeader='Pro koho je školení určeno'
-      TextParagraph='Školení je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíšou kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB a nebo konfiguraci serveru. Git pomůže i DBA nebo DevOps.'>
+      TextParagraph='Školení je určeno pro lidi (vývojáři a devops), kteří mají zájem provozovat své Docker aplikace v Kuberneres.'>
       <TwoCol
         col1={
           <>
@@ -54,7 +55,7 @@ const Index = () => (
             <ReactMarkdown source={`
 - Základy práce s Linuxemm
 - Základy práce v terminálu
-- Základní znalost Gitu výhodou
+- Základy práce s Dockerem
             `} escapeHtml={false}/>
           </>
         }
@@ -62,7 +63,7 @@ const Index = () => (
           <>
             <h4>Technické požadavky</h4>
             <ReactMarkdown source={`
-- Nainstalovaný Git
+- Nainstalovaný Kubernetes
 - Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
             `} escapeHtml={false}/>
           </>
@@ -87,13 +88,13 @@ const Index = () => (
     <Price
       PriceHeader='Cena za školení'
       PriceBtn='Nezávazně poptat školení'>
-      Otevřený termín (self funded): 4 999 CZK bez DPH<br/>
-      Otevřený termín (company funded): 6 999 CZK bez DPH<br/>
-      Firemní školení (ve firmě): 18 000 CZK bez DPH
+      Otevřený termín (self funded): 9 999 CZK bez DPH<br/>
+      Otevřený termín (company funded): 14 999 CZK bez DPH<br/>
+      Firemní školení (ve firmě): 36 000 CZK bez DPH
     </Price>
     <div className='container'>
       <TextArea
-        TextHeader='Poptávka firemního školeni Gitu'
+        TextHeader='Poptávka firemního školeni Kubernetes'
         TextParagraph='Pole označené * jsou povinné.'>
         <Form
           FormName='Jméno *'

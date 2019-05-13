@@ -20,11 +20,11 @@ const Navbar = (props) => (
                   {props.Lecturing}</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="/git">GIT</a>
-                  <a class="dropdown-item" href="#">DOCKER</a>
+                  <a class="dropdown-item" href="/docker">DOCKER</a>
                   {/* <div class="dropdown-divider"></div> */}
-                  <a class="dropdown-item" href="#">KUBERNETES</a>
-                  <a class="dropdown-item" href="#">ANSIBLE</a>
-                  <a class="dropdown-item" href="#">GITLAB CI</a>
+                  <a class="dropdown-item" href="/kubernetes">KUBERNETES</a>
+                  <a class="dropdown-item" href="/ansible">ANSIBLE</a>
+                  <a class="dropdown-item" href="/gitlab-ci">GITLAB CI</a>
                 </div>
               </li>
               <li class="nav-item">

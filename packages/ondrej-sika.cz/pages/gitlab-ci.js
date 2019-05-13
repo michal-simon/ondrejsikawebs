@@ -20,41 +20,41 @@ const Index = () => (
     <Head>
     </Head>
     <Header
-      websiteHeader='Školení Git'
+      websiteHeader='Školení Gitlab CI'
       inquiryBtn='Nezávazně poptat školení'
-      logo='/static/git.svg'>
+      logo='/static/gitlab-ci.svg'>
     </Header>
     <div className='container'>
       <TextArea
-      TextHeader='Co je to Git'
-      TextParagraph='Git je moderní verzovaci nástroj, který se stal defaco standatem mezi vývojáři. Git vám nabízí jednoduchou kolaboraci na projektu s více lidmi a práci na více částech současně, aniž by jste si zasahovali do rozdělaných projektů nebo je jinak narušovali. Spolupráci na vývoji projektu dále zlepšuje Gitlab, což je kolaborativni platforma na návrh, vývoj a provozování software.'></TextArea>
+      TextHeader='K čemu se používá ?'
+      TextParagraph='Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutijni úkoly jako je pouštění testů, kvality kódu a nebo nasazování. Umožní vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images a nebo pouštět testy v kontejnerech.'/>
       <TextArea
       TextHeader='Jak školení probíhá'
-      TextParagraph='Na školení formou workshopu si vysvětlíme proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practise.'></TextArea>
+      TextParagraph='Na školení formou workshopu si vysvětlíme proč je dobré CI používat, ukážeme si možnosti Gitlab CI a vyzkoušíme si napsat CI skript pro ukázkový projekt. Výsledkem bude CI skript pro jednoduchý projekt obsahující joby od buildu aplikace, přez testy až po deployment.'/>
       <TextArea
       TextHeader='Co Vás naučím'
       >
       <ReactMarkdown source={`
-- Instalace a konfigurace GITu
-- Vytvořit nový repozitář
-- Základní ovládání GITu
-- Práce v jedné větvi
-- Práce ve větvích - merge, rebase (silná stránka Gitu)
-- Práce se vzdálenými repozitáři
-- Záchrana smazaných dat z repozitáře`}/>
+- Obecný úvod do CI
+- Úvod do Gitlab CI
+- Instalace Gitlab CI Runneru
+- Práce s CI joby
+- Tvorba CI pipelines
+- Automatické nasazování
+- Docker a CI`}/>
       </TextArea>
 
     <TextArea
       TextHeader='Pro koho je školení určeno'
-      TextParagraph='Školení je určeno primárně pro vývojáře, kteří neverzují vůbec nebo nepoužívají Git. Zároveň je vhodné i pro ty, kteří Git nevyužívají na 100% (git commit, git pull, git push). Ať jde o malé weby nebo velké projekty, Git si najde uplatnění. Dále je kurz vhodný i pro ty, kteří nepíšou kód tak často, ale občas potřebují něco zaverzovat, například nějaké migrační skripty DB a nebo konfiguraci serveru. Git pomůže i DBA nebo DevOps.'>
+      TextParagraph='Školení je primárně určeno vývojářům kteří používají Gitlab a chtějí začít používat Gitlab CI. Zároveň právě Gitlab CI může být důvod přechodu na Gitlab. Školení je také vhodné pro DevOps, kteří si chtějí ulehčit práci s automatizací nasazování.'>
       <TwoCol
         col1={
           <>
             <h4>Předchozí znalosti</h4>
             <ReactMarkdown source={`
-- Základy práce s Linuxemm
+- Základy práce s Linuxem
 - Základy práce v terminálu
-- Základní znalost Gitu výhodou
+- Základní znalost Gitu výhodou - [Školení Git](/git)
             `} escapeHtml={false}/>
           </>
         }
@@ -62,8 +62,7 @@ const Index = () => (
           <>
             <h4>Technické požadavky</h4>
             <ReactMarkdown source={`
-- Nainstalovaný Git
-- Přístup na internet - ideálně bez korporátní proxy, případně nastavenou proxy v prohlížeči
+- Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)</li>
             `} escapeHtml={false}/>
           </>
         }
@@ -93,7 +92,7 @@ const Index = () => (
     </Price>
     <div className='container'>
       <TextArea
-        TextHeader='Poptávka firemního školeni Gitu'
+        TextHeader='Poptávka firemního školeni Gitlabu CI'
         TextParagraph='Pole označené * jsou povinné.'>
         <Form
           FormName='Jméno *'
