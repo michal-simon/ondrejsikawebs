@@ -30,10 +30,10 @@ const Index = () => (
       TextParagraph='Git je moderní verzovaci nástroj, který se stal defaco standatem mezi vývojáři. Git vám nabízí jednoduchou kolaboraci na projektu s více lidmi a práci na více částech současně, aniž by jste si zasahovali do rozdělaných projektů nebo je jinak narušovali. Spolupráci na vývoji projektu dále zlepšuje Gitlab, což je kolaborativni platforma na návrh, vývoj a provozování software.'></TextArea>
       <TextArea
       TextHeader='Jak školení probíhá'
-      TextParagraph='Na školení formou workshopu si vysvětlíme proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practise. Ukážeme si vše od instalace a základního nastavení Gitu, přez jednoduchou práci na jedné větvi až po práci v teamu a s více větvemi za pomoci různých mergovacich strategii (merge, rebase). Ukážeme si výhody a nevýhody obou z nich a je pak na Vás jak to budete dělat. Také si ukážeme jak se dostat ze špatných situací, jako omylem jsem si všechno smazal a podobně.'></TextArea>
+      TextParagraph='Na školení formou workshopu si vysvětlíme proč je dobré Git používat, jak funguje (proč dnes nemá konkurenty) a best practise.'></TextArea>
       <TextArea
-      TextTextHeader='Co Vás naučím'
-      />
+      TextHeader='Co Vás naučím'
+      >
       <ReactMarkdown source={`
 - Instalace a konfigurace GITu
 - Vytvořit nový repozitář
@@ -42,6 +42,7 @@ const Index = () => (
 - Práce ve větvích - merge, rebase (silná stránka Gitu)
 - Práce se vzdálenými repozitáři
 - Záchrana smazaných dat z repozitáře`}/>
+      </TextArea>
 
     <TextArea
       TextHeader='Pro koho je školení určeno'
@@ -68,7 +69,7 @@ const Index = () => (
         }
       />
     </TextArea>
-  
+
     </div>
     <References
       NameRef1='Adrian Kantor'
@@ -91,7 +92,7 @@ const Index = () => (
       Firemní školení (ve firmě): 18 000 CZK bez DPH
     </Price>
     <div className='container'>
-      <TextArea 
+      <TextArea
         TextHeader='Poptávka firemního školeni Gitu'
         TextParagraph='Pole označené * jsou povinné.'>
         <Form
@@ -106,8 +107,8 @@ const Index = () => (
           FormSent='Odeslat'
         />
       </TextArea>
-      
-      
+
+
     </div>
   </div>
 )

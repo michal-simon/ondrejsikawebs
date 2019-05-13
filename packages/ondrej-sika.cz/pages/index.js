@@ -1,6 +1,7 @@
 import '../css'
 
-import LectureImg from '@app/ondrej-sika.cz/components/LectureImg';
+import LectureImgMdLg from '@app/ondrej-sika.cz/components/LectureImgMdLg';
+import LectureImgSm from '@app/ondrej-sika.cz/components/LectureImgSm';
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
 import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
 import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
@@ -35,11 +36,13 @@ const Index = () => (
     NumberOfCompaniesHeader='Počet firem ve spolupráci'
     NumberOfLectures='55'
     NumberOfLecturesHeader='Počet uskutečněných školení'
-    ></StatisticBar>
+    />
 
     <div className="container">
-      <LectureImg
+      <LectureImgMdLg
         LectureImgHeader='Kurzy co školím'/>
+      <LectureImgSm
+      LectureImgHeader='Kurzy co školím'/>
       <TextWithImg
         TextWithImgHeader='O mně'>
         Jmenuji se Ondřej, vývojem softwaru se zabývam od roku 2009. Posledních 5 let jsem byl na pozici software engineera na Slush Poolu (težba Bitcoinu) a nadále s nim spolupracuji. Od roku 2013 školím.
