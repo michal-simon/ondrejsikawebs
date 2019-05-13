@@ -5,7 +5,6 @@ import LectureImgSm from '@app/ondrej-sika.cz/components/LectureImgSm';
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
 import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
 import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
-import Newsletter from '@app/ondrej-sika.cz/components/Newsletter';
 import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
 import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
 
@@ -65,10 +64,6 @@ const Index = () => (
         CompaniesBar6='../static/aaa-auto-sq.png'
       ></CompaniesBar>
     </div>
-    <Newsletter
-    NewsletterText='Odebírejte můj newsletter a budte v obraze!'
-
-    ></Newsletter>
 
   </div>
 )

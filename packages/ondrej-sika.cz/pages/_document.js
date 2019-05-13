@@ -27,7 +27,6 @@ class OndrejSikaDocument extends Document {
             Home='DOMŮ'
             Lecturing='NABÍDKA ŠKOLENÍ'
             PublicTerms='VEŘEJNÉ TERMÍNY'
-            Reference='REFERENCE'
             Contacts='KONTAKT'
             >
           </Navbar>
@@ -35,7 +34,15 @@ class OndrejSikaDocument extends Document {
           <Main />
           </div>
           <BootstrapJS />
-          <Footer></Footer>
+          <Footer
+            col1_name='Ondrej Sika'
+            col1_mail='ondrej@ondrejsika.com'
+            col1_phone='+420 773 452 376'
+
+            col4_NewsHeader='Zajímají Vás novinky?'
+            col4_NewsText='Odebírejte můj newsletter a budete v obraze!'
+            NewsletterBtn='Odebírat'
+          ></Footer>
           <NextScript />
         </body>
       </Html>

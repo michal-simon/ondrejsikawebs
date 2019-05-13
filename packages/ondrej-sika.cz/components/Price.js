@@ -1,6 +1,6 @@
 const Price = (props) => (
     <div>
-        <div className='price bg-grey pt-4 pb-3'>
+        <div className='price bg-grey pb-3'>
             <div className='container'>
                 <h3 className='pt-4 pb-2'>{props.PriceHeader}</h3>
                 <div className='row'>
