@@ -44,15 +44,14 @@ const Index = () => (
       LectureImgHeader='Kurzy co školím'/>
       <TextWithImg
         TextWithImgHeader='O mně'>
-        Jmenuji se Ondřej, vývojem softwaru se zabývam od roku 2009. Posledních 5 let jsem byl na pozici software engineera na Slush Poolu (težba Bitcoinu) a nadále s nim spolupracuji. Od roku 2013 školím.
+        Jmenuji se Ondřej, vývojem softwaru se zabývam od roku 2009 a od roku 2013 predavam sve zkusenosti na školích. Pracoval jsem pro male firmy, startupy i velke korporace s cilem zefektivnit jim proces vyvoje, testovani a nasazovani software.
         <br/><br/>
-        Všechny kurzy stavím na svých dlouholetých znalostech a zkušenostech z vývoje, testovaní a provozování softwarových projektů od malých webů, po velké globalní projekty.
+        <h4>Skoleni</h4>
+        Predne se venuji skoleni, všechny kurzy jsou formou workshopu (hands-on) a stavím je na svých dlouholetých znalostech a zkušenostech z vývoje, testovaní a provozování softwarových projektů.
         <br/><br/>
-        Nástroje jako <a href='/git'>Git</a>, <a href='/docker'>Docker</a>, <a href='/kubernetes'>Kubernetes</a>, <a href='/ansible'>Ansible</a> nebo <a href='/gitlab-ci'>CI</a> používám na denní bázi, vše co školím jsem použil v reálných projektech a mám s technologií osobní zkušenost. Všechny kurzy jsem schopen upravit na míru vašim požadavkům a všechny probíhají formou workshopu.
+        Nástroje jako <a href='/git'>Git</a>, <a href='/docker'>Docker</a>, <a href='/kubernetes'>Kubernetes</a>, <a href='/ansible'>Ansible</a> nebo <a href='/gitlab-ci'>CI</a> používám na denní bázi, vše co školím jsem použil v reálných projektech a mám s technologií osobní zkušenost.
         <br/><br/>
         Všechny kurzy a školení dělám v českém nebo anglickém jazyce.
-        <br/><br/>
-        Rád fotím a píši blog o technologiích, cestováni a knihách.
       </TextWithImg>
       <CompaniesBar
         CompaniesBarHeader='Firmy se kterými spolupracuji'
