@@ -23,6 +23,7 @@ class OndrejSikaDocument extends Document {
         </Head>
         <body>
           <Navbar
+            NavName='Ondřej Šika'
             NavUnderheader='Software {Engineetr, Konzultant, Lektor}'
             Home='DOMŮ'
             Lecturing='NABÍDKA ŠKOLENÍ'
@@ -35,7 +36,7 @@ class OndrejSikaDocument extends Document {
           </div>
           <BootstrapJS />
           <Footer
-            col1_name='Ondrej Sika'
+            col1_name='Ondřej Šika'
             col1_mail='ondrej@ondrejsika.com'
             col1_phone='+420 773 452 376'
 

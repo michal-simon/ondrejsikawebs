@@ -4,7 +4,7 @@ const Navbar = (props) => (
       <div className='container pt-2 pb-2'>
         <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="/">
-            <strong>Ondrej Sika</strong>
+            <strong>{props.NavName}</strong>
             <div className='text-gray-s fs-8'>{props.NavUnderheader}</div>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

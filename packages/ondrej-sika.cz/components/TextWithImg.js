@@ -9,12 +9,12 @@ const TextWithImg = (props) => (
         <img src='/static/ond.jpg' className='img-fluid img-size-90'/>
       </div>
       <div className='col-1'>
-        <a href='https://www.facebook.com/sikaondrej'><img src='/static/fb-hex.svg'/></a>
-        <a href='https://www.instagram.com/ondrejsika/'><img src='/static/insta-hex.svg'/></a>
         <a href='https://www.linkedin.com/in/ondrejsika/'><img src='/static/linkedin-hex.svg'/></a>
+        <a href='https://twitter.com/ondrejsika'><img src='/static/twitter-hex.svg'/></a>
+        <a href='https://www.instagram.com/ondrejsika/'><img src='/static/insta-hex.svg'/></a>
+        <a href='https://www.facebook.com/sikaondrej'><img src='/static/fb-hex.svg'/></a>
         <a href='https://github.com/ondrejsika'><img src='/static/github-hex.svg'/></a>
         <a href='mailto:ondrej@ondrejsika.com'><img src='/static/mail-hex.svg'/></a>
-        <a href='https://twitter.com/ondrejsika'><img src='/static/twitter-hex.svg'/></a>
       </div>
     </div>
   </div>

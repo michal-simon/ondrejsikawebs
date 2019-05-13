@@ -39,9 +39,9 @@ const Index = () => (
       <div className='row'>
         <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
           <h4>Fakturační údaje</h4>
-          <p>Klatovska trida 1532/71<br/>
-          301 00 Pilsen<br/>
-          Czech Republic</p>
+          <p>Klatovská třída 1532/71<br/>
+          301 00 Plzeň<br/>
+          Česká Republika</p>
           <table class="table table-borderless">
             <tbody>
               <tr>
@@ -60,7 +60,7 @@ const Index = () => (
           </table>
         </div>
         <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
-          <h4 className='pb-2'>Platební údaje</h4>
+          <h4 className='pt-4 pt-md-0'>Platební údaje</h4>
           <table class="table table-borderless">
             <tbody>
               <tr>
@@ -89,6 +89,7 @@ const Index = () => (
           Česká Republika</p>
         </div>
         <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
+        <h4 className='pt-4 pt-md-0'>Poptejte firemní školení</h4>
           {/* <img src='/static/ond.jpg' className='img-fluid img-size-70'/> */}
           <form>
             <div className="form-group">

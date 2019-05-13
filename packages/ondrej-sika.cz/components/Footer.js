@@ -10,20 +10,20 @@ const Footer = (props) => (
             <a href='tel:+420773452376'>{props.col1_phone}</a></p>
           </div>
           <div className='col-md-2 col-sm-5 col-4'>
-            <p><a href='/Docker'>Docker</a></p>
-            <p><a href='/Git'>Git</a></p>
-            <p><a href='/Kubernetes'>Kubernetes</a></p>
-            <p><a href='/GitlabCI'>Gitlab CI</a></p>
-            <p><a href='/Ansible'>Ansible</a></p>
+            <p><a href='/docker'>Docker</a></p>
+            <p><a href='/git'>Git</a></p>
+            <p><a href='/kubernetes'>Kubernetes</a></p>
+            <p><a href='/gitlab-ci'>Gitlab CI</a></p>
+            <p><a href='/ansible'>Ansible</a></p>
           </div>
 
           <div class='col-md-2 col-sm-12'>
             <a href='https://www.facebook.com/sikaondrej'><img src='/static/fb-hex.svg' className='pl-2 pr-2 pt-1'/></a>
             <a href='https://www.instagram.com/ondrejsika/'><img src='/static/insta-hex.svg' className='pl-2 pr-2 pt-1'/></a>
             <a href='https://www.linkedin.com/in/ondrejsika/'><img src='/static/linkedin-hex.svg' className='pl-2 pr-2 pt-1'/></a>
+            <a href='https://twitter.com/ondrejsika'><img src='/static/twitter-hex.svg' className='pl-2 pr-2 pt-1'/></a>
             <a href='https://github.com/ondrejsika'><img src='/static/github-hex.svg' className='pl-2 pr-2 pt-1'/></a>
             <a href='mailto:ondrej@ondrejsika.com'><img src='/static/mail-hex.svg' className='pl-2 pr-2 pt-1'/></a>
-            <a href='https://twitter.com/ondrejsika'><img src='/static/twitter-hex.svg' className='pl-2 pr-2 pt-1'/></a>
           </div>
           <div className='col-md-4 col-sm-12 pt-4 pt-md-0'>
             <h3 className='text-white'>{props.col4_NewsHeader}</h3>
