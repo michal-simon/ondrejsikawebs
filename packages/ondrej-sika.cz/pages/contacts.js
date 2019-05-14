@@ -88,7 +88,7 @@ const Index = () => (
           Praha 1,<br/>
           Česká Republika</p>
         </div>
-        <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
+        <div className='col-lg-4 col-md-9 col-sm-12 col-12'>
         <h4 className='pt-4 pt-md-0'>Poptejte firemní školení</h4>
           {/* <img src='/static/ond.jpg' className='img-fluid img-size-70'/> */}
           <form>

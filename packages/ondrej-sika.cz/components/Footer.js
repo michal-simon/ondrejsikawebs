@@ -29,7 +29,7 @@ const Footer = (props) => (
             <h3 className='text-white'>{props.col4_NewsHeader}</h3>
             <p className='text-white'>{props.col4_NewsText}</p>
             <div className="input-group pt-3">
-              <input type="text" className="form-control" placeholder="e-mail" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+              <input type="email" className="form-control" id="validationDefault03" placeholder="e-mail"/>
               <div className="input-group-append">
                 <button className="btn btn-outline-header" type="button">{props.NewsletterBtn}</button>
               </div>

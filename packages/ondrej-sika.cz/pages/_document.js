@@ -24,7 +24,7 @@ class OndrejSikaDocument extends Document {
         <body>
           <Navbar
             NavName='Ondřej Šika'
-            NavUnderheader='Software {Engineetr, Konzultant, Lektor}'
+            NavUnderheader='Software {Engineer, Konzultant, Lektor}'
             Home='DOMŮ'
             Lecturing='NABÍDKA ŠKOLENÍ'
             PublicTerms='VEŘEJNÉ TERMÍNY'

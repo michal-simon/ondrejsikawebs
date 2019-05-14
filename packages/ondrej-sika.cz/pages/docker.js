@@ -74,13 +74,13 @@ const Index = () => (
       NameRef1='Adrian Kantor'
       PositionRef1='Head of IT Prague Fio banka'
       DateRef1='17.listopadu 2018'
-      TextRef='Ondřej školil git, ale bez problémů na místě objasnil i mnoho našich specifických otázek kolem celého vývojového cyklu,neztratil se ani v ad hoc dotazech, které už s gitem souvisely jen málo.
+      TextRef1='Ondřej školil git, ale bez problémů na místě objasnil i mnoho našich specifických otázek kolem celého vývojového cyklu,neztratil se ani v ad hoc dotazech, které už s gitem souvisely jen málo.
       Bylo velmi přínosné strávit čas s člověkem, který tématu rozumí do hloubky i do šířky a zároveň se je schopen podívat na problém z vaší perspektivy.'
 
       NameRef2='František Janošek'
       PositionRef2='System Admin'
       DateRef2='10.dubna 2019'
-      TextRef='Školení na [/docker](Docker) od Ondřeje v ROOT.CZ bylo velice zajímavé a přínosné. Ondra toho zná opravdu dost a není problém se na cokoliv zeptat i z jiného tématu. Ke školení provozuje na Githubu spoustu příkladů, volně přístupné registry, blog a Slack. Není problém se na Ondru obrátit s dotazy i po školení. Zatím jedno z nejvíce profesionálních školení co jsem absolvoval.'
+      TextRef2='Školení na [Docker](/docker) od Ondřeje v ROOT.CZ bylo velice zajímavé a přínosné. Ondra toho zná opravdu dost a není problém se na cokoliv zeptat i z jiného tématu. Ke školení provozuje na Githubu spoustu příkladů, volně přístupné registry, blog a Slack. Není problém se na Ondru obrátit s dotazy i po školení. Zatím jedno z nejvíce profesionálních školení co jsem absolvoval.'
     >
     </References>
     <Price
@@ -96,7 +96,7 @@ const Index = () => (
         TextParagraph='Pole označené * jsou povinné.'>
         <Form
           FormName='Jméno *'
-          FromNamePlaceholder='Antonn Hrabiš'
+          FromNamePlaceholder='Anton Hrabiš'
           FormCompany='Společnost'
           FormCompanyPlaceholder='Drůbežárny'
           FormEmail='Email *'

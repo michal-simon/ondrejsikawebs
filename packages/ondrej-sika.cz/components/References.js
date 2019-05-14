@@ -11,7 +11,7 @@ const References = (props) => (
           <p className='text-secondary'>{props.DateRef1}</p>
         </div>
         <div className='col-lg-8 col-md-9 col-sm-9 col-9'>
-          <p>{props.TextRef}</p>
+          <p>{props.TextRef1}</p>
         </div>
       </div>
       <hr/>
@@ -25,7 +25,7 @@ const References = (props) => (
           <p className='text-secondary'>{props.DateRef2}</p>
         </div>
         <div className='col-lg-8 col-md-9 col-sm-9 col-9'>
-          <p>{props.TextRef}Školení na <a href='/docker'>Docker</a> od Ondřeje v ROOT.CZ bylo velice zajímavé a přínosné. Ondra toho zná opravdu dost a není problém se na cokoliv zeptat i z jiného tématu. Ke školení provozuje na Githubu spoustu příkladů, volně přístupné registry, blog a Slack. Není problém se na Ondru obrátit s dotazy i po školení. Zatím jedno z nejvíce profesionálních školení co jsem absolvoval.</p>
+          <p>{props.TextRef2}</p>
         </div>
       </div>
     </div>
