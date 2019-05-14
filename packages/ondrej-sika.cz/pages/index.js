@@ -30,7 +30,7 @@ const Index = () => (
     </MainBar>
     <StatisticBar
     NumberOfPeople='666'
-    NumberOfPeopleHeader='Počet odškolených lidi'
+    NumberOfPeopleHeader='Počet odškolených'
     NumberOfCompanies='44'
     NumberOfCompaniesHeader='Počet firem ve spolupráci'
     NumberOfLectures='55'
