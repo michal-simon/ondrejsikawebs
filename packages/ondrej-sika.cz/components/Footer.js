@@ -5,16 +5,15 @@ const Footer = (props) => (
         <div className='row'>
           <div class='col-md-4 col-sm-7 col-8'>
             <h3 className='text-white'>{props.col1_name}</h3>
-            <p className='text-white'>Software {'{Engineer, Konzultant, Lektor}'}</p>
-            <p><a href='mailto:ondrej@ondrejsika.com'>{props.col1_mail}</a><br></br>
-            <a href='tel:+420773452376'>{props.col1_phone}</a></p>
+            <p><a href='mailto:ondrej@ondrejsika.com' className='a-underline'>{props.col1_mail}</a><br></br>
+            <a href='tel:+420773452376' className='a-underline'>{props.col1_phone}</a></p>
           </div>
           <div className='col-md-2 col-sm-5 col-4'>
-            <p><a href='/docker'>Docker</a></p>
-            <p><a href='/git'>Git</a></p>
-            <p><a href='/kubernetes'>Kubernetes</a></p>
-            <p><a href='/gitlab-ci'>Gitlab CI</a></p>
-            <p><a href='/ansible'>Ansible</a></p>
+            <p><a href='/docker' className='a-underline'>Docker</a></p>
+            <p><a href='/git' className='a-underline'>Git</a></p>
+            <p><a href='/kubernetes' className='a-underline'>Kubernetes</a></p>
+            <p><a href='/gitlab-ci' className='a-underline'>Gitlab CI</a></p>
+            <p><a href='/ansible' className='a-underline'>Ansible</a></p>
           </div>
 
           <div class='col-md-2 col-sm-12'>
