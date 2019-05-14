@@ -20,54 +20,54 @@ const Index = () => (
     <Head>
     </Head>
     <Header
-      websiteHeader='Školení Docker'
+      websiteHeader='Školení Gitlab CI'
       inquiryBtn='Nezávazně poptat školení'
-      logo='/static/docker.svg'>
+      logo='/static/gitlab-ci.svg'>
     </Header>
     <div className='container course-page'>
-      <ReactMarkdown source={`
-### K čemu se používá?
-Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
+    <ReactMarkdown source={`
+### K čemu se používá ?
+Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutijni úkoly jako je pouštění testů, kvality kódu a nebo nasazování. Umožní vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images a nebo pouštět testy v kontejnerech.
 ### Jak školení probíhá
-Na školení si formou workshopu ukážeme vše jak s Dockerem pracovat, od vytvoření vlastního kontejnerů, po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
-### Co Vás naučím'
-- Teoretický úvod do Dockeru
-- Instalace Dockeru (pro ty kteří nenainstalovali doma)
-- Práce s kontejnery
-- Práce s obrazy
-- Docker Compose – vicekontejnerove aplikace v Dockeru
-- Deployment do Swarmu
-- Ukázka deploymentu do Kubernetes
+Na školení formou workshopu si vysvětlíme proč je dobré CI používat, ukážeme si možnosti Gitlab CI a vyzkoušíme si napsat CI skript pro ukázkový projekt. Výsledkem bude CI skript pro jednoduchý projekt obsahující joby od buildu aplikace, přez testy až po deployment.
+### Co Vás naučím
+- Obecný úvod do CI
+- Úvod do Gitlab CI
+- Instalace Gitlab CI Runneru
+- Práce s CI joby
+- Tvorba CI pipelines
+- Automatické nasazování
+- Docker a CI
 ### Pro koho je školení určeno
-Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by jej mohli použít.`}/>
+Školení je primárně určeno vývojářům kteří používají Gitlab a chtějí začít používat Gitlab CI. Zároveň právě Gitlab CI může být důvod přechodu na Gitlab. Školení je také vhodné pro DevOps, kteří si chtějí ulehčit práci s automatizací nasazování.`}/>
       <TwoCol
         col1={
           <ReactMarkdown source={`
 #### Předchozí znalosti
-- Základy práce s Linuxemm
+- Základy práce s Linuxem
 - Základy práce v terminálu
+- Základní znalost Gitu výhodou - [Školení Git](/skoleni/git)
           `} escapeHtml={false}/>
         }
         col2={
           <ReactMarkdown source={`
 #### Technické požadavky
-- Nainstalovány Docker
 - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
           `} escapeHtml={false}/>
         }
       />
     </div>
-    <References ids={[ 'sit', 'vse']} lang={site.lang} />
+    <References ids={['CMS', 'vse']} lang={site.lang} />
     <Price
       PriceHeader='Cena za školení'
       PriceBtn='Nezávazně poptat školení'>
-      Otevřený termín (self funded): 9 999 CZK bez DPH<br/>
-      Otevřený termín (company funded): 14 999 CZK bez DPH<br/>
-      Firemní školení (ve firmě): 36 000 CZK bez DPH
+      Otevřený termín (self funded): 4 999 CZK bez DPH<br/>
+      Otevřený termín (company funded): 6 999 CZK bez DPH<br/>
+      Firemní školení (ve firmě): 18 000 CZK bez DPH
     </Price>
     <div className='container'>
       <TextArea
-        TextHeader='Poptávka firemního školení Dockeru'
+        TextHeader='Poptávka firemního školeni Gitlabu CI'
         TextParagraph='Pole označené * jsou povinné.'>
         <Form
           FormName='Jméno *'
@@ -81,6 +81,8 @@ Na školení si formou workshopu ukážeme vše jak s Dockerem pracovat, od vytv
           FormSent='Odeslat'
         />
       </TextArea>
+
+
     </div>
   </div>
 )

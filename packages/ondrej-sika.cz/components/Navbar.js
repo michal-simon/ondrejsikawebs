@@ -19,19 +19,19 @@ const Navbar = (props) => (
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   {props.Lecturing}</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/git">GIT</a>
-                  <a class="dropdown-item" href="/docker">DOCKER</a>
+                  <a class="dropdown-item" href="/skoleni/docker">DOCKER</a>
                   {/* <div class="dropdown-divider"></div> */}
-                  <a class="dropdown-item" href="/kubernetes">KUBERNETES</a>
-                  <a class="dropdown-item" href="/ansible">ANSIBLE</a>
-                  <a class="dropdown-item" href="/gitlab-ci">GITLAB CI</a>
+                  <a class="dropdown-item" href="/skoleni/kubernetes">KUBERNETES</a>
+                  <a class="dropdown-item" href="/skoleni/gitlab-ci">GITLAB CI</a>
+                  <a class="dropdown-item" href="/skoleni/ansible">ANSIBLE</a>
+                  <a class="dropdown-item" href="/skoleni/git">GIT</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">{props.PublicTerms}</a>
+                <a class="nav-link" href="/verejne-terminy">{props.PublicTerms}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/contacts">{props.Contacts}</a>
+                <a class="nav-link" href="/kontakt">{props.Contacts}</a>
               </li>
             </ul>
           </div>
