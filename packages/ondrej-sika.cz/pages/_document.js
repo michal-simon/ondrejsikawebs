@@ -9,6 +9,21 @@ import Navbar from '@app/ondrej-sika.cz/components/Navbar';
 import Footer from '@app/ondrej-sika.cz/components/Footer';
 import BootstrapJS from '@app/common/components/BootstrapJS';
 
+let DevelopmentBar = ()=> {
+  if (process.env.NODE_ENV == 'development') {
+    return (
+      <div style={{
+        backgroundColor: 'red',
+        height: '0.2em'
+      }}>
+      </div>
+    )
+  }
+  else {
+    return <></>
+  }
+}
+
 class OndrejSikaDocument extends Document {
   // static async getInitialProps(ctx) {
   //    nst initialProps = await Document.getInitialProps(ctx);
@@ -22,6 +37,7 @@ class OndrejSikaDocument extends Document {
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet"/>
         </Head>
         <body>
+          <DevelopmentBar />
           <Navbar
             NavName='Ondřej Šika'
             NavUnderheader='Software {Engineer, Konzultant, Lektor}'
