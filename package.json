@@ -38,5 +38,6 @@
     "static-docker-training.uk": "yarn --cwd packages/docker-training.uk static",
     "static-kubernetes-training.uk": "yarn --cwd packages/kubernetes-training.uk static",
     "static-ansible-training.uk": "yarn --cwd packages/ansible-training.uk static"
+    "now-ondrej-sika.cz": "yarn run static-ondrej-sika.cz && (cd packages/ondrej-sika.cz/out && now --name ondrej-sika-cz)"
   }
 }
