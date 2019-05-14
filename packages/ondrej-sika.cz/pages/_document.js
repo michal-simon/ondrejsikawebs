@@ -34,7 +34,6 @@ class OndrejSikaDocument extends Document {
           <div className='content'>
           <Main />
           </div>
-          <BootstrapJS />
           <Footer
             col1_name='Ondřej Šika'
             col1_mail='ondrej@ondrejsika.com'
@@ -45,6 +44,7 @@ class OndrejSikaDocument extends Document {
             NewsletterBtn='Odebírat'
           ></Footer>
           <NextScript />
+          <BootstrapJS />
         </body>
       </Html>
     );
