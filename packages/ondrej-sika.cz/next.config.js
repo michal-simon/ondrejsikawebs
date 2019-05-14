@@ -1,12 +1,24 @@
 const CopyPlugin = require('copy-webpack-plugin');
 
+function buildExportPathMap(paths){
+  var out = {}
+  paths.forEach(function(path){
+    out[path] = { page: path }
+  })
+  return out
+}
+
 module.exports = {
   exportPathMap: function() {
-    return {
-      '/': { page: '/' },
-      '/git': { page: '/git' },
-      '/contacts': { page: '/contacts' },
-    }
+    return buildExportPathMap([
+      '/',
+      '/skoleni/git',
+      '/skoleni/gitlab-ci',
+      '/skoleni/docker',
+      '/skoleni/kubernetes',
+      '/skoleni/ansible',
+      '/kontakt'
+    ])
   },
   webpack: function (config) {
     config.module.rules.push(
