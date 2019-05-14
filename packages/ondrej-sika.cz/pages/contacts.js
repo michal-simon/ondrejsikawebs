@@ -1,4 +1,4 @@
-import '../css'
+import '@app/ondrej-sika.cz/css'
 
 import Header from '@app/course-landing/components/Header'
 import HeaderLink from '@app/course-landing/components/HeaderLink'
