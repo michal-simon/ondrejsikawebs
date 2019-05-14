@@ -24,51 +24,38 @@ const Index = () => (
       inquiryBtn='Nezávazně poptat školení'
       logo='/static/gitlab-ci.svg'>
     </Header>
-    <div className='container'>
-      <TextArea
-      TextHeader='K čemu se používá ?'
-      TextParagraph='Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutijni úkoly jako je pouštění testů, kvality kódu a nebo nasazování. Umožní vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images a nebo pouštět testy v kontejnerech.'/>
-      <TextArea
-      TextHeader='Jak školení probíhá'
-      TextParagraph='Na školení formou workshopu si vysvětlíme proč je dobré CI používat, ukážeme si možnosti Gitlab CI a vyzkoušíme si napsat CI skript pro ukázkový projekt. Výsledkem bude CI skript pro jednoduchý projekt obsahující joby od buildu aplikace, přez testy až po deployment.'/>
-      <TextArea
-      TextHeader='Co Vás naučím'
-      >
-      <ReactMarkdown source={`
+    <div className='container course-page'>
+    <ReactMarkdown source={`
+### K čemu se používá ?
+Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutijni úkoly jako je pouštění testů, kvality kódu a nebo nasazování. Umožní vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images a nebo pouštět testy v kontejnerech.
+### Jak školení probíhá
+Na školení formou workshopu si vysvětlíme proč je dobré CI používat, ukážeme si možnosti Gitlab CI a vyzkoušíme si napsat CI skript pro ukázkový projekt. Výsledkem bude CI skript pro jednoduchý projekt obsahující joby od buildu aplikace, přez testy až po deployment.'/>
+### Co Vás naučím'
 - Obecný úvod do CI
 - Úvod do Gitlab CI
 - Instalace Gitlab CI Runneru
 - Práce s CI joby
 - Tvorba CI pipelines
 - Automatické nasazování
-- Docker a CI`}/>
-      </TextArea>
-
-    <TextArea
-      TextHeader='Pro koho je školení určeno'
-      TextParagraph='Školení je primárně určeno vývojářům kteří používají Gitlab a chtějí začít používat Gitlab CI. Zároveň právě Gitlab CI může být důvod přechodu na Gitlab. Školení je také vhodné pro DevOps, kteří si chtějí ulehčit práci s automatizací nasazování.'>
+- Docker a CI
+### Pro koho je školení určeno
+Školení je primárně určeno vývojářům kteří používají Gitlab a chtějí začít používat Gitlab CI. Zároveň právě Gitlab CI může být důvod přechodu na Gitlab. Školení je také vhodné pro DevOps, kteří si chtějí ulehčit práci s automatizací nasazování.`}/>
       <TwoCol
         col1={
-          <>
-            <h4>Předchozí znalosti</h4>
-            <ReactMarkdown source={`
+          <ReactMarkdown source={`
+#### Předchozí znalosti
 - Základy práce s Linuxem
 - Základy práce v terminálu
 - Základní znalost Gitu výhodou - [Školení Git](/git)
-            `} escapeHtml={false}/>
-          </>
+          `} escapeHtml={false}/>
         }
         col2={
-          <>
-            <h4>Technické požadavky</h4>
-            <ReactMarkdown source={`
+          <ReactMarkdown source={`
+#### Technické požadavky
 - Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)</li>
-            `} escapeHtml={false}/>
-          </>
+          `} escapeHtml={false}/>
         }
       />
-    </TextArea>
-
     </div>
     <References
       NameRef1='Adrian Kantor'
