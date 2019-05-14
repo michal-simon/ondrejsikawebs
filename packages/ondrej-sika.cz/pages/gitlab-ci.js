@@ -29,8 +29,8 @@ const Index = () => (
 ### K čemu se používá ?
 Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutijni úkoly jako je pouštění testů, kvality kódu a nebo nasazování. Umožní vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images a nebo pouštět testy v kontejnerech.
 ### Jak školení probíhá
-Na školení formou workshopu si vysvětlíme proč je dobré CI používat, ukážeme si možnosti Gitlab CI a vyzkoušíme si napsat CI skript pro ukázkový projekt. Výsledkem bude CI skript pro jednoduchý projekt obsahující joby od buildu aplikace, přez testy až po deployment.'/>
-### Co Vás naučím'
+Na školení formou workshopu si vysvětlíme proč je dobré CI používat, ukážeme si možnosti Gitlab CI a vyzkoušíme si napsat CI skript pro ukázkový projekt. Výsledkem bude CI skript pro jednoduchý projekt obsahující joby od buildu aplikace, přez testy až po deployment.
+### Co Vás naučím
 - Obecný úvod do CI
 - Úvod do Gitlab CI
 - Instalace Gitlab CI Runneru
@@ -52,24 +52,12 @@ Na školení formou workshopu si vysvětlíme proč je dobré CI používat, uk�
         col2={
           <ReactMarkdown source={`
 #### Technické požadavky
-- Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)</li>
+- Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
           `} escapeHtml={false}/>
         }
       />
     </div>
-    <References
-      NameRef1='Adrian Kantor'
-      PositionRef1='Head of IT Prague Fio banka'
-      DateRef1='17.listopadu 2018'
-      TextRef1='Ondřej školil git, ale bez problémů na místě objasnil i mnoho našich specifických otázek kolem celého vývojového cyklu,neztratil se ani v ad hoc dotazech, které už s gitem souvisely jen málo.
-      Bylo velmi přínosné strávit čas s člověkem, který tématu rozumí do hloubky i do šířky a zároveň se je schopen podívat na problém z vaší perspektivy.'
-
-      NameRef2='František Janošek'
-      PositionRef2='System Admin'
-      DateRef2='10.dubna 2019'
-      TextRef2='Školení na [Docker](/docker) od Ondřeje v ROOT.CZ bylo velice zajímavé a přínosné. Ondra toho zná opravdu dost a není problém se na cokoliv zeptat i z jiného tématu. Ke školení provozuje na Githubu spoustu příkladů, volně přístupné registry, blog a Slack. Není problém se na Ondru obrátit s dotazy i po školení. Zatím jedno z nejvíce profesionálních školení co jsem absolvoval.'
-    >
-    </References>
+    <References ids={['CMS', 'vse']} lang={site.lang} />
     <Price
       PriceHeader='Cena za školení'
       PriceBtn='Nezávazně poptat školení'>
