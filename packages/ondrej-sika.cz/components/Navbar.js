@@ -31,9 +31,6 @@ const Navbar = (props) => (
                 <a class="nav-link" href="#">{props.PublicTerms}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">{props.Reference}</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="/contacts">{props.Contacts}</a>
               </li>
             </ul>
