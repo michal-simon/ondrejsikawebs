@@ -29,11 +29,11 @@ const Index = () => (
       MainBarText='Zlepšuji práci vývojářských týmu zaváděním efektivních procesu ve vývoji a použitím prověřených nástrojů a technologií, které vedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software.'>
     </MainBar>
     <StatisticBar
-    NumberOfPeople='666'
+    NumberOfPeople='500+'
     NumberOfPeopleHeader='Počet odškolených'
-    NumberOfCompanies='44'
+    NumberOfCompanies='70+'
     NumberOfCompaniesHeader='Počet firem ve spolupráci'
-    NumberOfLectures='55'
+    NumberOfLectures='100+'
     NumberOfLecturesHeader='Počet uskutečněných školení'
     />
 
