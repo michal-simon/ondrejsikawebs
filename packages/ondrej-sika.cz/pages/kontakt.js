@@ -42,7 +42,7 @@ const Index = () => (
           <p>Klatovská třída 1532/71<br/>
           301 00 Plzeň<br/>
           Česká Republika</p>
-          <table class="table table-borderless">
+          <table class="contact-table table-borderless">
             <tbody>
               <tr>
                 <td>IČ:</td>
@@ -61,7 +61,7 @@ const Index = () => (
         </div>
         <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
           <h4 className='pt-4 pt-md-0'>Platební údaje</h4>
-          <table class="table table-borderless">
+          <table class="contact-table table-borderless">
             <tbody>
               <tr>
                 <td>ČR (CZK):</td>
