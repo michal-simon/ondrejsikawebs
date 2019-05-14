@@ -1,35 +1,53 @@
-const References = (props) => (
-  <div>
-    <div className='container border mb-4 mt-4'>
-      <div className='row pt-3'>
-        <div className='col-1 pt-2 d-none d-lg-block d-xl-block'>
-          <img src='/static/putin.jpg' className='img-fluid rounded-circle'/>
-        </div>
-        <div className='col-3'>
-          <h4 className='pt-2'><b>{props.NameRef1}</b></h4>
-          <p className='mb-1'><b>{props.PositionRef1}</b></p>
-          <p className='text-secondary'>{props.DateRef1}</p>
-        </div>
-        <div className='col-lg-8 col-md-9 col-sm-9 col-9'>
-          <p>{props.TextRef1}</p>
+import React from 'react'
+
+import recommendations from '@app/data/training/recommendations/recommendations.yaml'
+
+let recommendation_id_map = {}
+recommendations.map((element, i) => {
+  recommendation_id_map[element.id] = i
+})
+
+console.log(recommendation_id_map)
+
+class References extends React.Component {
+  render() {
+    return (
+      <div>
+        <div className='container border mb-4 mt-4'>
+          {
+            this.props.ids.map((id, i) => {
+              let recommendation = recommendations[recommendation_id_map[id]]
+              let img = require(`@app/data/training/recommendations/` + recommendation.photo)
+              return (
+                <div key={i}>
+                  {
+                    (() => {
+                      if (i > 0) {
+                        return <hr />
+                      }
+                    })()
+                  }
+                  <div className='row pt-3'>
+                    <div className='col-1 pt-2 d-none d-lg-block d-xl-block'>
+                      <img src={img} className='img-fluid rounded-circle' />
+                    </div>
+                    <div className='col-3'>
+                      <h4 className='pt-2'><b>{recommendation.name}</b></h4>
+                      <p className='mb-1'><b>{recommendation.role[this.props.lang]}</b></p>
+                      <p className='text-secondary'>{recommendation.date[this.props.lang]}</p>
+                    </div>
+                    <div className='col-lg-8 col-md-9 col-sm-9 col-9'>
+                      <p>{recommendation.text[this.props.lang]}</p>
+                    </div>
+                  </div>
+                </div>
+              )
+            })
+          }
         </div>
       </div>
-      <hr/>
-      <div className='row'>
-        <div className='col-1 pt-2 d-none d-lg-block d-xl-block'>
-          <img src='/static/karel-marx.jpg' className='img-fluid rounded-circle'/>
-        </div>
-        <div className='col-3'>
-          <h4 className='pt-2'><b>{props.NameRef2}</b></h4>
-          <p className='mb-1'><b>{props.PositionRef2}</b></p>
-          <p className='text-secondary'>{props.DateRef2}</p>
-        </div>
-        <div className='col-lg-8 col-md-9 col-sm-9 col-9'>
-          <p>{props.TextRef2}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-)
+    );
+  }
+}
 
 export default References

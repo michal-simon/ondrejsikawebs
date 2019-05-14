@@ -2,11 +2,11 @@ import '@app/ondrej-sika.cz/css'
 
 import ReactMarkdown from 'react-markdown'
 import Header from '@app/ondrej-sika.cz/components/Header'
-import TextArea from '@app/ondrej-sika.cz/components/TextArea';
-import TwoCol from '@app/ondrej-sika.cz/components/TwoCol';
-import References from '@app/ondrej-sika.cz/components/References';
-import Price from '@app/ondrej-sika.cz/components/Price';
-import Form from '@app/ondrej-sika.cz/components/Form';
+import TextArea from '@app/ondrej-sika.cz/components/TextArea'
+import TwoCol from '@app/ondrej-sika.cz/components/TwoCol'
+import References from '@app/ondrej-sika.cz/components/References'
+import Price from '@app/ondrej-sika.cz/components/Price'
+import Form from '@app/ondrej-sika.cz/components/Form'
 
 import Head from 'next/head'
 
@@ -72,18 +72,7 @@ const Index = () => (
     </TextArea>
 
     </div>
-    <References
-      NameRef1='Ivo Kašpárek'
-      PositionRef1='Administrator in oXy shop'
-      DateRef1='7.5.2019'
-      TextRef1='Pár školení už jsem zažil, ale takhle perfektně do detailu vyladěné Kubernetes školení mě vážně dostalo;) Pokud chcete jít z dobou a vůbec nevíte co k8s je, tak neváhejte a napište Ondrovi!!! Ještě jednou díky Ondro;) Bylo to super👍'
-
-      NameRef2='František Janošek'
-      PositionRef2='System Admin'
-      DateRef2='10.dubna 2019'
-      TextRef2='Školení na [Docker](/docker) od Ondřeje v ROOT.CZ bylo velice zajímavé a přínosné. Ondra toho zná opravdu dost a není problém se na cokoliv zeptat i z jiného tématu. Ke školení provozuje na Githubu spoustu příkladů, volně přístupné registry, blog a Slack. Není problém se na Ondru obrátit s dotazy i po školení. Zatím jedno z nejvíce profesionálních školení co jsem absolvoval.'
-    >
-    </References>
+    <References ids={['oxy', 'vse', 'oxy']} lang={site.lang} />
     <Price
       PriceHeader='Cena za školení'
       PriceBtn='Nezávazně poptat školení'>
