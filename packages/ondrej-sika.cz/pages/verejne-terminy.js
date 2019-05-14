@@ -30,48 +30,37 @@ const Index = () => (
     </MainBar>
 
     <div className="container">
-    <table class="table mt-4 public-sessions-table">
-      <thead class="thead-dark">
+    <table class="table table-hover">
+      <thead>
         <tr>
-          <th scope="col">Název školeni</th>
-          <th scope="col">Místo</th>
-          <th scope="col">Datum</th>
-          <th scope="col">Cena</th>
-          <th scope="col"></th>
+          <th scope="col" className='col-main'>NÁZEV ŠKOLENÍ</th>
+          <th scope="col" className='col-min'>MÍSTO</th>
+          <th scope="col" className='col-min'>DATUM</th>
+          <th scope="col" className='col-min'>CENA</th>
+          <th scope="col" className='col-min'>DÉLKA</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">Git</th>
+        <th scope="row">Git</th>
           <td>Praha</td>
           <td>1.1.2019</td>
           <td>10000kc</td>
-          <td><button type="button" class="btn btn-dark">Objednat</button></td>
+          <td>1 den</td>
         </tr>
         <tr>
-          <th scope="row">Docker</th>
+        <th scope="row">Docker</th>
           <td>Reikjavik</td>
           <td>1.1.2019</td>
           <td>10000kc</td>
-          <td><button type="button" class="btn btn-dark">Objednat</button></td>
-        </tr><tr>
-          <th scope="row">Git</th>
+          <td>2 dny</td>
+        </tr>
+        <tr>
+        <th scope="row">Gitlab CI</th>
           <td>Praha</td>
           <td>1.1.2019</td>
           <td>10000kc</td>
-          <td><button type="button" class="btn btn-dark">Objednat</button></td>
-        </tr><tr>
-          <th scope="row">Git</th>
-          <td>Praha</td>
-          <td>1.1.2019</td>
-          <td>10000kc</td>
-          <td><button type="button" class="btn btn-dark">Objednat</button></td>
-        </tr><tr>
-          <th scope="row">Git</th>
-          <td>Praha</td>
-          <td>1.1.2019</td>
-          <td>10000kc</td>
-          <td><button type="button" class="btn btn-dark">Objednat</button></td>
+          <td>1 den</td>
         </tr>
       </tbody>
     </table>
