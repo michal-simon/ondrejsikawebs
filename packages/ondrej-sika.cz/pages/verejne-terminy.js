@@ -24,47 +24,92 @@ const Index = () => (
   <div>
     <Head>
     </Head>
-    <MainBar
-      MainBarHeader='Veřejné termíny'
-      MainBarText='Zlepšuji práci vývojářských týmu zaváděním efektivních procesu ve vývoji a použitím prověřených nástrojů a technologií, které vedou k rychlejšímu vývoji a bezpečnějšímu provozu vašeho software.'>
-    </MainBar>
-
+    <MainBar MainBarHeader='Veřejné termíny školení'/>
     <div className="container">
-    <table class="table table-hover">
-      <thead>
-        <tr>
-          <th scope="col" className='col-main'>NÁZEV ŠKOLENÍ</th>
-          <th scope="col" className='col-min'>MÍSTO</th>
-          <th scope="col" className='col-min'>DATUM</th>
-          <th scope="col" className='col-min'>CENA</th>
-          <th scope="col" className='col-min'>DÉLKA</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-        <th scope="row">Git</th>
-          <td>Praha</td>
-          <td>1.1.2019</td>
-          <td>10000kc</td>
-          <td>1 den</td>
-        </tr>
-        <tr>
-        <th scope="row">Docker</th>
-          <td>Reikjavik</td>
-          <td>1.1.2019</td>
-          <td>10000kc</td>
-          <td>2 dny</td>
-        </tr>
-        <tr>
-        <th scope="row">Gitlab CI</th>
-          <td>Praha</td>
-          <td>1.1.2019</td>
-          <td>10000kc</td>
-          <td>1 den</td>
-        </tr>
-      </tbody>
-    </table>
-      <CompaniesBar
+      <table class="table-my table-hover mt-4">
+        <thead>
+          <tr>
+            <th scope="col" className='col-main'>NÁZEV ŠKOLENÍ</th>
+            <th scope="col" className='col-min'>MÍSTO</th>
+            <th scope="col" className='col-min'>DATUM</th>
+            <th scope="col" className='col-min'>CENA</th>
+            <th scope="col" className='col-min'>DÉLKA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <th scope="row">Git</th>
+            <td>Praha</td>
+            <td>1.1.2019</td>
+            <td>10000kc</td>
+            <td>1 den</td>
+          </tr>
+          <tr>
+          <th scope="row">Docker</th>
+            <td>Reikjavik</td>
+            <td>1.1.2019</td>
+            <td>10000kc</td>
+            <td>2 dny</td>
+          </tr>
+          <tr>
+          <th scope="row">Gitlab CI</th>
+            <td>Praha</td>
+            <td>1.1.2019</td>
+            <td>10000kc</td>
+            <td>1 den</td>
+          </tr>
+          <tr>
+          <th scope="row">Gitlab CI</th>
+            <td>Praha</td>
+            <td>1.1.2019</td>
+            <td>10000kc</td>
+            <td>1 den</td>
+          </tr>
+          <tr>
+          <th scope="row">Gitlab CI</th>
+            <td>Praha</td>
+            <td>1.1.2019</td>
+            <td>10000kc</td>
+            <td>1 den</td>
+          </tr>
+          <tr>
+          <th scope="row">Gitlab CI</th>
+            <td>Praha</td>
+            <td>1.1.2019</td>
+            <td>10000kc</td>
+            <td>1 den</td>
+          </tr>
+          <tr>
+          <th scope="row">Gitlab CI</th>
+            <td>Praha</td>
+            <td>1.1.2019</td>
+            <td>10000kc</td>
+            <td>1 den</td>
+          </tr>
+          <tr>
+          <th scope="row">Gitlab CI</th>
+            <td>Praha</td>
+            <td>1.1.2019</td>
+            <td>10000kc</td>
+            <td>1 den</td>
+          </tr>
+          <tr>
+          <th scope="row">Kubernetes</th>
+            <td>Praha</td>
+            <td>1.1.2019</td>
+            <td>10000kc</td>
+            <td>1 den</td>
+          </tr>
+          <tr>
+          <th scope="row">Gitlab CI</th>
+            <td>Praha</td>
+            <td>1.1.2019</td>
+            <td>10000kc</td>
+            <td>1 den</td>
+          </tr>
+        </tbody>
+      </table>
+      {/* <CompaniesBar
         CompaniesBarHeader='Firmy se kterými spolupracuji'
         CompaniesBar1='../static/webglobe-yegon-sq.png'
         CompaniesBar2='../static/eltodo-sq.png'
@@ -72,9 +117,8 @@ const Index = () => (
         CompaniesBar4='../static/kb-sq.jpg'
         CompaniesBar5='../static/dimension-data-sq.png'
         CompaniesBar6='../static/aaa-auto-sq.png'
-      ></CompaniesBar>
+      ></CompaniesBar> */}
     </div>
-
   </div>
 )
 

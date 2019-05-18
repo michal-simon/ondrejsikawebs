@@ -1,7 +1,9 @@
 const Navbar = (props) => (
   <div>
     <div className="container-fluid">
+
       <div className='container pt-2 pb-2'>
+
         <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="/">
             <strong>{props.NavName}</strong>
