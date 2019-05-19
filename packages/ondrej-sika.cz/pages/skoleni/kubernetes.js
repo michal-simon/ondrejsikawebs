@@ -72,6 +72,7 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
         TextHeader='Poptávka firemního školeni Kubernetes'
         TextParagraph='Pole označené * jsou povinné.'>
         <Form
+          course='Kubernetes'
           FormName='Jméno *'
           FromNamePlaceholder='Anton Hrabiš'
           FormCompany='Společnost'

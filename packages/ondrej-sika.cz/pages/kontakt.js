@@ -16,17 +16,12 @@ import ButtonOutline from '@app/course-landing/components/ButtonOutline';
 import Recommendation from '@app/course-landing/components/Recommendation'
 import Contact from '@app/course-landing/components/Contact'
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
-import Head from 'next/head'
+import Former2 from "@app/common/components/Former2"
+import site from "@app/ondrej-sika.cz/config"
 
-
-let site = {
-  lang: 'cs'
-}
 
 const Index = () => (
   <div>
-    <Head>
-    </Head>
     <div className="bar-header">
       <div className='container'>
         <div className='pt-4 pb-4'>
@@ -91,27 +86,27 @@ const Index = () => (
         <div className='col-lg-4 col-md-9 col-sm-12 col-12'>
         <h4 className='pt-4 pt-md-0'>Poptejte firemní školení</h4>
           {/* <img src='/static/ond.jpg' className='img-fluid img-size-70'/> */}
-          <form>
+          <Former2 site={site} name='Contact form' redirect_path="/odeslano">
             <div className="form-group">
               <div className="col-md-12 mb-3 pl-0">
                 <label for="validationDefault01">Jméno *</label>
-                <input type="text" className="form-control" id="validationDefault01" placeholder="Anton Hrabiš" required/>
+                <input type="text" className="form-control" id="validationDefault01" name="name" placeholder="Anton Hrabiš" required/>
               </div>
               <div className="col-md-12 mb-3 pl-0">
                 <label for="validationDefault02">Společnost</label>
-                <input type="text" className="form-control" id="validationDefault02" placeholder="Drůbežárny"/>
+                <input type="text" className="form-control" id="validationDefault02" name="company" placeholder="Drůbežárny"/>
               </div>
               <div className="col-md-12 mb-3 pl-0">
                 <label for="validationDefault03">Email *</label>
-                <input type="email" className="form-control" id="validationDefault03" placeholder="anton@hrabis.cz" required/>
+                <input type="email" className="form-control" id="validationDefault03" name="email" placeholder="anton@hrabis.cz" required/>
               </div>
               <div className="col-md-12 mb-3 pl-0">
                 <label for="validationDefault04">Telefon *</label>
-                <input type="tel" className="form-control" id="validationDefault04" placeholder="+420111222333" required/>
+                <input type="tel" className="form-control" id="validationDefault04" name="phone" placeholder="+420111222333" required/>
               </div>
             </div>
             <button className='btn btn-succes mb-4' type="submit">Odeslat</button>
-          </form>
+          </Former2>
         </div>
       </div>
     </div>

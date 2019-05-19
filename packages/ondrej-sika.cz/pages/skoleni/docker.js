@@ -70,6 +70,7 @@ Na školení si formou workshopu ukážeme vše jak s Dockerem pracovat, od vytv
         TextHeader='Poptávka firemního školení Dockeru'
         TextParagraph='Pole označené * jsou povinné.'>
         <Form
+          course='Docker'
           FormName='Jméno *'
           FromNamePlaceholder='Anton Hrabiš'
           FormCompany='Společnost'

@@ -71,6 +71,7 @@ Na školení formou workshopu si vysvětlíme proč je dobré Git používat, ja
         TextHeader='Poptávka firemního školeni Gitu'
         TextParagraph='Pole označené * jsou povinné.'>
         <Form
+          course='Git'
           FormName='Jméno *'
           FromNamePlaceholder='Anton Hrabiš'
           FormCompany='Společnost'

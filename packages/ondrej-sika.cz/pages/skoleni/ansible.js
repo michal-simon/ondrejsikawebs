@@ -86,6 +86,7 @@ Ansible si společně nainstalujeme a popíšeme si jak pracuje a základní kon
         TextHeader='Poptávka firemního školení Ansible'
         TextParagraph='Pole označené * jsou povinné.'>
         <Form
+          course='ansible'
           FormName='Jméno *'
           FromNamePlaceholder='Anton Hrabiš'
           FormCompany='Společnost'

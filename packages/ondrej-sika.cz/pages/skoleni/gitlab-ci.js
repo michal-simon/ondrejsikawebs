@@ -70,6 +70,7 @@ Na školení formou workshopu si vysvětlíme proč je dobré CI používat, uk�
         TextHeader='Poptávka firemního školeni Gitlabu CI'
         TextParagraph='Pole označené * jsou povinné.'>
         <Form
+          course='Gitlab CI'
           FormName='Jméno *'
           FromNamePlaceholder='Anton Hrabiš'
           FormCompany='Společnost'
