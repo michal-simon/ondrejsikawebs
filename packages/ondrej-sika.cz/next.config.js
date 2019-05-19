@@ -17,7 +17,9 @@ module.exports = {
       '/skoleni/docker',
       '/skoleni/kubernetes',
       '/skoleni/ansible',
-      '/kontakt'
+      '/verejne-terminy',
+      '/odeslano',
+      '/kontakt',
     ])
   },
   webpack: function (config) {
