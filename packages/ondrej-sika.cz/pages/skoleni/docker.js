@@ -30,12 +30,12 @@ const Index = () => (
 Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
 ### Jak školení probíhá
 Na školení si formou workshopu ukážeme vše jak s Dockerem pracovat, od vytvoření vlastního kontejnerů, po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
-### Co Vás naučím'
+### Co Vás naučím
 - Teoretický úvod do Dockeru
 - Instalace Dockeru (pro ty kteří nenainstalovali doma)
 - Práce s kontejnery
 - Práce s obrazy
-- Docker Compose – vicekontejnerove aplikace v Dockeru
+- Docker Compose – vícekontejnerové aplikace v Dockeru
 - Deployment do Swarmu
 - Ukázka deploymentu do Kubernetes
 ### Pro koho je školení určeno

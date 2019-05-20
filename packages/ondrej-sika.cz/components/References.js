@@ -36,7 +36,7 @@ class References extends React.Component {
                       <p className='mb-1'><b>{recommendation.role[this.props.lang]}</b></p>
                       <p className='text-secondary'>{recommendation.date[this.props.lang]}</p>
                     </div>
-                    <div className='col-lg-8 col-md-9 col-sm-9 col-9'>
+                    <div className='col-lg-8 col-md-9 col-sm-9 col-9 pt-2'>
                       <p>{recommendation.text[this.props.lang]}</p>
                     </div>
                   </div>
