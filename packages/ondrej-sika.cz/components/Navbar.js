@@ -33,6 +33,9 @@ const Navbar = (props) => (
                 <a class="nav-link" href="/verejne-terminy">{props.PublicTerms}</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="/blog">{props.Blog}</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="/kontakt">{props.Contacts}</a>
               </li>
             </ul>

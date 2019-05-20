@@ -44,6 +44,7 @@ class OndrejSikaDocument extends Document {
             Home='DOMŮ'
             Lecturing='NABÍDKA ŠKOLENÍ'
             PublicTerms='VEŘEJNÉ TERMÍNY'
+            Blog='BLOG'
             Contacts='KONTAKT'
             >
           </Navbar>
