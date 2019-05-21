@@ -35,8 +35,8 @@ const Install = () => (
       Pri instalace nechte defaultni nastaveni, pri vyberu typu kontejneru nechte vybrane Linuxove kontejnery.<br/><br/>
       Po instalaci spuste Docker do do terminalu napiste: docker run ondrejsika/verify-docker a meli by jste dostat:</p>
     </div>
-    <div className='container-fluid code'>
-      <div className='container'>
+    <div className='container-fluid '>
+      <div className='container code'>
         <div className='pt-3 pb-2'>
           <p>sika@sika-x250:~$ docker run ondrejsika/verify-docker<br/>
           Unable to find image 'ondrejsika/verify-docker:latest' locally<br/>
