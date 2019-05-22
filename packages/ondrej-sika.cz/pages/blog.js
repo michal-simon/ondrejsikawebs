@@ -7,7 +7,7 @@ import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
 import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
 import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
 import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
-
+import Link from 'next/link'
 
 import Head from 'next/head'
 
@@ -20,29 +20,41 @@ let style = {
   fontWeight: 'bold',
 }
 
-const Blog = () => (
-  <div>
-    <Head>
-    </Head>
-    <MainBar
-      MainBarHeader=''>
-    </MainBar>
+import posts from '@app/ondrej-sika.cz/data/blog-posts.yaml'
 
-    <div className="container">
-      <h3 className='pt-4'>Mac OS vs Debian + i3</h3>
-      <p>5. 2. 2019</p>
-      <p className='pb-4'>Chci si koupit Mac. Uz po treti jej testuji. Mam iPhone, iPad, Apple Watch, Apple TV. Dlouho si rikam, zda by pro me nebyl i MacOS. Predchozi dva pokusi byli neuspesne, na Mac se mi nepodarilo prejit. Ted to skousim… <a href='#'>číst dále</a></p>
-      <hr className='hr-black'/>
-      <h3 className='pt-4'>Mac OS vs Debian + i3</h3>
-      <p>5. 2. 2019</p>
-      <p className='pb-4'>Chci si koupit Mac. Uz po treti jej testuji. Mam iPhone, iPad, Apple Watch, Apple TV. Dlouho si rikam, zda by pro me nebyl i MacOS. Predchozi dva pokusi byli neuspesne, na Mac se mi nepodarilo prejit. Ted to skousim… <a href='#'>číst dále</a></p>
-      <hr className='hr-black'/>
-      <h3 className='pt-4'>Mac OS vs Debian + i3</h3>
-      <p>5. 2. 2019</p>
-      <p className='pb-4'>Chci si koupit Mac. Uz po treti jej testuji. Mam iPhone, iPad, Apple Watch, Apple TV. Dlouho si rikam, zda by pro me nebyl i MacOS. Predchozi dva pokusi byli neuspesne, na Mac se mi nepodarilo prejit. Ted to skousim… <a href='#'>číst dále</a></p>
-    </div>
 
-  </div>
-)
+class Blog extends React.Component {
+  render() {
+    return (
+      <div>
+        <MainBar
+          MainBarHeader='Blog'>
+        </MainBar>
+
+        <div className="container">
+          {
+            posts.map((post, i) => {
+              return (
+                <div key={i}>
+                  {
+                    (() => {
+                      if (i > 0) {
+                        return <hr className='hr-black' />
+                      }
+                    })()
+                  }
+                  <h3 className='pt-4'><Link as={`${post.url}`} href={`/blog-post?post_id=${post.id}`}><a style={{color: 'black'}}>{post.title}</a></Link></h3>
+                  <p>{post.date}</p>
+                  <p className='pb-4'>{post.perex} <Link as={`${post.url}`} href={`/blog-post?post_id=${post.id}`}><a>číst dále</a></Link></p>
+                </div>
+              )
+            })
+          }
+        </div>
+
+      </div>
+    );
+  }
+}
 
 export default Blog

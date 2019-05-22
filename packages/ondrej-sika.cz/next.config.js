@@ -1,10 +1,22 @@
 const CopyPlugin = require('copy-webpack-plugin');
+yaml = require('js-yaml');
+fs   = require('fs');
 
 function buildExportPathMap(paths){
   var out = {}
   paths.forEach(function(path){
     out[path] = { page: path }
   })
+  try {
+    var posts = yaml.safeLoad(fs.readFileSync('data/blog-posts.yaml', 'utf8'));
+    posts.forEach(function(post){
+      var path = post.url;
+
+      out[path] = { page: '/blog-post', query: {post_id: post.id}}
+    })
+  } catch (e) {
+    console.log(e);
+  }
   return out
 }
 
@@ -18,6 +30,7 @@ module.exports = {
       '/skoleni/kubernetes',
       '/skoleni/ansible',
       '/verejne-terminy',
+      '/blog',
       '/odeslano',
       '/kontakt',
     ])
