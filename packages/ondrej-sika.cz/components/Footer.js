@@ -7,7 +7,7 @@ const Footer = (props) => (
     <div className='footer mt-4'>
       <div className='container pt-4 pb-4'>
         <div className='row'>
-          <div class='col-md-4 col-sm-7 col-8'>
+          <div className='col-md-4 col-sm-7 col-8'>
             <h3 className='text-white'>{props.col1_name}</h3>
             <p><a href='mailto:ondrej@ondrejsika.com' className='a-underline'>{props.col1_mail}</a><br></br>
             <a href='tel:+420773452376' className='a-underline'>{props.col1_phone}</a></p>
@@ -20,7 +20,7 @@ const Footer = (props) => (
             <p><a href='/ansible' className='a-underline'>Ansible</a></p>
           </div>
 
-          <div class='col-md-2 col-sm-12'>
+          <div className='col-md-2 col-sm-12'>
             <a href='https://www.facebook.com/sikaondrej'><img src='/static/fb-hex.svg' className='pl-2 pr-2 pt-1'/></a>
             <a href='https://www.instagram.com/ondrejsika/'><img src='/static/insta-hex.svg' className='pl-2 pr-2 pt-1'/></a>
             <a href='https://www.linkedin.com/in/ondrejsika/'><img src='/static/linkedin-hex.svg' className='pl-2 pr-2 pt-1'/></a>
