@@ -33,3 +33,39 @@
 
     #### Wifi Hotspot
     Na Macu je skvele sdileni internetu z iPhone a iPadu do Macu. Otevru Mac, kliknu na ikonu Wifi a vyberu si zda chci internet z telefonu nebo iPadu. Nemusim nic vyndavat z kapes a poustet hotspot. Proste to funguje.
+
+- id: emaily-v-jedne-domene-na-google-i-na-svem-serveru
+  url: /blog/2019/emaily-v-jedne-domene-na-google-i-na-svem-serveru
+  title: Emaily v jedné doméně na Google i na svém serveru
+  date: 10. 1. 2019
+  perex: |
+    Chci si koupit Mac. Uz po treti jej testuji. Mam iPhone, iPad, Apple Watch, Apple TV. Dlouho si rikam, zda by pro me nebyl i MacOS. Predchozi dva pokusi byli neuspesne, na Mac se mi nepodarilo prejit. Ted to skousim po treti.
+  content: |
+    Je možné mít emaily v jedné doméně jako ondrej@example.com na G Suite a monitoring@example.com na svém serverů? Ano, jde a není to těžké.
+
+    Používám G Suite z mnoha důvodů. Je to stabilní email, který fuguje i když zbytek mě infrastruktury spadne, doručuje se do inboxu a nemusím řešit spam listy, mám na Google kalendář, kontakty a G Suite. To jsou asi hlavní důvody proč jej používám.
+
+    Na druhou stranu, email účet stojí 4 EUR měsíčně a postu si organizují do více účtu. Dělám to zase z více důvodů, dobře se mi s tím pracuje a některé emaily chci sdílet s a některé ne. Nechci také stahovat všechny emaily na mobilů, zvlášť ty, které nemusím řešit akutně a chodí jich hodně. Stejně tak mi vadí filtrování Googlim způsobem narozdíl od standartniho Sieve. Není to možná nejlepší způsob, ale mě vyhovuje.
+
+    Dejme tomu že používám doménu example.com. Používat email ondrej@example.com jako hlavní, ondrejsika@example.com na většinu služeb a webu (jako například ondrejsika+alza@example.com nebo ondrejsika+netflix@example.com), monitoring@example.com pro notifikace z monitoringu, wp@example.com pro notifikace z Worpresu a podobně.
+
+    Jelikož Google chce za každý účet v G Suite 4 EUR, platil bych zbytečně moc za služby které nechci. U těchto emailu nemusím řešit ani spam, většinou z nich nic neposílám.
+
+    Moje dosavadní řešení bylo na svém serverů mít doménu int.example.com (int jako internal) a na ní mít tyto emaily (například ondrejsika@int.example.com, wp@int.example.com).
+
+    Toto řešení se mi nakonec přestalo líbit. Povedlo se mi totiž docílit toho, že emaily mohu mít v hezkém formátu (ondrejsika@example.com, wp@example.com) a nepoužívat více účtu v G Suitě. Ukážu Vám jak na to.
+
+    Provozují vlastní emailový server Poště.io. Je to jeden Docker kontejner, který obsahuje SMTP, IMAP, webmail a Admin. Vytvořili to češi, je to fakt super. V něm jsem si vytvořil virtuální doménu example.com, na které si vytvářím jednotlivé účty. Dále jsem si vytvoří doménu gin.example.com (Google INput, podobnost s alkoholem náhodná), kterou jsem přesměroval na example.com, což znamená že všechny emaily pro účty na gin.example.com se bude doručovat do schránek v doméně example.com. Používá se to například když máte alias domény s pomlčkou a chcete doručovat emaily na obě domény (například ondrej@my-domain.com -> ondrej@mydomain.com, alice@my-domain.com -> alice@mydomain.com).
+
+    MX DNS záznamy domény example.com nechám na Google a MX pro gin.example.com nastavím na můj mailserver. Vypadá to asi takto:
+
+        sika@sika-x250:~$ host example.com
+        example.com mail is handled by 10 aspmx.l.google.com.
+        example.com mail is handled by 20 alt1.aspmx.l.google.com.
+        sika@sika-x250:~$ host gin.example.com
+        gin.example.com mail is handled by 10 mail.example.com.
+        sika@sika-x250:~$
+
+    V G Suitě nastavím mému uživateli aliasy pro tyto jména (ondrejsika@example.com, wp@example.com) nebo doménový koš (akceptuje všechny emaly (cokoliv@example.com). Potom nastavím přesměrování těchto emailu na emaily v gin.example.com doméně (která je interně doručuje na example.com). Poště.io nedělá DNS resilution pro domény, se kterými pracuje a proto se nepodívá že example.com má být na Google, ale email doručí lokálnímu účtu. A to je celé. Stacu přidat nové emaily do mailoveho klienta.
+
+    Pokud mám správné nastavené SPF, mohu emaily z domény i odesílat a ano, budou ve složce odeslána pošta.
