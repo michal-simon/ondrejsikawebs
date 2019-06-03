@@ -32,7 +32,7 @@ const LectureImg = (props) => (
             </div>
             <div className='col-8'>
               <a href='/skoleni/git'><h4 className='course-header-sm'>GIT</h4></a>
-              <a href='/skoleni/git' className='course-text'><p className='pb-3 course-text'>{props.LectureImgGitText}Moderni verzovaci nastroj. Dnes defakto standart a nezbytna soucat kazdeho vyvojarskeho tymu.</p></a>
+              <a href='/skoleni/git' className='course-text'><p className='pb-3 course-text'>{props.LectureImgGitText}</p></a>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@ const LectureImg = (props) => (
             </div>
             <div className='col-8'>
               <a href='/skoleni/gitlab-ci'><h4 className='course-header-sm'>GITLAB-CI</h4></a>
-              <a href='/skoleni/gitlab-ci'><p className='pb-3 course-text'>{props.LectureImgGitlabCIText}Nástroj na automaticke testovani a automaticke nasazovani integrovane primo v Gitlabu. Testujte kazdy jednotlivi commit a nasazujte stisknutim tlacitka.</p></a>
+              <a href='/skoleni/gitlab-ci'><p className='pb-3 course-text'>{props.LectureImgGitlabCIText}</p></a>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ const LectureImg = (props) => (
             </div>
             <div className='col-8'>
               <a href='/skoleni/ansible'><h4 className='course-header-sm'>ANSIBLE</h4></a>
-              <a href='/skoleni/ansible'><p className='pb-3 course-text'>{props.LectureImgAnsibleText}Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklarujete vysledný stav serveru a služeb a Ansible se postará o provedení.</p></a>
+              <a href='/skoleni/ansible'><p className='pb-3 course-text'>{props.LectureImgAnsibleText}</p></a>
             </div>
           </div>
         </div>

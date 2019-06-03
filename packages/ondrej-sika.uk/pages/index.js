@@ -55,7 +55,9 @@ const Index = () => (
       LectureImgHeader='My lectures'
       LectureImgDockerText='Docker can make your life easier through simplifying the process of R&D, testing, and software usage in your business. Run everything, everywhere. Have the environment as a part of your application.'
       LectureImgKubernetesText='Kubernetes is one of the most used platforms for running your Docker containers and it is supported by key market leaders via Cloud Native Computing Foundation.'
-
+      LectureImgGitText='Moderni verzovaci nastroj. Dnes defakto standart a nezbytna soucat kazdeho vyvojarskeho tymu.'
+      LectureImgGitlabCIText='Nástroj na automaticke testovani a automaticke nasazovani integrovane primo v Gitlabu. Testujte kazdy jednotlivi commit a nasazujte stisknutim tlacitka.'
+      LectureImgAnsibleText='Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklarujete vysledný stav serveru a služeb a Ansible se postará o provedení.' 
       />
 
       <TextWithImg

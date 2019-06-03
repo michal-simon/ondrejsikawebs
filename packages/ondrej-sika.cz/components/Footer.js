@@ -49,14 +49,12 @@ const Footer = (props) => (
         <div className='center'>
           {
             props.job_links.map((link, j) => {
-              if (typeof link[0] == 'string') {
-                return (
-                  <li className='mb-3 li-row' key={j}>
-                    <a href={link[1]} className='a-underline'>{link[0]}</a>
-                    &nbsp;|&nbsp;
-                  </li>
-                )
-              }
+              return (
+                <li className='mb-3 li-row' key={j}>
+                  <a href={link[1]} className='a-underline'>{link[0]}</a>
+                  &nbsp;|&nbsp;
+                </li>
+              )
             })
           }
         </div>

@@ -79,7 +79,7 @@ class OndrejSikaDocument extends Document {
               ['Ansible','/training/ansible'],
             ]}
             job_links={[
-              ['Lecturer coworking','/coworking'],
+              ['Lektorská spoluprace','/coworking'],
               ['Nabidka (spolu)prace','/jobs'],
               ['Obchodní Spolupráce','/obchodni-spoluprace'],
             ]}
