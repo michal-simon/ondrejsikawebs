@@ -44,28 +44,27 @@ class OndrejSikaDocument extends Document {
         <body>
           <DevelopmentBar />
           <Navbar
-            NavName='Ondřej Šika'
+            NavName='Ondrej Sika'
             NavUnderheader='Software {Engineer, Konzultant, Lektor}'
             links={[
-              ['DOMŮ', '/'],
-              ['KURZY', [
-                ['GIT', '/skoleni/git'],
-                ['GITLAB CI', '/skoleni/gitlab-ci'],
-                ['DOCKER', '/skoleni/docker'],
-                ['KUBERNETES', '/skoleni/kubernetes'],
-                ['ANSIBLE', '/skoleni/ansible'],
+              ['HOME', '/'],
+              ['COURSES', [
+                ['GIT', '/training/git'],
+                ['GITLAB CI', '/training/gitlab-ci'],
+                ['DOCKER', 'training/docker'],
+                ['KUBERNETES', 'training/kubernetes'],
+                ['ANSIBLE', '/training/ansible'],
               ]],
-              ['TERMÍNY', '/verejne-terminy'],
-              ['BLOG', '/blog'],
-              ['NÁVODY', '/navody'],
-              ['KONTAKT', '/kontakt'],
+              ['TERMS', '/terms'],
+              ['INSTRUCTIONS', '/instructions'],
+              ['CONTACT', '/contact'],
             ]}
           />
           <div className='content'>
           <Main />
           </div>
           <Footer
-            col1_name='Ondřej Šika'
+            col1_name='Ondrej Sika'
             col1_mail='ondrej@ondrejsika.com'
             col1_phone='+420 773 452 376'
 

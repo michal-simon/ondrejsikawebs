@@ -8,12 +8,12 @@ let site = {
 
 const Index = () => (
   <div>
-    <MainBar MainBarHeader='Formulář byl úspěšně odeslán'/>
+    <MainBar MainBarHeader='Form was succesfully send'/>
     <div className="container pt-4">
     <ReactMarkdown source={`
-Brzy se Vám ozvu.
+I wiil contact you as soon as possible.
 
-V případě jakýchkoliv dotazů pište na <ondrej@ondrejsika.com>.
+If you have any questions write me on <ondrej@ondrejsika.com>.
 `}/>
     <div style={{height: '100px'}}></div>
     </div>

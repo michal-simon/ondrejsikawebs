@@ -1,15 +1,11 @@
 import '@app/ondrej-sika.cz/css'
 
-import LectureImgMdLg from '@app/ondrej-sika.cz/components/LectureImgMdLg';
-import LectureImgSm from '@app/ondrej-sika.cz/components/LectureImgSm';
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
 import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
 import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
 import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
 import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
-
-import UpcomingSessions from '@app/ondrej-sika.cz/components/UpcomingSessions'
-
+import ReactMarkdown from 'react-markdown'
 
 import Head from 'next/head'
 
@@ -22,15 +18,31 @@ let style = {
   fontWeight: 'bold',
 }
 
-const Index = () => (
+const Install = () => (
   <div>
     <Head>
     </Head>
-    <MainBar MainBarHeader='Veřejné termíny školení'/>
-    <div className="container">
-      <UpcomingSessions lang={site.lang} />
+    <MainBar
+      MainBarHeader='Instructions'>
+    </MainBar>
+
+    <div className="container pt-4 pb-2">
+      <ReactMarkdown source={`
+### Docker
+
+- [Instalation](/docker/Instalation)
+
+### Kubernetes
+
+- [Instalation](/kubernetes/Instalation)
+
+### Git
+
+- [Instalation](/git/Instalation)
+- [Rebase](/git/rebase)
+`} escapeHtml={false}/>
     </div>
   </div>
 )
 
-export default Index
+export default Install
