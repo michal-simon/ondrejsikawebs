@@ -12,7 +12,7 @@ import Head from 'next/head'
 
 
 let site = {
-  lang: 'cs'
+  lang: 'en'
 }
 
 const Index = () => (
@@ -20,66 +20,72 @@ const Index = () => (
     <Head>
     </Head>
     <Header
-      websiteHeader='Školení Docker'
-      inquiryBtn='Nezávazně poptat školení'
+      websiteHeader='Docker Training'
+      inquiryBtn='Ask for training'
       logo='/static/docker.svg'>
     </Header>
     <div className='container course-page'>
       <ReactMarkdown source={`
-### K čemu se používá?
-Docker je dnes technologie, která proces vývoje, testování a provozování softwaru velmi zjednodušuje. Provozujte cokoliv a kdekoliv. Už nečekejte na nastavení vašeho serveru nebo na aktualizaci nějaké knihovny. Mějte prostředí jako součást vaší aplikace.
-### Jak školení probíhá
-Na školení si formou workshopu ukážeme vše jak s Dockerem pracovat, od vytvoření vlastního kontejnerů, po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
-### Co Vás naučím
-- Teoretický úvod do Dockeru
-- Instalace Dockeru (pro ty kteří nenainstalovali doma)
-- Práce s kontejnery
-- Práce s obrazy
-- Docker Compose – vícekontejnerové aplikace v Dockeru
-- Deployment do Swarmu
-- Ukázka deploymentu do Kubernetes
-### Pro koho je školení určeno
-Školení je primárně určeno lidem, kteří nemají s Dockerem žádné (nebo malé) zkušenosti. Školení nepočítá s předchozími znalostmi Dockeru. Je vhodné pro vývojáře nebo devops (server administrátory), kteří chtějí Docker využívat v praxi nebo chtějí mít přehled co Docker řeší a kde by jej mohli použít.`}/>
+### What is Docker?
+Docker can make your life easier through simplifying the process of R&D, testing, and software usage in your business. Run everything, everywhere. Don’t lose your time waiting for server setups or random library updates. Have the environment as a part of your application.
+
+### Course Description
+During the two-day workshop, you’ll be shown everything you need to know to be able to use Docker - from creating a custom container image to the Swarm utilisation. This course is very hands-on, and you will be able to practice everything you learn.
+
+### Course outline
+- Theory introduction to containers & Docker
+- How to install Docker at home or work (for those who did not - do so)
+- Basics of Containerisation
+- Basics of Images
+- Docker Compose - multi-container applications
+- Deployment to Swarm
+- Preview of deployment to Kubernetes
+
+### Who Should Attend
+This training course is primarily aimed at complete beginners who have either none or very little experience with Docker. Most of all, Developers and/or DevOps (Server Administrators), or those who want to use Docker in practice or want to find out more about its purpose and if it is something they can implement.`}/>
       <TwoCol
         col1={
           <ReactMarkdown source={`
-#### Předchozí znalosti
-- Základy práce s Linuxemm
-- Základy práce v terminálu
+#### Skill Requirements
+- Basic Linux knowledge
+- Basic Terminal knowledge
           `} escapeHtml={false}/>
         }
         col2={
           <ReactMarkdown source={`
-#### Technické požadavky
-- Nainstalovány Docker
-- Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
+#### Technical Requirements
+- Have Docker installed, instructions: [here](/instructions/docker)
+- Access to the internet - ideally without corporate proxy, or proxy set up in Docker
           `} escapeHtml={false}/>
         }
       />
     </div>
     <References ids={[ 'sit', 'vse']} lang={site.lang} />
     <Price
-      PriceHeader='Cena za školení'
-      PriceBtn='Nezávazně poptat školení'>
-      Otevřený termín (self funded): 9 999 CZK bez DPH<br/>
-      Otevřený termín (company funded): 14 999 CZK bez DPH<br/>
-      Firemní školení (ve firmě): 36 000 CZK bez DPH
+      PriceHeader='Pricing'
+      PriceBtn='Asf for a training'>
+      Price for two days Docker training<br/><br/>
+      <ReactMarkdown source={`
+Open to public (self-funded): 800 GBP excl. VAT
+Open to public (company-funded): 1 000 GBP excl. VAT
+On-site training (on-site): 3 000 GBP excl. VAT
+`} escapeHtml={false}/>
     </Price>
     <div className='container'>
       <TextArea
-        TextHeader='Poptávka firemního školení Dockeru'
-        TextParagraph='Pole označené * jsou povinné.'>
+        TextHeader='Ask for company training on Docker'
+        TextParagraph='Fields marked with * are required.'>
         <Form
           course='Docker'
-          FormName='Jméno *'
-          FromNamePlaceholder='Anton Hrabiš'
-          FormCompany='Společnost'
-          FormCompanyPlaceholder='Drůbežárny'
-          FormEmail='Email *'
-          FormEmailPlaceholder='anton@hrabis.cz'
-          FormPhone='Telefon *'
+          FormName='Name *'
+          FromNamePlaceholder='xx xx'
+          FormCompany='Company'
+          FormCompanyPlaceholder='xx'
+          FormEmail='E-mail *'
+          FormEmailPlaceholder='xx@xx.com'
+          FormPhone='Phone *'
           FormPhonePlaceholder='+420111222333'
-          FormSent='Odeslat'
+          FormSent='Sent'
         />
       </TextArea>
     </div>

@@ -12,7 +12,7 @@ import Head from 'next/head'
 
 
 let site = {
-  lang: 'cs'
+  lang: 'en'
 }
 
 const Index = () => (
@@ -20,66 +20,73 @@ const Index = () => (
     <Head>
     </Head>
     <Header
-      websiteHeader='Školení Gitlab CI'
-      inquiryBtn='Nezávazně poptat školení'
+      websiteHeader='Gitlab CI Training'
+      inquiryBtn='Ask for a Training'
       logo='/static/gitlab-ci.svg'>
     </Header>
     <div className='container course-page'>
     <ReactMarkdown source={`
-### K čemu se používá ?
-Continuous Integration (zkráceně CI nebo CI/CD) je nástroj, který za Vás automatizuje rutijni úkoly jako je pouštění testů, kvality kódu a nebo nasazování. Umožní vám rychleji začleňovat změny do masteru a rychleji nasazovat. Výhodou Gitlab CI je velmi dobrá podpora Dockeru, můžete velmi jednoduše skládat Docker images a nebo pouštět testy v kontejnerech.
-### Jak školení probíhá
-Na školení formou workshopu si vysvětlíme proč je dobré CI používat, ukážeme si možnosti Gitlab CI a vyzkoušíme si napsat CI skript pro ukázkový projekt. Výsledkem bude CI skript pro jednoduchý projekt obsahující joby od buildu aplikace, přez testy až po deployment.
-### Co Vás naučím
-- Obecný úvod do CI
-- Úvod do Gitlab CI
-- Instalace Gitlab CI Runneru
-- Práce s CI joby
-- Tvorba CI pipelines
-- Automatické nasazování
-- Docker a CI
-### Pro koho je školení určeno
-Školení je primárně určeno vývojářům kteří používají Gitlab a chtějí začít používat Gitlab CI. Zároveň právě Gitlab CI může být důvod přechodu na Gitlab. Školení je také vhodné pro DevOps, kteří si chtějí ulehčit práci s automatizací nasazování.`}/>
+### What is CI?
+Continuous Integration (abbr. CI or CI/CD) is a tool that automates routine tasks such as running tests,code quality or deployment. It allows faster adoption of changes to master and quicker deployment. The compelling advantage of Gitlab CI is its Docker support; you can easily combine Docker images or run tests in containers.
+
+### Course Description
+This course is ran in the form of a one day hands-on workshop where you will learn the importance of CI,the different versions of Gitlab CI and practice writing CI script for a sample project. The outcome will be a script for a simple project containing application build jobs, from tests to deployment.
+
+### Course Outline
+- Generic introduction to CI
+- Introduction to Gitlab CI
+- Installation of Gitlab CI Runner
+- Work with CI Jobs
+- Creation of CI Pipelines
+- Deployment Automatisation
+- Docker and CI
+
+### Who Should Attend
+The course is primarily aimed at developers who are using Gitlab and are wanting to start using Gitlab CI. At the same time, Gitlab CI might be the reason why people are transferring onto Gitlab. The course is also useful for DevOps who want to simplify their routine tasks with deployment automatisation.`}/>
       <TwoCol
         col1={
           <ReactMarkdown source={`
-#### Předchozí znalosti
-- Základy práce s Linuxem
-- Základy práce v terminálu
-- Základní znalost Gitu výhodou - [Školení Git](/skoleni/git)
+#### Skill Requirement
+- Basic Linux knowledge
+- Basic Terminal knowledge
+- Basic Git knowledge is of benefit - [Git training](/training/git)
+- Docker knowledge is of benefit - [Docker training](/training/docker)
           `} escapeHtml={false}/>
         }
         col2={
           <ReactMarkdown source={`
-#### Technické požadavky
-- Přístup na internet (ideálně bez korporatni proxy, případně nastavenou proxy v Dockeru)
+#### Technical Requirements
+- Access to the internet - ideally without corporate proxy
           `} escapeHtml={false}/>
         }
       />
     </div>
     <References ids={['CMS', 'vse']} lang={site.lang} />
     <Price
-      PriceHeader='Cena za školení'
-      PriceBtn='Nezávazně poptat školení'>
-      Otevřený termín (self funded): 4 999 CZK bez DPH<br/>
-      Otevřený termín (company funded): 6 999 CZK bez DPH<br/>
-      Firemní školení (ve firmě): 18 000 CZK bez DPH
+      PriceHeader='Pricing'
+      PriceBtn='Ask for a training'>
+      Price for one day hands-on Git training
+      <ReactMarkdown source={`
+- Open to public (self-funded): 400 GBP excl. VAT
+- Open to public (company-funded): 500 GBP excl. VAT
+- On-site training (on-site): 1 500 GBP excl. VAT
+`} escapeHtml={false}/>
     </Price>
     <div className='container'>
       <TextArea
-        TextHeader='Poptávka firemního školeni Gitlabu CI'
-        TextParagraph='Pole označené * jsou povinné.'>
+        TextHeader='Ask for company training on Gitlabu CI'
+        TextParagraph='Fields marked with * are required.'>
         <Form
           course='Gitlab CI'
-          FormName='Jméno *'
-          FromNamePlaceholder='Anton Hrabiš'
-          FormCompany='Společnost'
-          FormCompanyPlaceholder='Drůbežárny'
-          FormEmail='Email *'
-          FormEmailPlaceholder='anton@hrabis.cz'
-          FormPhone='Telefon *'
+          FormName='Name *'
+          FromNamePlaceholder='xx xx'
+          FormCompany='Company'
+          FormCompanyPlaceholder='xx'
+          FormEmail='E-mail *'
+          FormEmailPlaceholder='xx@xx.com'
+          FormPhone='Phone *'
           FormPhonePlaceholder='+420111222333'
-          FormSent='Odeslat'
+          FormSent='Sent'
         />
       </TextArea>
 

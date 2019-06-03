@@ -11,7 +11,7 @@ const Form = (props) => (
           <input type="text" className="form-control-border" id="validationDefault01" name="name" placeholder={props.FromNamePlaceholder} required />
         </div>
         <div className="col-md-4 mb-3 pl-0">
-          <label htmlFor="validationDefault02">{props.FormCompany}Společnost</label>
+          <label htmlFor="validationDefault02">{props.FormCompany}</label>
           <input type="text" className="form-control-border" id="validationDefault02" name="company" placeholder={props.FormCompanyPlaceholder} />
         </div>
         <div className="col-md-4 mb-3 pl-0">

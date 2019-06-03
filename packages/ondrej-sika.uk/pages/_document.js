@@ -51,8 +51,8 @@ class OndrejSikaDocument extends Document {
               ['COURSES', [
                 ['GIT', '/training/git'],
                 ['GITLAB CI', '/training/gitlab-ci'],
-                ['DOCKER', 'training/docker'],
-                ['KUBERNETES', 'training/kubernetes'],
+                ['DOCKER', '/training/docker'],
+                ['KUBERNETES', '/training/kubernetes'],
                 ['ANSIBLE', '/training/ansible'],
               ]],
               ['TERMS', '/terms'],

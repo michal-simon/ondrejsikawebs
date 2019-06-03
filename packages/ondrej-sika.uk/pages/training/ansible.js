@@ -12,7 +12,7 @@ import Head from 'next/head'
 
 
 let site = {
-  lang: 'cs'
+  lang: 'en'
 }
 
 const H3 = (props) => (
@@ -24,22 +24,20 @@ const Index = () => (
     <Head>
     </Head>
     <Header
-      websiteHeader='Školení Ansible'
-      inquiryBtn='Nezávazně poptat školení'
+      websiteHeader='Ansible Training'
+      inquiryBtn='Ask for training'
       logo='/static/ansible.png'>
     </Header>
     <div className='container course-page'>
     <ReactMarkdown source={`
-### What is Ansible?
 
+### What is Ansible?
 Ansible is a tool for mass configuration and deployment management. You declare the desired state of the server and services and Ansible will do the execution. You don't have to worry about the state the current server or applications are in now; Ansible turns it into desired state. The entire configuration is versioned using Git, and you will never lose view of where everything is being deployed or miss any critical steps during the process. Ansible will help you with application deployment and quicker and safer server administration.
 
 ### Course Description
-
 The training is ran as a two-day hands-on workshop, where you can try what you learn in practice. We will install Ansible together and describe how it works and introduce the basic concepts. We will see how to configure a server (tester on DigitalOcean) and deploy an application from the beginning to the end. Starting with the installation of system packages, application download from Git, creation of templates for configuration scripts, and secrets setup (e.g., passwords). After this course, you will be able to use Ansible on a daily basis and simplify deployment and configuration routines.
 
 ### Course Outline
-
 - Basic insights into automation
 - Basic insights into Ansible
 - Ansible installation (for those who did not install at home)
@@ -51,24 +49,23 @@ The training is ran as a two-day hands-on workshop, where you can try what you l
 - Ansible & CI/CD (Gitlab CI)
 
 ### Who Should Attend
-
 This training is primarily aimed at admins and DevOps who want to start using Ansible. At the same time,developers who deploy their applications (even into test environments) and want to simplify this process, will also find it useful.
 `}/>
 
   <TwoCol
     col1={
       <ReactMarkdown source={`
-#### Skill Requirements
 
+#### Skill Requirements
 - Basic Linux knowledge
 - Basic Terminal knowledge
       `} escapeHtml={false}/>
     }
     col2={
       <ReactMarkdown source={`
-#### Technical Requirements
 
-- Have Ansible installed, instructions: here
+#### Technical Requirements
+- Have Ansible installed, instructions: [here](/instructions/ansible)
 - Access to the internet (https, ssh) - better without corporate proxy
       `} escapeHtml={false}/>
     }
@@ -88,10 +85,10 @@ This training is primarily aimed at admins and DevOps who want to start using An
     </Price>
     <div className='container'>
       <TextArea
-        TextHeader='Order a company training of Ansible'
+        TextHeader='Ask for company training on Ansible'
         TextParagraph='Fields marked with * are required.'>
         <Form
-          course='ansible'
+          course='Ansible'
           FormName='Name *'
           FromNamePlaceholder='xx xx'
           FormCompany='Company'
