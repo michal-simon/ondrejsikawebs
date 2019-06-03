@@ -68,10 +68,22 @@ class OndrejSikaDocument extends Document {
             col1_mail='ondrej@ondrejsika.com'
             col1_phone='+420 773 452 376'
 
-            col4_NewsHeader='Zajímají Vás novinky?'
-            col4_NewsText='Odebírejte můj newsletter a budete v obraze!'
-            NewsletterBtn='Odebírat'
-          ></Footer>
+            col4_NewsHeader='Subscribe for a Newsletter?'
+            col4_NewsText="Don't miss any news!"
+            NewsletterBtn='Subscribe'
+            lecture_links={[
+              ['Docker','/training/docker'],
+              ['Git','/training/git'],
+              ['Kubernetes','/training/kubernetes'],
+              ['Gitlab-CI','/training/gitlab-ci'],
+              ['Ansible','/training/ansible'],
+            ]}
+            job_links={[
+              ['Lecturer coworking','/coworking'],
+              ['Nabidka (spolu)prace','/jobs'],
+              ['Obchodní Spolupráce','/obchodni-spoluprace'],
+            ]}
+          />
           <NextScript />
           <BootstrapJS />
           <Gauges gauges_site_id={this.props.site.gauges_site_id} />

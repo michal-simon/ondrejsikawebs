@@ -10,7 +10,7 @@ import ReactMarkdown from 'react-markdown'
 import Head from 'next/head'
 
 let site = {
-  lang: 'cs'
+  lang: 'en'
 }
 
 let style = {
@@ -23,29 +23,29 @@ const Install = () => (
     <Head>
     </Head>
     <MainBar
-      MainBarHeader='Instalace Gitu'>
+      MainBarHeader='Git Installation'>
     </MainBar>
 
     <div className="container pt-4 pb-2">
       <ReactMarkdown source={`
 ### Linux
 
-Prikazem
+By command
 
     apt install git
 
 ### macOS
 
-Prikazem
+By command
 
     brew install git
 
-Pokud nemate __brew__, muzete ho naistalovat z oficialniho webu [brew.sh](https://brew.sh)
+If you don't have __brew__, you can install it from official websites [brew.sh](https://brew.sh)
 
 
 ### Windows
 
-Stahnout installer z oficialnich stranek [git-scm.com](https://git-scm.com)
+Download git installer from official website [git-scm.com](https://git-scm.com)
 `} escapeHtml={false}/>
     </div>
   </div>

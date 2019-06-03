@@ -12,7 +12,7 @@ import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
 import Head from 'next/head'
 
 let site = {
-  lang: 'cs'
+  lang: 'en'
 }
 
 let style = {
@@ -39,9 +39,25 @@ const Index = () => (
 
     <div className="container">
       <LectureImgMdLg
-        LectureImgHeader='My lectures'/>
+        LectureImgHeader='My lectures'
+        LectureImgLinkDocker='/training/docker'
+        LectureImgLinkDockerImg='/static/docker-w.svg'
+        LectureImgLinkKubernetes='/training/kubernetes'
+        LectureImgLinkKubernetes='/static/kubernetes.png'
+        LectureImgLinkGit='/training/git'
+        LectureImgLinkGitImg='/static/git-w.svg'
+        LectureImgLinkGitlabCI='/training/gitlab-ci'
+        LectureImgLinkGitlabCIImg='/static/gitlab-ci.svg'
+        LectureImgLinkAnsible='/training/ansible'
+        LectureImgLinkAnsibleImg='/static/ansible.png'
+        />
       <LectureImgSm
-      LectureImgHeader='My lectures'/>
+      LectureImgHeader='My lectures'
+      LectureImgDockerText='Docker can make your life easier through simplifying the process of R&D, testing, and software usage in your business. Run everything, everywhere. Have the environment as a part of your application.'
+      LectureImgKubernetesText='Kubernetes is one of the most used platforms for running your Docker containers and it is supported by key market leaders via Cloud Native Computing Foundation.'
+
+      />
+
       <TextWithImg
         TextWithImgHeader='About me'>
         My name is Ondrej, I am a software engineer and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have worked for small companies, startups to big corporations. I have four years of experience with training.
@@ -49,7 +65,7 @@ const Index = () => (
         <h4>Training</h4>
         All courses are perform as workshops (hands-on). They are build on my long-term knowledge and experience in developing, testing and running software projects.
         <br/><br/>
-        Nástroje jako <a href='/git'>Git</a>, <a href='/docker'>Docker</a>, <a href='/kubernetes'>Kubernetes</a>, <a href='/ansible'>Ansible</a> nebo <a href='/gitlab-ci'>CI</a> používám na denní bázi, vše co školím jsem použil v reálných projektech a mám s technologií osobní zkušenost.
+        Nástroje jako <a href='/training/git'>Git</a>, <a href='/training/docker'>Docker</a>, <a href='/training/kubernetes'>Kubernetes</a>, <a href='/training/ansible'>Ansible</a> nebo <a href='/training/gitlab-ci'>CI</a> používám na denní bázi, vše co školím jsem použil v reálných projektech a mám s technologií osobní zkušenost.
         <br/>
       </TextWithImg>
       <CompaniesBar
@@ -60,9 +76,8 @@ const Index = () => (
         CompaniesBar4='../static/kb-sq.jpg'
         CompaniesBar5='../static/dimension-data-sq.png'
         CompaniesBar6='../static/aaa-auto-sq.png'
-      ></CompaniesBar>
+      />
     </div>
-
   </div>
 )
 

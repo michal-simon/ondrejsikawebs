@@ -30,15 +30,15 @@ const Install = () => (
       <ReactMarkdown source={`
 ### Docker
 
-- [Instalation](/docker/Instalation)
+- [Installation](/docker/installation)
 
 ### Kubernetes
 
-- [Instalation](/kubernetes/Instalation)
+- [Installation](/kubernetes/installation)
 
 ### Git
 
-- [Instalation](/git/Instalation)
+- [Installation](/git/Installation)
 - [Rebase](/git/rebase)
 `} escapeHtml={false}/>
     </div>

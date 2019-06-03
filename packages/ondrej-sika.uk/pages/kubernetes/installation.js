@@ -10,7 +10,7 @@ import ReactMarkdown from 'react-markdown'
 import Head from 'next/head'
 
 let site = {
-  lang: 'cs'
+  lang: 'en'
 }
 
 let style = {
@@ -23,12 +23,12 @@ const Install = () => (
     <Head>
     </Head>
     <MainBar
-      MainBarHeader='Instalace Kubernetes pro lokalni vyvoj'>
+      MainBarHeader='Installation Kubernetes for local development'>
     </MainBar>
 
     <div className="container pt-4 pb-2">
       <ReactMarkdown source={`
-Navod mam popsany v [repozitari s kurzem](https://github.com/ondrejsika/kubernetes-training-examples#install).
+Instructions are in [my course repository](https://github.com/ondrejsika/kubernetes-training-examples#install).
 `} escapeHtml={false}/>
     </div>
   </div>

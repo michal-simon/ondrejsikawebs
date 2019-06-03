@@ -10,7 +10,7 @@ import ReactMarkdown from 'react-markdown'
 import Head from 'next/head'
 
 let site = {
-  lang: 'cs'
+  lang: 'en'
 }
 
 let style = {
@@ -23,7 +23,7 @@ const Install = () => (
     <Head>
     </Head>
     <MainBar
-      MainBarHeader='Instalace Dockeru'>
+      MainBarHeader='Docker Installation'>
     </MainBar>
 
     <div className="container pt-4 pb-2">

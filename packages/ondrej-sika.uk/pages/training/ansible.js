@@ -65,7 +65,7 @@ This training is primarily aimed at admins and DevOps who want to start using An
       <ReactMarkdown source={`
 
 #### Technical Requirements
-- Have Ansible installed, instructions: [here](/instructions/ansible)
+- Have Ansible installed, instructions: [here](/ansible/instructions)
 - Access to the internet (https, ssh) - better without corporate proxy
       `} escapeHtml={false}/>
     }
