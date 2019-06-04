@@ -5,7 +5,6 @@ const StatisticBar = (props) => (
         <div className='col-4'>
           <h2 className='text-center text-white mb-0 text-huge'>{props.NumberOfPeople}</h2>
           <p className='text-white text-center statistic-bottom'>{props.NumberOfPeopleHeader}</p>
-
         </div>
         <div className='col-4'>
           <h2 className='text-white text-center mb-0 text-huge '>{props.NumberOfCompanies}</h2>

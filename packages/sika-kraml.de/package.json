@@ -1,5 +1,5 @@
 {
-  "name": "@app/sika-kraml.de",
+  "name": "@app/ondrej-sika.se",
   "private": true,
   "version": "0.0.0",
   "author": "Ondrej Sika",
@@ -11,6 +11,6 @@
     "static": "yarn run build && yarn run export"
   },
   "dependencies": {
-    "@app/course-landing": "^0.0.0"
+    "@app/ondrej-sika.cz": "^0.0.0"
   }
 }
