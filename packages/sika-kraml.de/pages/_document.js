@@ -1,14 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import ReactMarkdown from 'react-markdown'
-import Header from '@app/ondrej-sika.cz/components/Header'
-import TextArea from '@app/ondrej-sika.cz/components/TextArea';
-import TwoCol from '@app/ondrej-sika.cz/components/TwoCol';
-import References from '@app/ondrej-sika.cz/components/References';
+import ReactMarkdown from 'react-markdown';
 import Gauges from '@app/common/components/Gauges';
 import GoogleAnalytics from '@app/common/components/GoogleAnalytics';
-
 import Navbar from '@app/ondrej-sika.cz/components/Navbar';
-import Footer from '@app/ondrej-sika.cz/components/Footer';
+import Footer from '@app/sika-kraml.de/components/Footer';
 import BootstrapJS from '@app/common/components/BootstrapJS';
 
 import site from '../config';
@@ -44,7 +39,7 @@ class OndrejSikaDocument extends Document {
         <body>
           <DevelopmentBar />
           <Navbar
-            NavName='IT schulung, consultation and workshops'
+            NavName='SIKA KRAML'
             NavUnderheader=''
             links={[
               ['HOME', '/'],
@@ -61,12 +56,15 @@ class OndrejSikaDocument extends Document {
             ]}
           />
           <div className='content'>
-          <Main />
+            <Main />
           </div>
           <Footer
             col1_name='Ondrej Sika'
             col1_mail='ondrej@ondrejsika.com'
             col1_phone='+420 773 452 376'
+            col2_name='Jiri Kraml'
+            col2_mail='jiri@kraml.com'
+            col2_phone='+420 773 452 376'
 
             col4_NewsHeader='Subscribe for a Newsletter?'
             col4_NewsText="Ja Ja!"
