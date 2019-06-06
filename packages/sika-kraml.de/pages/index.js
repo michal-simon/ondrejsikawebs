@@ -4,7 +4,7 @@ import LectureImgMdLg from '@app/ondrej-sika.cz/components/LectureImgMdLg';
 import LectureImgSm from '@app/ondrej-sika.cz/components/LectureImgSm';
 import MainBar from '@app/sika-kraml.de/components/MainBar';
 import TextWithImg from '@app/sika-kraml.de/components/TextWithImg';
-import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
+import IntroBar from '@app/sika-kraml.de/components/IntroBar';
 import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
 import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
 import site from '@app/ondrej-sika.cz/config';
@@ -25,12 +25,13 @@ const Index = () => (
       MainBarHeader='IT Schulungen, Workshops und Consultation'
     />
     <div className="container">
-      <ReactMarkdown source={`
+      <IntroBar>
+        <ReactMarkdown source={`
 We provide training & consulting in DevOps field. We're professionals focused on improvements in your software development & operations. Helping you boost your productivity & efficiency and also cut your dev & ops budgets.
 - We do super efficient workshops which boost your & your team skills in fields of DevOps.
 - Every course is a hands-on workshop, you will try everything you need to know for everyday use of the technology.technogy
-      `} escapeHtml={false}/>
-    
+        `} escapeHtml={false}/>
+      </IntroBar>
       <LectureImgMdLg
         LectureImgHeader='My lectures'
         LectureImgLinkDocker='/schulung/docker'
