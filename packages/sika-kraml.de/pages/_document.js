@@ -2,7 +2,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import ReactMarkdown from 'react-markdown';
 import Gauges from '@app/common/components/Gauges';
 import GoogleAnalytics from '@app/common/components/GoogleAnalytics';
-import Navbar from '@app/ondrej-sika.cz/components/Navbar';
+import Navbar from '@app/sika-kraml.de/components/Navbar';
 import Footer from '@app/sika-kraml.de/components/Footer';
 import BootstrapJS from '@app/common/components/BootstrapJS';
 
