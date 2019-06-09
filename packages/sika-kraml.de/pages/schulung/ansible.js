@@ -1,4 +1,4 @@
-import '@app/ondrej-sika.cz/css'
+import '@app/sika-kraml.de/css'
 
 import ReactMarkdown from 'react-markdown'
 import Header from '@app/ondrej-sika.cz/components/Header'
@@ -12,7 +12,7 @@ import Head from 'next/head'
 
 
 let site = {
-  lang: 'en'
+  lang: 'de'
 }
 
 const H3 = (props) => (

@@ -1,4 +1,4 @@
-import '@app/ondrej-sika.cz/css'
+import '@app/sika-kraml.de/css'
 
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
 import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';

@@ -1,4 +1,4 @@
-import '@app/ondrej-sika.cz/css'
+import '@app/sika-kraml.de/css'
 
 import LectureImgMdLg from '@app/ondrej-sika.cz/components/LectureImgMdLg';
 import LectureImgSm from '@app/ondrej-sika.cz/components/LectureImgSm';

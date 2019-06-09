@@ -1,4 +1,4 @@
-import '@app/ondrej-sika.cz/css';
+import '@app/sika-kraml.de/css';
 import ReactMarkdown from '@app/common/components/StyledReactMarkdown';
 import LectureImgMdLg from '@app/sika-kraml.de/components/LectureImgMdLg';
 import LectureSectionMdLg from '@app/sika-kraml.de/components/LectureSectionMdLg';
