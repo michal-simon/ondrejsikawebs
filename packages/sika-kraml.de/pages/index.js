@@ -41,8 +41,8 @@ const Index = () => (
       <LectureSectionMdLg
       LectureImgHeader='Unsere Schulungen'>
         <LectureImgMdLg link="/schulung/docker" title="DOCKER" image={docker_img} first={true}/>
-        <LectureImgMdLg link="/schulung/docker" title="GIT" image={git_img} />
-        <LectureImgMdLg link="/schulung/docker" title="KUBERNETES" image={kubernetes_img} />
+        <LectureImgMdLg link="/schulung/git" title="GIT" image={git_img} />
+        <LectureImgMdLg link="/schulung/kubernetes" title="KUBERNETES" image={kubernetes_img} />
         <LectureImgMdLg link="/schulung/ansible" title="ANSIBLE" image={ansible_img} />
         <LectureImgMdLg link="/schulung/gitlab-ci" title="GITLAB-CI" image={gitlab_img} />
       </LectureSectionMdLg>
