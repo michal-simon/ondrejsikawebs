@@ -2,7 +2,7 @@ import '@app/sika-kraml.de/css'
 
 import LectureImgMdLg from '@app/ondrej-sika.cz/components/LectureImgMdLg';
 import LectureImgSm from '@app/ondrej-sika.cz/components/LectureImgSm';
-import MainBar from '@app/ondrej-sika.cz/components/MainBar';
+import Header from '@app/ondrej-sika.cz/components/Header';
 import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
 import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
 import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
@@ -26,7 +26,7 @@ const Index = () => (
   <div>
     <Head>
     </Head>
-    <MainBar MainBarHeader='Public training - terms'/>
+    <Header websiteHeader='Public training - terms'/>
     <div className="container">
       <UpcomingSessions lang={site.lang} />
     </div>

@@ -51,7 +51,6 @@ class OndrejSikaDocument extends Document {
                 ['ANSIBLE', '/schulung/ansible'],
               ]],
               ['BEDINGUNGEN', '/terms'],
-              ['ANLEITUNG', '/instructions'],
               ['KONTAKT', '/contact'],
             ]}
           />
