@@ -13,12 +13,12 @@ const Footer = (props) => (
       <div className='container pt-4 pb-4'>
         <div className='row'>
           <div className='col-md-4 col-sm-7 col-8'>
-            <h3 className='text-white'>{props.col1_name}</h3>
-            <p><a href='mailto:ondrej@sikakraml.de' className='a-underline' style={colorText}>{props.col1_mail}</a><br></br>
-            <a href='tel:+420773452376' className='a-underline' style={colorText}>{props.col1_phone}</a></p>
-            <h3 className='text-white'>{props.col2_name}</h3>
-            <p><a href='mailto:jiri@sikakraml.de' className='a-underline' style={colorText}>{props.col2_mail}</a><br></br>
-            <a href='tel:+4901773586458' className='a-underline' style={colorText}>{props.col2_phone}</a></p>
+            <h3 className='text-white'>Ondrej Sika</h3>
+            <p><a href='mailto:ondrej@sika-kraml.de' className='a-underline' style={colorText}>ondrej@sika-kraml.de</a><br></br>
+            <a href='tel:+420773452376' className='a-underline' style={colorText}>+420 773 452 376</a></p>
+            <h3 className='text-white'>Jiri Kraml</h3>
+            <p><a href='mailto:jiri@sika-kraml.de' className='a-underline' style={colorText}>jiri@sika-kraml.de</a><br></br>
+            <a href='tel:+4901773586458' className='a-underline' style={colorText}>+49 (0) 177 358658</a></p>
           </div>
           <div className='col-md-3 col-sm-5 col-4'>
             {

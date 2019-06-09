@@ -59,13 +59,6 @@ class OndrejSikaDocument extends Document {
             <Main />
           </div>
           <Footer
-            col1_name='Ondrej Sika'
-            col1_mail='ondrej@sikakraml.de'
-            col1_phone='+420 773 452 376'
-            col2_name='Jiri Kraml'
-            col2_mail='jiri@sikakraml.de'
-            col2_phone='+49 (0) 177 358658'
-
             col4_NewsHeader='Subscribe for a Newsletter?'
             col4_NewsText="Ja Ja!"
             NewsletterBtn='Subscribe'
