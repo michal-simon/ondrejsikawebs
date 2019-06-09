@@ -1,16 +1,49 @@
-const LectureImgMdLg = (props) => (
-  <div style={{
-    borderRadius: 0,
-    borderWidth: 2,
-    borderColor: '#328496',
-  }}>
-    <a href={props.link}>
-      <h2 className='text-center'>{props.title}</h2>
-    </a>
-    <a href={props.link}>
-      <img src={props.image} style={{ width: '100px' }} className='img img-fluid' />
-    </a>
-  </div>
-)
+import React from 'react'
+
+var img = {
+  width: '50%',
+  margin: 'auto',
+  padding: '15px',
+  display: 'inherit',
+}
+
+class LectureImgMdLg extends React.Component {
+  render() {
+    // DELSI RESENI
+    // if (this.props.first) {
+    //   var box = {
+    //     flex: '0 0 20%',
+    //     maxWidth: '20%',
+    //   }
+    // }
+    // else {
+    //   var box = {
+    //     borderLeft: '1px solid #51AFAB',
+    //     flex: '0 0 20%',
+    //     maxWidth: '20%',
+    //   }
+    // }
+    var box = {
+      flex: '0 0 20%',
+      maxWidth: '20%',
+    }
+    if (! this.props.first) {
+      box.borderLeft = '1px solid #51AFAB'
+    }
+
+    return (
+      <div className="" style={box}>
+        <a href={this.props.link}>
+          <h2 className='text-center'>{this.props.title}</h2>
+        </a>
+        <a href={this.props.link} >
+          <div style={{ width: '100%' }}>
+            <img src={this.props.image} style={img} className='img img-fluid center' />
+          </div>
+        </a>
+      </div>
+    )
+  }
+}
 
 export default LectureImgMdLg
