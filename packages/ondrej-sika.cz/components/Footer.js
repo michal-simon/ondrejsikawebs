@@ -13,14 +13,17 @@ const Footer = (props) => (
           </div>
           <div className='col-md-2 col-sm-5 col-4'>
             {
-              props.lecture_links.map((link, l) => {
-                if (typeof link[0] == 'string') {
-                  return (
-                    <li className='mb-3' key={l}>
-                      <a href={link[1]} className='a-underline' >{link[0]}</a>
-                    </li>
-                  )
-                }
+              (()=>{
+                if (!props.lecture_links) return;
+                props.lecture_links.map((link, l) => {
+                  if (typeof link[0] == 'string') {
+                    return (
+                      <li className='mb-3' key={l}>
+                        <a href={link[1]} className='a-underline' >{link[0]}</a>
+                      </li>
+                    )
+                  }
+                })
               })
             }
           </div>
@@ -48,13 +51,16 @@ const Footer = (props) => (
         </div>
         <div className='center'>
           {
-            props.job_links.map((link, j) => {
-              return (
-                <li className='mb-3 li-row' key={j}>
-                  <a href={link[1]} className='a-underline'>{link[0]}</a>
-                  &nbsp;|&nbsp;
-                </li>
-              )
+            (()=>{
+              if (!props.lecture_links) return;
+              props.job_links.map((link, j) => {
+                return (
+                  <li className='mb-3 li-row' key={j}>
+                    <a href={link[1]} className='a-underline'>{link[0]}</a>
+                    &nbsp;|&nbsp;
+                  </li>
+                )
+              })
             })
           }
         </div>
