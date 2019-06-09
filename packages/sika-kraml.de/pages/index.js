@@ -32,13 +32,14 @@ const Index = () => (
       MainBarHeader='IT Schulungen, Workshops und Consultation'
       MainBarText='We provide training & consulting in DevOps field. Were professionals focused on improvements in your software development & operations. Helping you boost your productivity & efficiency and also cut your dev & ops budgets.'
     >
-    <ReactMarkdown style={ white } source={`
+    {/* <ReactMarkdown style={ white } source={`
 - We do super efficient workshops which boost your & your team skills in fields of DevOps.
 - Every course is a hands-on workshop, you will try everything you need to know for everyday use of the technology.technogy
-      `}/>
+      `}/> */}
     </MainBar>
     <div className="container">
-      <LectureSectionMdLg>
+      <LectureSectionMdLg
+      LectureImgHeader='Unsere Schulungen'>
         <LectureImgMdLg link="/schulung/docker" title="DOCKER" image={docker_img} first={true}/>
         <LectureImgMdLg link="/schulung/docker" title="GIT" image={git_img} />
         <LectureImgMdLg link="/schulung/docker" title="KUBERNETES" image={kubernetes_img} />
@@ -46,13 +47,6 @@ const Index = () => (
         <LectureImgMdLg link="/schulung/gitlab-ci" title="GITLAB-CI" image={gitlab_img} />
       </LectureSectionMdLg>
 
-      <div className='pt-4'>
-        <ReactMarkdown source={`
-- Training
-- Consulting
-- Part-time contrakt
-        `} escapeHtml={false}/>
-      </div>
       <TextWithImg
         TextWithImgHeader='About us'>
         My name is Ondrej, I am a software engineer and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have worked for small companies, startups to big corporations. I have four years of experience with schulung.
