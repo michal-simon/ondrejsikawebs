@@ -34,10 +34,6 @@ const Index = () => (
       MainBarHeader='IT Schulungen, Workshops und Consultation'
       MainBarText='We provide training & consulting in DevOps field. Were professionals focused on improvements in your software development & operations. Helping you boost your productivity & efficiency and also cut your dev & ops budgets.'
     >
-    {/* <ReactMarkdown style={ white } source={`
-- We do super efficient workshops which boost your & your team skills in fields of DevOps.
-- Every course is a hands-on workshop, you will try everything you need to know for everyday use of the technology.technogy
-      `}/> */}
     </MainBar>
     <div className="container">
       <LectureSectionLg

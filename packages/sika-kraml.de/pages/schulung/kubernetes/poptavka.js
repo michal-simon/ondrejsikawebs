@@ -12,7 +12,7 @@ import Head from 'next/head'
 
 
 let site = {
-  lang: 'cs'
+  lang: 'de'
 }
 
 const Index = () => (
