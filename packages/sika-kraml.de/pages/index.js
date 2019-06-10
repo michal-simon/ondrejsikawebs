@@ -1,13 +1,12 @@
 import '@app/sika-kraml.de/css';
 import ReactMarkdown from '@app/common/components/StyledReactMarkdown';
-import LectureImgMdLg from '../components/LectureImgMdLg';
-import LectureImgSm from '@app/sika-kraml.de/components/LectureImgSm';
-import LectureSectionMdLg from '@app/sika-kraml.de/components/LectureSectionMdLg';
+import LectureInnerLg from '@app/sika-kraml.de/components/LectureInnerLg';
+import LectureSectionLg from '@app/sika-kraml.de/components/LectureSectionLg';
 import MainBar from '@app/sika-kraml.de/components/MainBar';
 import TextWithImg from '@app/sika-kraml.de/components/TextWithImg';
 // import IntroBar from '@app/sika-kraml.de/components/IntroBar';
-import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
-import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
+// import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
+// import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
 import site from '@app/ondrej-sika.cz/config';
 import Head from 'next/head';
 import docker_img from '@app/sika-kraml.de/static/docker.svg';
@@ -15,8 +14,8 @@ import git_img from '@app/sika-kraml.de/static/git.svg';
 import kubernetes_img from '@app/sika-kraml.de/static/kubernetes.svg';
 import gitlab_img from '@app/sika-kraml.de/static/gitlab-ci.svg';
 import ansible_img from '@app/sika-kraml.de/static/ansible.svg';
-import LectureSectionMdSm from '@app/sika-kraml.de/components/LectureSectionMdSm';
-import LectureInnerMdSm from '@app/sika-kraml.de/components/LectureInnerMdSm';
+// import LectureSectionMdSm from '@app/sika-kraml.de/components/LectureSectionMdSm';
+// import LectureInnerMdSm from '@app/sika-kraml.de/components/LectureInnerMdSm';
 
 let style = {
   fontSize: '1.4em',
@@ -41,25 +40,28 @@ const Index = () => (
       `}/> */}
     </MainBar>
     <div className="container">
-      <LectureSectionMdLg
+      <LectureSectionLg
       LectureImgHeader='Unsere Schulungen'>
-        <LectureImgMdLg link="/schulung/docker" title="DOCKER" image={docker_img} first={true}/>
-        <LectureImgMdLg link="/schulung/git" title="GIT" image={git_img} />
-        <LectureImgMdLg link="/schulung/kubernetes" title="KUBERNETES" image={kubernetes_img} />
-        <LectureImgMdLg link="/schulung/ansible" title="ANSIBLE" image={ansible_img} />
-        <LectureImgMdLg link="/schulung/gitlab-ci" title="GITLAB-CI" image={gitlab_img} />
-      </LectureSectionMdLg>
-      <LectureSectionMdSm
+        <LectureInnerLg link="/schulung/docker" title="DOCKER" image={docker_img} first={true}/>
+        <LectureInnerLg link="/schulung/git" title="GIT" image={git_img} />
+        <LectureInnerLg link="/schulung/kubernetes" title="KUBERNETES" image={kubernetes_img} />
+        <LectureInnerLg link="/schulung/ansible" title="ANSIBLE" image={ansible_img} />
+        <LectureInnerLg link="/schulung/gitlab-ci" title="GITLAB-CI" image={gitlab_img} />
+      </LectureSectionLg>
+      {/* <LectureSectionMdSm
       LectureImgHeader='Unsere Schulungen'>
         <LectureInnerMdSm link="/schulung/docker" title="DOCKER" image={docker_img} text=''/>
         <LectureInnerMdSm link="/schulung/git" title="GIT" image={git_img} text=''/>
         <LectureInnerMdSm link="/schulung/kubernetes" title="KUBERNETES" image={kubernetes_img} text=''/>
         <LectureInnerMdSm link="/schulung/ansible" title="ANSIBLE" image={ansible_img} text=''/>
         <LectureInnerMdSm link="/schulung/gitlab-ci" title="GITLAB-CI" image={gitlab_img} text='' last={true}/>
-      </LectureSectionMdSm>
+      </LectureSectionMdSm> */}
       <TextWithImg
         TextWithImgHeader='About us'>
-        My name is Ondrej, I am a software engineer and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have worked for small companies, startups to big corporations. I have four years of experience with schulung.
+
+        POTŘEBA NAPSAT TEXT O NÁS A O SKOLENI (uveden jen priklad od Ondry)<br/><br/>
+
+        My name is Ondrej, I am a software engineer and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have worked for small companies,startups to big corporations. I have four years of experience with schulung.
         <br/><br/>
         <h4>Schulung</h4>
         All courses are perform as workshops (hands-on). They are build on my long-term knowledge and experience in developing, testing and running software projects.

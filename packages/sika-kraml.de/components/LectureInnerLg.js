@@ -7,7 +7,7 @@ var img = {
   display: 'inherit',
 }
 
-class LectureImgMdLg extends React.Component {
+class LectureInnerLg extends React.Component {
   render() {
     // DELSI RESENI
     // if (this.props.first) {
@@ -46,4 +46,4 @@ class LectureImgMdLg extends React.Component {
   }
 }
 
-export default LectureImgMdLg
+export default LectureInnerLg
