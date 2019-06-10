@@ -1,6 +1,7 @@
 import '@app/sika-kraml.de/css';
 import ReactMarkdown from '@app/common/components/StyledReactMarkdown';
-import LectureImgMdLg from '@app/sika-kraml.de/components/LectureImgMdLg';
+import LectureImgMdLg from '../components/LectureImgMdLg';
+import LectureImgSm from '@app/sika-kraml.de/components/LectureImgSm';
 import LectureSectionMdLg from '@app/sika-kraml.de/components/LectureSectionMdLg';
 import MainBar from '@app/sika-kraml.de/components/MainBar';
 import TextWithImg from '@app/sika-kraml.de/components/TextWithImg';
@@ -14,6 +15,8 @@ import git_img from '@app/sika-kraml.de/static/git.svg';
 import kubernetes_img from '@app/sika-kraml.de/static/kubernetes.svg';
 import gitlab_img from '@app/sika-kraml.de/static/gitlab-ci.svg';
 import ansible_img from '@app/sika-kraml.de/static/ansible.svg';
+import LectureSectionMdSm from '@app/sika-kraml.de/components/LectureSectionMdSm';
+import LectureInnerMdSm from '@app/sika-kraml.de/components/LectureInnerMdSm';
 
 let style = {
   fontSize: '1.4em',
@@ -46,7 +49,14 @@ const Index = () => (
         <LectureImgMdLg link="/schulung/ansible" title="ANSIBLE" image={ansible_img} />
         <LectureImgMdLg link="/schulung/gitlab-ci" title="GITLAB-CI" image={gitlab_img} />
       </LectureSectionMdLg>
-
+      <LectureSectionMdSm
+      LectureImgHeader='Unsere Schulungen'>
+        <LectureInnerMdSm link="/schulung/docker" title="DOCKER" image={docker_img} text=''/>
+        <LectureInnerMdSm link="/schulung/git" title="GIT" image={git_img} text=''/>
+        <LectureInnerMdSm link="/schulung/kubernetes" title="KUBERNETES" image={kubernetes_img} text=''/>
+        <LectureInnerMdSm link="/schulung/ansible" title="ANSIBLE" image={ansible_img} text=''/>
+        <LectureInnerMdSm link="/schulung/gitlab-ci" title="GITLAB-CI" image={gitlab_img} text='' last={true}/>
+      </LectureSectionMdSm>
       <TextWithImg
         TextWithImgHeader='About us'>
         My name is Ondrej, I am a software engineer and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have worked for small companies, startups to big corporations. I have four years of experience with schulung.
