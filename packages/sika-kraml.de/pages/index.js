@@ -4,7 +4,6 @@ import LectureInnerLg from '@app/sika-kraml.de/components/LectureInnerLg';
 import LectureSectionLg from '@app/sika-kraml.de/components/LectureSectionLg';
 import MainBar from '@app/sika-kraml.de/components/MainBar';
 import TextWithImg from '@app/sika-kraml.de/components/TextWithImg';
-// import IntroBar from '@app/sika-kraml.de/components/IntroBar';
 // import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
 // import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
 import site from '@app/ondrej-sika.cz/config';
@@ -24,6 +23,10 @@ let style = {
 
 var white = {
   color: 'white',
+}
+
+var colorText = {
+  color: '#09AEAB',
 }
 
 const Index = () => (
@@ -52,18 +55,37 @@ const Index = () => (
         <LectureInnerMdSm link="/schulung/ansible" title="ANSIBLE" image={ansible_img} text=''/>
         <LectureInnerMdSm link="/schulung/gitlab-ci" title="GITLAB-CI" image={gitlab_img} text='' last={true}/>
       </LectureSectionMdSm> */}
+      <ReactMarkdown source={`
+#### Schulung
+All courses are perform as workshops (hands-on). They are build on my long-term knowledge and experience in developing, testing and running software projects. All courses are perform as workshops (hands-on). They are build on my long-term knowledge and experience in developing, testing and running software projects.
+      `} escapeHtml={false}/>
+      <div className="d-flex flex-row">
+        <div className='col-4 pr-5 card' style={{background: '#00212C', borderRight: '40px white solid', borderTop: '3px solid white', borderBottom: '3px solid white'}}>
+          <h3 className='center pt-3 pb-3' style={ colorText }>
+            WORKSHOPEN<br/>
+          </h3>
+          {/* <p className='text-white'>We do super efficient workshops which boost your & your team skills in fields of DevOps</p> */}
+        </div>
+        <div className='col-4 pr-5 card' style={{background: '#00212C', borderLeft: '20px white solid', borderRight: '20px white solid', borderTop: '3px solid white', borderBottom: '3px solid white'}}>
+          <h3 className='center pt-3 pb-3' style={ colorText }>
+            SCHULUNGEN
+          </h3>
+          {/* <p className='text-white'>Docker | Git | Kubernetes | Gitlab CI | Ansible</p> */}
+        </div>
+        <div className='col-4 pr-5 card' style={{background: '#00212C', borderLeft: '40px white solid', borderTop: '3px solid white', borderBottom: '3px solid white'}}>
+          <h3 className='center pt-5 pb-5' style={ colorText }>
+            SHORT-TERM CONTRACTS
+          </h3>
+        </div>
+      </div>
       <TextWithImg
         TextWithImgHeader='About us'>
-
         POTŘEBA NAPSAT TEXT O NÁS A O SKOLENI (uveden jen priklad od Ondry)<br/><br/>
-
-        My name is Ondrej, I am a software engineer and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have worked for small companies,startups to big corporations. I have four years of experience with schulung.
+        My name is Ondrej, I am a software engineer and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have worked for small companies,startups to big corporations. I have four years of experience with schulung.<br/>
+        Venujeme se skolenim a dale take workshopum, short term kontraktum.
         <br/><br/>
-        <h4>Schulung</h4>
-        All courses are perform as workshops (hands-on). They are build on my long-term knowledge and experience in developing, testing and running software projects.
-        <br/><br/>
-        <br/>
       </TextWithImg>
+
     </div>
   </div>
 

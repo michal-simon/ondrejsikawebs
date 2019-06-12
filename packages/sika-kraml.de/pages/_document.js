@@ -4,6 +4,7 @@ import Gauges from '@app/common/components/Gauges';
 import GoogleAnalytics from '@app/common/components/GoogleAnalytics';
 import Navbar from '@app/sika-kraml.de/components/Navbar';
 import Footer from '@app/sika-kraml.de/components/Footer';
+import Newsletter from '@app/sika-kraml.de/components/Newsletter';
 import BootstrapJS from '@app/common/components/BootstrapJS';
 
 import site from '../config';
@@ -57,6 +58,7 @@ class OndrejSikaDocument extends Document {
           <div className='content'>
             <Main />
           </div>
+          <Newsletter></Newsletter>
           <Footer
             col4_NewsHeader='Subscribe for a Newsletter?'
             col4_NewsText="NEJAKY ZAJIMAVY TEXT TYPU : Odebírejte nas newsletter a budte v obraze!"
