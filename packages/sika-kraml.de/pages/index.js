@@ -59,25 +59,29 @@ const Index = () => (
 #### Schulung
 All courses are perform as workshops (hands-on). They are build on my long-term knowledge and experience in developing, testing and running software projects. All courses are perform as workshops (hands-on). They are build on my long-term knowledge and experience in developing, testing and running software projects.
       `} escapeHtml={false}/>
-      <div className="d-flex flex-row">
-        <div className='col-4 pr-5 card' style={{background: '#00212C', borderRight: '40px white solid', borderTop: '3px solid white', borderBottom: '3px solid white'}}>
-          <h3 className='center pt-3 pb-3' style={ colorText }>
+    </div>
+    <div style={{ background: '#4EA9A5' }}>
+      <div  className="d-flex flex-row container pt-3 pb-3">
+        <div className='col-4 pr-5' style={{ borderLeft: '1px solid white' }}>
+          <h3 className='center pt-5 pb-5 text-white'>
             WORKSHOPEN<br/>
           </h3>
           {/* <p className='text-white'>We do super efficient workshops which boost your & your team skills in fields of DevOps</p> */}
         </div>
-        <div className='col-4 pr-5 card' style={{background: '#00212C', borderLeft: '20px white solid', borderRight: '20px white solid', borderTop: '3px solid white', borderBottom: '3px solid white'}}>
-          <h3 className='center pt-3 pb-3' style={ colorText }>
+        <div className='col-4 pr-5' style={{ borderLeft: '1px solid white' }}>
+          <h3 className='center pt-5 pb-5 text-white'>
             SCHULUNGEN
           </h3>
           {/* <p className='text-white'>Docker | Git | Kubernetes | Gitlab CI | Ansible</p> */}
         </div>
-        <div className='col-4 pr-5 card' style={{background: '#00212C', borderLeft: '40px white solid', borderTop: '3px solid white', borderBottom: '3px solid white'}}>
-          <h3 className='center pt-5 pb-5' style={ colorText }>
+        <div className='col-4 pr-5' style={{ borderLeft: '1px solid white', borderRight: '1px solid white' }}>
+          <h3 className='center pt-5 pb-5 text-white'>
             SHORT-TERM CONTRACTS
           </h3>
         </div>
       </div>
+    </div>
+    <div className='container'>
       <TextWithImg
         TextWithImgHeader='About us'>
         POTŘEBA NAPSAT TEXT O NÁS A O SKOLENI (uveden jen priklad od Ondry)<br/><br/>
@@ -85,7 +89,6 @@ All courses are perform as workshops (hands-on). They are build on my long-term 
         Venujeme se skolenim a dale take workshopum, short term kontraktum.
         <br/><br/>
       </TextWithImg>
-
     </div>
   </div>
 
