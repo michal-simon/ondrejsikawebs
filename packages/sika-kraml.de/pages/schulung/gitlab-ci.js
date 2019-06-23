@@ -9,6 +9,7 @@ import Price from '@app/ondrej-sika.cz/components/Price';
 import Form from '@app/ondrej-sika.cz/components/Form';
 
 import Head from 'next/head'
+import gitlab from '@app/data/pictures/courses/gitlab-ci.svg';
 
 
 let site = {
@@ -22,7 +23,7 @@ const Index = () => (
     <Header
       websiteHeader='Gitlab CI Schulung'
       inquiryBtn='Ask for a Training'
-      logo='/static/gitlab-ci.svg'>
+      logo={gitlab}>
     </Header>
     <div className='container course-page'>
     <ReactMarkdown source={`

@@ -1,5 +1,6 @@
-import Former2 from "@app/common/components/Former2"
-import site from "@app/sika-kraml.de/config"
+import Former2 from '@app/common/components/Former2'
+import site from '@app/sika-kraml.de/config'
+
 var styleFooter = {
   background: '#00212C',
 }
@@ -20,11 +21,11 @@ const Footer = (props) => (
             <p><a href='mailto:ondrej@sika-kraml.de' className='a-underline' style={colorText}>ondrej@sika-kraml.de</a><br></br>
               <a href='tel:+420773452376' className='a-underline' style={colorText}>+420 773 452 376</a></p>
             <div className='row'>
-              <a href='https://www.linkedin.com/in/ondrejsika/' className='a-underline pl-3' style={colorText}><img src='/static/linkedin.svg' /></a>
-              <a href='https://github.com/ondrejsika' className='a-underline' style={colorText}><img src='/static/github.svg' /></a>
-              <a href='https://www.facebook.com/sikaondrej' className='a-underline' style={colorText}><img src='/static/facebook.svg' /></a>
-              <a href='https://twitter.com/ondrejsika' className='a-underline' style={colorText}><img src='/static/twitter.svg' /></a>
-              <a href='https://www.instagram.com/ondrejsika/' className='a-underline' style={colorText}><img src='/static/instagram.svg' /></a>
+              <a href='https://www.linkedin.com/in/ondrejsika/' className='a-underline pl-3' style={colorText}><img src={props.linkedinImg}/></a>
+              <a href='https://github.com/ondrejsika' className='a-underline' style={colorText}><img src={props.githubImg} /></a>
+              <a href='https://www.facebook.com/sikaondrej' className='a-underline' style={colorText}><img src={props.facebookImg} /></a>
+              <a href='https://twitter.com/ondrejsika' className='a-underline' style={colorText}><img src={props.twitterImg} /></a>
+              <a href='https://www.instagram.com/ondrejsika/' className='a-underline' style={colorText}><img src={props.instagramImg} /></a>
             </div>
           </div>
           <div className='col-4' style={borderLeft}>
@@ -46,9 +47,9 @@ const Footer = (props) => (
             <p><a href='mailto:jiri@sika-kraml.de' className='a-underline' style={colorText}>jiri@sika-kraml.de</a><br></br>
               <a href='tel:+4901773586458' className='a-underline' style={colorText}>+49 (0) 177 358658</a></p>
             <div className='row'>
-              <a href='https://www.linkedin.com/in/ji%C5%99%C3%AD-kraml-60ba51b4/' className='a-underline pl-3' style={colorText}><img src='/static/linkedin.svg' /></a>
-              <a href='' className='a-underline' style={colorText}><img src='/static/github.svg' /></a>
-              <a href='https://www.facebook.com/jirka.kraml' className='a-underline' style={colorText}><img src='/static/facebook.svg' /></a>
+              <a href='https://www.linkedin.com/in/ji%C5%99%C3%AD-kraml-60ba51b4/' className='a-underline pl-3' style={colorText}><img src={props.linkedinImg} /></a>
+              <a href='' className='a-underline' style={colorText}><img src={props.githubImg} /></a>
+              <a href='https://www.facebook.com/jirka.kraml' className='a-underline' style={colorText}><img src={props.facebookImg} /></a>
             </div>
           </div>
         </div>
@@ -64,7 +65,7 @@ const Footer = (props) => (
             })
           }
         </div>
-        <p className="text-right text-white fs-9 pt-4">Website by <a href="https://zuzjes.com" target="_blank" className='fs-11 text a-underline' style={colorText}>Zuzana Jeschke</a></p>
+        <p className='text-right text-white fs-9 pt-4'>Website by <a href='https://zuzjes.com' target='_blank' className='fs-11 text a-underline' style={colorText}>Zuzana Jeschke</a></p>
       </div>
     </div>
   </div>

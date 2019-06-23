@@ -9,6 +9,7 @@ import Price from '@app/ondrej-sika.cz/components/Price';
 import Form from '@app/ondrej-sika.cz/components/Form';
 
 import Head from 'next/head'
+import ansible from '@app/data/pictures/courses/ansible.svg';
 
 
 let site = {
@@ -26,7 +27,7 @@ const Index = () => (
     <Header
       websiteHeader='Ansible Training'
       inquiryBtn='Ask for training'
-      logo='/static/ansible.png'>
+      logo={ansible}>
     </Header>
     <div className='container course-page'>
     <ReactMarkdown source={`

@@ -1,15 +1,33 @@
 import '@app/ondrej-sika.cz/css'
 
-import LectureImgMdLg from '@app/ondrej-sika.cz/components/LectureImgMdLg';
+import LectureInnerLg from '@app/ondrej-sika.cz/components/LectureInnerLg';
+import LectureOuterLg from '@app/ondrej-sika.cz/components/LectureOuterLg';
 import LectureImgSm from '@app/ondrej-sika.cz/components/LectureImgSm';
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
 import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
 import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
 import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
-import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
 
-
+import docker_img from '@app/data/pictures/courses/docker.svg';
+import git_img from '@app/data/pictures/courses/git.svg';
+import kubernetes_img from '@app/data/pictures/courses/kubernetes.svg';
+import gitlab_img from '@app/data/pictures/courses/gitlab-ci.svg';
+import ansible_img from '@app/data/pictures/courses/ansible.svg';
 import Head from 'next/head'
+
+import webglobeYegon from '@app/data/pictures/companies/webglobe-yegon-sq.png'
+import eltodo from '@app/data/pictures/companies/eltodo-sq.png'
+import eon from '@app/data/pictures/companies/eon-sq.jpg'
+import kb from '@app/data/pictures/companies/kb-sq.jpg'
+import dimensionData from '@app/data/pictures/companies/dimension-data-sq.png'
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png'
+import linkedin from '@app/data/pictures/social-networks/linkedin-hex.svg'
+import twitter from '@app/data/pictures/social-networks/twitter-hex.svg'
+import github from '@app/data/pictures/social-networks/github-hexagon.svg'
+import instagram from '@app/data/pictures/social-networks/instagram-hexa.svg'
+import facebook from '@app/data/pictures/social-networks/fb-hex.svg'
+import mail from '@app/data/pictures/social-networks/mail-hex.svg'
+import ond from '@app/data/pictures/ond.jpg'
 
 let site = {
   lang: 'cs'
@@ -39,12 +57,23 @@ const Index = () => (
     />
 
     <div className="container">
-      <LectureImgMdLg
-        LectureImgHeader='Kurzy co školím'/>
+      <LectureOuterLg LectureImgHeader='Kurzy co školím'>
+        <LectureInnerLg>
+
+        </LectureInnerLg>
+      </LectureOuterLg>
       <LectureImgSm
       LectureImgHeader='Kurzy co školím'/>
       <TextWithImg
-        TextWithImgHeader='O mně'>
+        TextWithImgHeader='O mně'
+        img={ond}
+        linkedin={linkedin}
+        mail={mail}
+        instagram={instagram}
+        twitter={twitter}
+        facebook={facebook}
+        github={github}
+        >
         Jmenuji se Ondřej, vývojem softwaru se zabývám od roku 2009 a od roku 2013 předávám své zkušenosti na školích. Pracoval jsem pro malé firmy, startupy i velké korporace s cílem zefektivnit jim proces vývoje, testování a nasazování software.
         <br/><br/>
         <h4>Školení</h4>
@@ -56,12 +85,12 @@ const Index = () => (
       </TextWithImg>
       <CompaniesBar
         CompaniesBarHeader='Firmy se kterými spolupracuji'
-        CompaniesBar1='../static/webglobe-yegon-sq.png'
-        CompaniesBar2='../static/eltodo-sq.png'
-        CompaniesBar3='../static/eon-sq.jpg'
-        CompaniesBar4='../static/kb-sq.jpg'
-        CompaniesBar5='../static/dimension-data-sq.png'
-        CompaniesBar6='../static/aaa-auto-sq.png'
+        CompaniesBar1={webglobeYegon}
+        CompaniesBar2={eltodo}
+        CompaniesBar3={eon}
+        CompaniesBar4={kb}
+        CompaniesBar5={dimensionData}
+        CompaniesBar6={aaaAuto}
       ></CompaniesBar>
     </div>
 

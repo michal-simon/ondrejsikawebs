@@ -9,7 +9,7 @@ import Price from '@app/ondrej-sika.cz/components/Price'
 import Form from '@app/ondrej-sika.cz/components/Form'
 
 import Head from 'next/head'
-
+import kubernetes from '@app/data/pictures/courses/kubernetes.svg';
 
 let site = {
   lang: 'de'
@@ -22,7 +22,7 @@ const Index = () => (
     <Header
       websiteHeader='Kubernetes Schulung'
       inquiryBtn='Ask for training'
-      logo='/static/kubernetes.png'>
+      logo={kubernetes}>
     </Header>
     <div className='container course-page'>
     <ReactMarkdown source={`

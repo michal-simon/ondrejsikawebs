@@ -8,11 +8,15 @@ import TextWithImg from '@app/sika-kraml.de/components/TextWithImg';
 // import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
 import site from '@app/ondrej-sika.cz/config';
 import Head from 'next/head';
-import docker_img from '@app/sika-kraml.de/static/docker.svg';
-import git_img from '@app/sika-kraml.de/static/git.svg';
-import kubernetes_img from '@app/sika-kraml.de/static/kubernetes.svg';
-import gitlab_img from '@app/sika-kraml.de/static/gitlab-ci.svg';
-import ansible_img from '@app/sika-kraml.de/static/ansible.svg';
+
+import docker_img from '@app/data/pictures/courses/docker.svg';
+import git_img from '@app/data/pictures/courses/git.svg';
+import kubernetes_img from '@app/data/pictures/courses/kubernetes.svg';
+import gitlab_img from '@app/data/pictures/courses/gitlab-ci.svg';
+import ansible_img from '@app/data/pictures/courses/ansible.svg';
+import sikaKraml from '@app/data/pictures/it.jpg';
+
+
 // import LectureSectionMdSm from '@app/sika-kraml.de/components/LectureSectionMdSm';
 // import LectureInnerMdSm from '@app/sika-kraml.de/components/LectureInnerMdSm';
 
@@ -83,7 +87,8 @@ All courses are perform as workshops (hands-on). They are build on my long-term 
     </div>
     <div className='container'>
       <TextWithImg
-        TextWithImgHeader='About us'>
+        TextWithImgHeader='About us'
+        img={sikaKraml}>
         POTŘEBA NAPSAT TEXT O NÁS A O SKOLENI (uveden jen priklad od Ondry)<br/><br/>
         My name is Ondrej, I am a software engineer and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have worked for small companies,startups to big corporations. I have four years of experience with schulung.<br/>
         Venujeme se skolenim a dale take workshopum, short term kontraktum.

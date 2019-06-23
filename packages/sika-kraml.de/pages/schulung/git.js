@@ -9,7 +9,7 @@ import Price from '@app/ondrej-sika.cz/components/Price';
 import Form from '@app/ondrej-sika.cz/components/Form';
 
 import Head from 'next/head'
-
+import git from '@app/data/pictures/courses/git.svg';
 
 let site = {
   lang: 'en'
@@ -22,7 +22,7 @@ const Index = () => (
     <Header
       websiteHeader='Git Training'
       inquiryBtn='Ask for a company training'
-      logo='/static/git.svg'>
+      logo={git}>
     </Header>
     <div className='container course-page'>
       <ReactMarkdown source={`

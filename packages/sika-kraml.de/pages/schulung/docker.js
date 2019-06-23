@@ -9,6 +9,7 @@ import Form from '@app/ondrej-sika.cz/components/Form';
 import Head from 'next/head'
 
 import Header from '@app/ondrej-sika.cz/components/Header';
+import docker from '@app/data/pictures/courses/docker.svg';
 
 let site = {
   lang: 'de'
@@ -21,7 +22,7 @@ const Index = () => (
     <Header
       websiteHeader='Docker Schulung'
       inquiryBtn='Ask for training'
-      logo='/static/docker.svg'>
+      logo={docker}>
     </Header>
     <div className='container course-page'>
       <ReactMarkdown source={`

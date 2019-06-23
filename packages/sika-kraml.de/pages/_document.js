@@ -6,8 +6,14 @@ import Navbar from '@app/sika-kraml.de/components/Navbar';
 import Footer from '@app/sika-kraml.de/components/Footer';
 import Newsletter from '@app/sika-kraml.de/components/Newsletter';
 import BootstrapJS from '@app/common/components/BootstrapJS';
-
 import site from '../config';
+import React from 'react';
+
+import linkedin from '@app/data/pictures/social-networks/linkedin.svg';
+import twitter from '@app/data/pictures/social-networks/twitter.svg';
+import facebook from '@app/data/pictures/social-networks/facebook.svg';
+import github from '@app/data/pictures/social-networks/github.svg';
+import instagram from '@app/data/pictures/social-networks/instagram.svg';
 
 let DevelopmentBar = ()=> {
   if (process.env.NODE_ENV == 'development') {
@@ -63,6 +69,13 @@ class OndrejSikaDocument extends Document {
             col4_NewsHeader='Subscribe for a Newsletter?'
             col4_NewsText="NEJAKY ZAJIMAVY TEXT TYPU : Odebírejte nas newsletter a budte v obraze!"
             NewsletterBtn='Subscribe'
+
+            linkedinImg={linkedin}
+            facebookImg={facebook}
+            instagramImg={instagram}
+            githubImg={github}
+            twitterImg={twitter}
+
             lecture_links={[
               ['Docker','/schulung/docker'],
               ['Git','/schulung/git'],
