@@ -8,11 +8,11 @@ import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
 import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
 import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
 
-import docker_img from '@app/data/pictures/courses/docker.svg';
-import git_img from '@app/data/pictures/courses/git.svg';
-import kubernetes_img from '@app/data/pictures/courses/kubernetes.svg';
-import gitlab_img from '@app/data/pictures/courses/gitlab-ci.svg';
-import ansible_img from '@app/data/pictures/courses/ansible.svg';
+import docker from '@app/data/pictures/courses/docker-w.svg';
+import git from '@app/data/pictures/courses/git-w.svg';
+import kubernetes from '@app/data/pictures/courses/kubernetes.svg';
+import gitlab from '@app/data/pictures/courses/gitlab-ci.svg';
+import ansible from '@app/data/pictures/courses/ansible-w.svg';
 import Head from 'next/head'
 
 import webglobeYegon from '@app/data/pictures/companies/webglobe-yegon-sq.png'
@@ -23,8 +23,8 @@ import dimensionData from '@app/data/pictures/companies/dimension-data-sq.png'
 import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png'
 import linkedin from '@app/data/pictures/social-networks/linkedin-hex.svg'
 import twitter from '@app/data/pictures/social-networks/twitter-hex.svg'
-import github from '@app/data/pictures/social-networks/github-hexagon.svg'
-import instagram from '@app/data/pictures/social-networks/instagram-hexa.svg'
+import github from '@app/data/pictures/social-networks/github-hex.svg'
+import instagram from '@app/data/pictures/social-networks/instagram-hex.svg'
 import facebook from '@app/data/pictures/social-networks/fb-hex.svg'
 import mail from '@app/data/pictures/social-networks/mail-hex.svg'
 import ond from '@app/data/pictures/ond.jpg'
@@ -37,7 +37,11 @@ let style = {
   fontSize: '1.4em',
   fontWeight: 'bold',
 }
-
+var dockerBackground = 'blue'
+var gitBackground = '#EA4F33'
+var kubernetesBackground = '#52ABE3'
+var gitlabBackground = '#6F3BBC'
+var ansibleBackground = '#2c2c2a'
 const Index = () => (
   <div>
     <Head>
@@ -58,9 +62,11 @@ const Index = () => (
 
     <div className="container">
       <LectureOuterLg LectureImgHeader='Kurzy co školím'>
-        <LectureInnerLg>
-
-        </LectureInnerLg>
+        <LectureInnerLg link="/schulung/docker" title="DOCKER" background={dockerBackground} image={docker}/>
+        <LectureInnerLg link="/schulung/git" title="GIT" background={gitBackground} image={git} />
+        <LectureInnerLg link="/schulung/kubernetes" title="KUBERNETES" background={kubernetesBackground} image={kubernetes} />
+        <LectureInnerLg link="/schulung/ansible" title="ANSIBLE" background={ansibleBackground} image={ansible} />
+        <LectureInnerLg link="/schulung/gitlab-ci" title="GITLAB-CI" background={gitlabBackground} image={gitlab} />
       </LectureOuterLg>
       <LectureImgSm
       LectureImgHeader='Kurzy co školím'/>
@@ -69,10 +75,10 @@ const Index = () => (
         img={ond}
         linkedin={linkedin}
         mail={mail}
+        github={github}
         instagram={instagram}
         twitter={twitter}
         facebook={facebook}
-        github={github}
         >
         Jmenuji se Ondřej, vývojem softwaru se zabývám od roku 2009 a od roku 2013 předávám své zkušenosti na školích. Pracoval jsem pro malé firmy, startupy i velké korporace s cílem zefektivnit jim proces vývoje, testování a nasazování software.
         <br/><br/>

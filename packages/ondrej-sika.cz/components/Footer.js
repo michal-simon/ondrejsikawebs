@@ -28,12 +28,12 @@ const Footer = (props) => (
             }
           </div>
           <div className='col-md-2 col-sm-12'>
-            <a href='https://www.facebook.com/sikaondrej'><img src='/static/fb-hex.svg' className='pl-2 pr-2 pt-1'/></a>
-            <a href='https://www.instagram.com/ondrejsika/'><img src='/static/insta-hex.svg' className='pl-2 pr-2 pt-1'/></a>
-            <a href='https://www.linkedin.com/in/ondrejsika/'><img src='/static/linkedin-hex.svg' className='pl-2 pr-2 pt-1'/></a>
-            <a href='https://twitter.com/ondrejsika'><img src='/static/twitter-hex.svg' className='pl-2 pr-2 pt-1'/></a>
-            <a href='https://github.com/ondrejsika'><img src='/static/github-hex.svg' className='pl-2 pr-2 pt-1'/></a>
-            <a href='mailto:ondrej@ondrejsika.com'><img src='/static/mail-hex.svg' className='pl-2 pr-2 pt-1'/></a>
+            <a href='https://www.facebook.com/sikaondrej'><img src={props.facebookImg} className='pl-2 pr-2 pt-1'/></a>
+            <a href='https://www.instagram.com/ondrejsika/'><img src={props.instagramImg} className='pl-2 pr-2 pt-1'/></a>
+            <a href='https://www.linkedin.com/in/ondrejsika/'><img src={props.linkedinImg} className='pl-2 pr-2 pt-1'/></a>
+            <a href='https://twitter.com/ondrejsika'><img src={props.twitterImg} className='pl-2 pr-2 pt-1'/></a>
+            <a href='https://github.com/ondrejsika'><img src={props.githubImg}  className='pl-2 pr-2 pt-1'/></a>
+            <a href='mailto:ondrej@ondrejsika.com'><img src={props.mailImg}  className='pl-2 pr-2 pt-1'/></a>
           </div>
           <div className='col-md-4 col-sm-12 pt-4 pt-md-0'>
 

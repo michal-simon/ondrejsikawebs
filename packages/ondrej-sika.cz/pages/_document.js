@@ -1,16 +1,17 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import ReactMarkdown from 'react-markdown'
-import Header from '@app/ondrej-sika.cz/components/Header'
-import TextArea from '@app/ondrej-sika.cz/components/TextArea';
-import TwoCol from '@app/ondrej-sika.cz/components/TwoCol';
-import References from '@app/ondrej-sika.cz/components/References';
 import Gauges from '@app/common/components/Gauges';
 import GoogleAnalytics from '@app/common/components/GoogleAnalytics';
 
 import Navbar from '@app/ondrej-sika.cz/components/Navbar';
 import Footer from '@app/ondrej-sika.cz/components/Footer';
 import BootstrapJS from '@app/common/components/BootstrapJS';
-
+import linkedin from '@app/data/pictures/social-networks/linkedin-hex.svg'
+import twitter from '@app/data/pictures/social-networks/twitter-hex.svg'
+import github from '@app/data/pictures/social-networks/github-hex.svg'
+import instagram from '@app/data/pictures/social-networks/instagram-hex.svg'
+import facebook from '@app/data/pictures/social-networks/fb-hex.svg'
+import mail from '@app/data/pictures/social-networks/mail-hex.svg'
+import ond from '@app/data/pictures/ond.jpg'
 import site from '../config';
 
 let DevelopmentBar = ()=> {
@@ -73,6 +74,13 @@ class OndrejSikaDocument extends Document {
             col4_NewsHeader='Zajímají Vás novinky?'
             col4_NewsText='Odebírejte můj newsletter a budete v obraze!'
             NewsletterBtn='Odebírat'
+
+            mailImg={mail}
+            facebookImg={facebook}
+            instagramImg={instagram}
+            twitterImg={twitter}
+            githubImg={github}
+            linkedinImg={linkedin}
           ></Footer>
           <NextScript />
           <BootstrapJS />

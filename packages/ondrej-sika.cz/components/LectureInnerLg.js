@@ -1,29 +1,26 @@
 import React from 'react'
 
-var img = {
-  width: '50%',
-  margin: 'auto',
-  padding: '15px',
-  display: 'inherit',
-}
 
 class LectureInnerLg extends React.Component {
   render() {
     var box = {
       flex: '0 0 20%',
       maxWidth: '20%',
+      backgroundColor: this.props.background,
     }
-    if (! this.props.first) {
-      box.borderLeft = '1px solid #51AFAB'
+    var img = {
+      width: '80%',
+      margin: 'auto',
+      padding: '15px',
+      display: 'inherit',
     }
-
     return (
-      <div className="" style={box}>
-        <a href={this.props.link}>
-          <h2 className='text-center'>{this.props.title}</h2>
+      <div style={box}>
+        <a className="lectureBar" href={this.props.link}>
+          <h4 className='text-center pt-3'>{this.props.title}</h4>
         </a>
         <a href={this.props.link} >
-          <div style={{ width: '100%' }}>
+          <div>
             <img src={this.props.image} style={img} className='img img-fluid center' />
           </div>
         </a>

@@ -10,10 +10,10 @@ const TextWithImg = (props) => (
       </div>
       <div className='col-1'>
         <a href='https://www.linkedin.com/in/ondrejsika/'><img src={props.linkedin}/></a>
+        <a href='https://github.com/ondrejsika'><img src={props.github}/></a>
         <a href='https://twitter.com/ondrejsika'><img src={props.twitter}/></a>
         <a href='https://www.instagram.com/ondrejsika/'><img src={props.instagram}/></a>
         <a href='https://www.facebook.com/sikaondrej'><img src={props.facebook}/></a>
-        <a href='https://github.com/ondrejsika'><img src={props.github}/></a>
         <a href='mailto:ondrej@ondrejsika.com'><img src={props.mail}/></a>
       </div>
     </div>
