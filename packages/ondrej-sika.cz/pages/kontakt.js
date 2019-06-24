@@ -1,6 +1,4 @@
 import '@app/ondrej-sika.cz/css'
-
-import Header from '@app/course-landing/components/Header'
 import HeaderLink from '@app/course-landing/components/HeaderLink'
 import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
