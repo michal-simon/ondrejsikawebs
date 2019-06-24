@@ -7,7 +7,7 @@ import TwoCol from '@app/ondrej-sika.cz/components/TwoCol';
 import References from '@app/ondrej-sika.cz/components/References';
 import Price from '@app/ondrej-sika.cz/components/Price';
 import Form from '@app/ondrej-sika.cz/components/Form';
-
+import git from '@app/data/pictures/courses/git.svg';
 import Head from 'next/head'
 
 
@@ -23,7 +23,7 @@ const Index = () => (
     <Header
       websiteHeader='Školení Git'
       inquiryBtn='Nezávazně poptat školení'
-      logo='/static/git.svg'>
+      logo={git}>
     </Header>
     <div className='container course-page'>
       <ReactMarkdown source={`
