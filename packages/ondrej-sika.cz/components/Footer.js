@@ -52,7 +52,7 @@ const Footer = (props) => (
         <div className='center'>
           {
             (()=>{
-              if (!props.lecture_links) return;
+              if (!props.job_links) return;
               props.job_links.map((link, j) => {
                 return (
                   <li className='mb-3 li-row' key={j}>

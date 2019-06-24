@@ -75,6 +75,13 @@ class OndrejSikaDocument extends Document {
             col4_NewsText='Odebírejte můj newsletter a budete v obraze!'
             NewsletterBtn='Odebírat'
 
+            lecture_links = {[
+              ['GIT', '/skoleni/git'],
+              ['GITLAB CI', '/skoleni/gitlab-ci'],
+              ['DOCKER', '/skoleni/docker'],
+              ['KUBERNETES', '/skoleni/kubernetes'],
+              ['ANSIBLE', '/skoleni/ansible'],
+            ]}
             mailImg={mail}
             facebookImg={facebook}
             instagramImg={instagram}
