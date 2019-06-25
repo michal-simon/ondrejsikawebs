@@ -14,6 +14,14 @@ import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
 import site from '@app/ansible-training.uk/config';
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
+import kb from '@app/data/pictures/companies/kb.png';
+import fio from '@app/data/pictures/companies/fio.png';
+import o2 from '@app/data/pictures/companies/o2.png';
+import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
+import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
+import ansible from '@app/data/pictures/courses/ansible.png';
 
 
 const Index = () => (
@@ -26,7 +34,7 @@ const Index = () => (
       websiteHeader="Ansible Training"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.uk/?x_source=ansible-training.uk"
-      logoUrl="/static/ansible.png"
+      logoUrl={ansible}
     >
       <HeaderLink url="https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-skoleni.uk">Request training</HeaderLink>
       <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=ansible-training.uk">Contact me</HeaderLink>
@@ -83,14 +91,22 @@ This training is primarily aimed at admins and DevOps who want to start using An
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondrej Sika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
 A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. I use Ansible as a tool for server administration. I try to use Ansible for the administration of everything I can - from database users to DNS records on Cloudflare.
         `}/>
       </TextFrameWithImage>
 
-      <MyClients lang={site.lang}/>
+      <MyClients
+      lang={site.lang}
+      image1={aaaAuto}
+      image2={termoFisher}
+      image3={kb}
+      image4={fio}
+      image5={o2}
+      image6={ceskaPojistovna}
+      />
       <ThreeCol header="Reference"
         col1={
           <Recommendation id="bohemiaenergy" lang={site.lang}/>
