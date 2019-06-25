@@ -89,12 +89,12 @@ Na školení formou workshopu si vysvětlíme proč je dobré Git používat, ja
         header="Lektor: Ondřej Šika"
         imgUrl={ondrejsika}
       >
-        <ReactMarkdown source={`
+      <ReactMarkdown source={`
 Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Všechny kurzy vedu osobně. S GITem mám více než 7 let zkušeností v rámci komerčního vývoje software. Práci bez Gitu si dnes nedokážu vůbec představit. Kromě zdrojových kódů verzuji konfiguraci, nastavení sertveru, …Problematiku kolem verzování a vývoje software obecně školím více než 3 roky. Git je kurz se, kterým jsem začínal a pořád je populární.
-        `}/>
-        </TextFrameWithImage>
+      `}/>
+      </TextFrameWithImage>
 
-        <MyClients
+      <MyClients
       lang={site.lang}
       image1={aaaAuto}
       image2={termoFisher}
