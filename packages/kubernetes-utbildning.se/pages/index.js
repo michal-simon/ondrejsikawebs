@@ -14,6 +14,14 @@ import Contact from '@app/course-landing/components/Contact';
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
 import site from '@app/kubernetes-utbildning.se/config';
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
+import kb from '@app/data/pictures/companies/kb.png';
+import fio from '@app/data/pictures/companies/fio.png';
+import o2 from '@app/data/pictures/companies/o2.png';
+import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
+import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
+import kubernetes from '@app/data/pictures/courses/kubernetes.svg';
 
 const Index = () => (
   <div>
@@ -25,7 +33,7 @@ const Index = () => (
       websiteHeader="Kuberneres Utbildning"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.se/?x_source=kubernetes-utbildning.se"
-      logoUrl="/static/kubernetes.png"
+      logoUrl={kubernetes}
     >
       <HeaderLink url="https://ondrej-sika.se/utbildning/kubernetes/forfragan/?x_source=kubernetes-utbildning.se">Fråga efter en träning</HeaderLink>
       <HeaderLink url="https://ondrej-sika.se/contact/?x_source=kubernetes-utbildning.se">Kontaka mig</HeaderLink>
@@ -81,7 +89,7 @@ Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina a
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondrej Sika"
-        imgUrl="/static/ondrejsika.jpg" >
+        imgUrl={ondrejsika}>
         <ReactMarkdown source={`
 En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
 <br/><br/>
@@ -89,7 +97,15 @@ Om du har några frågor - hör gärna från dig!
 `} escapeHtml={false}/>
       </TextFrameWithImage>
 
-      <MyClients lang={site.lang}/>
+      <MyClients
+      lang={site.lang}
+      image1={aaaAuto}
+      image2={termoFisher}
+      image3={kb}
+      image4={fio}
+      image5={o2}
+      image6={ceskaPojistovna}
+      ></MyClients>
       <ThreeCol header="References"
         col1={
           <Recommendation id="dimensiondata" lang={site.lang}/>
