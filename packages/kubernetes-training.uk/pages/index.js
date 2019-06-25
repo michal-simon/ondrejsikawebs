@@ -14,6 +14,14 @@ import Contact from '@app/course-landing/components/Contact';
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
 import site from '@app/kubernetes-training.uk/config'
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
+import kb from '@app/data/pictures/companies/kb.png';
+import fio from '@app/data/pictures/companies/fio.png';
+import o2 from '@app/data/pictures/companies/o2.png';
+import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
+import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
+import kubernetes from '@app/data/pictures/courses/kubernetes.svg';
 
 const Index = () => (
   <div>
@@ -25,7 +33,7 @@ const Index = () => (
       websiteHeader="Kuberneres Training"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.uk/?x_source=kubernetes-training.uk"
-      logoUrl="/static/kubernetes.png"
+      logoUrl={kubernetes}
     >
       <HeaderLink url="https://ondrej-sika.uk/training/kubernetes/inquiry/?x_source=kubernetes-training.uk">Request training</HeaderLink>
       <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=kubernetes-training.uk">Contact me</HeaderLink>
@@ -81,7 +89,7 @@ This course is primarily aimed at people (developers & DevOps), who want to main
       </TextFrame>
       <TextFrameWithImage
         header="Course Leader: Ondrej Sika"
-        imgUrl="/static/ondrejsika.jpg" >
+        imgUrl={ondrejsika}>
         <ReactMarkdown source={`
 A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. I have trained Kubernetes in firms like CGI or Webglobe - Yergeon. I am specialised mostly in Docker training which is closely related to Kubernetes. I use Kubernetes as a platform for most of my projects. It is one of the simplest ways of running Docker containers.
 <br/><br/>
@@ -89,7 +97,16 @@ Get in touch if you have any questions - happy hearing from you!
 `} escapeHtml={false}/>
       </TextFrameWithImage>
 
-      <MyClients lang={site.lang}/>
+      <MyClients
+      lang={site.lang}
+      image1={aaaAuto}
+      image2={termoFisher}
+      image3={kb}
+      image4={fio}
+      image5={o2}
+      image6={ceskaPojistovna}
+      ></MyClients>
+
       <ThreeCol header="References"
         col1={
           <Recommendation id="dimensiondata" lang={site.lang}/>
