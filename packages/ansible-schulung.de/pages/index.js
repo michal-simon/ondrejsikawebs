@@ -20,6 +20,14 @@ import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import site from '@app/ansible-schulung.de/config';
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
+import kb from '@app/data/pictures/companies/kb.png';
+import fio from '@app/data/pictures/companies/fio.png';
+import o2 from '@app/data/pictures/companies/o2.png';
+import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
+import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
+import ansible from '@app/data/pictures/courses/ansible.png';
 
 const Index = () => (
   <div>
@@ -31,7 +39,7 @@ const Index = () => (
       websiteHeader="Ansible Schulung"
       byName="Ondrej Sika"
       byUrl="https://sika-kraml.de/kontakt/?x_source=ansible-schulung.de"
-      logoUrl="/static/ansible.png"
+      logoUrl={ansible}
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">Nezávazně poptat školení</HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">Kontaktovat</HeaderLink>
@@ -85,15 +93,23 @@ Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracova
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondřej Šika"
-        imgUrl="/static/ondrejsika.jpg"
-        >
-        <ReactMarkdown source={`
+        imgUrl={ondrejsika}
+      >
+      <ReactMarkdown source={`
 Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu ondrej-sika.cz.
 Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušeností v rámci komerčního vývoje softwaru. Docker používám denně jak ve vývoji, tak i na produkci a práci bez něj nedovedu už ani představit.
-        `}/>
-        </TextFrameWithImage>
+      `}/>
+      </TextFrameWithImage>
 
-      <MyClients HeaderClients="Moji nejvýznamější klienti"/>
+      <MyClients
+      lang={site.lang}
+      image1={aaaAuto}
+      image2={termoFisher}
+      image3={kb}
+      image4={fio}
+      image5={o2}
+      image6={ceskaPojistovna}
+      />
 
       <ThreeCol header="Reference"
         col1={
@@ -103,7 +119,7 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
           <Recommendation id="spel" lang={site.lang}/>
         }
         col3={
-          <Recommendation id="vse" lang={site.lang}/>
+          <Recommendation id="NMS" lang={site.lang}/>
         }
       />
 
