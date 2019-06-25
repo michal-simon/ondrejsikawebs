@@ -47,8 +47,8 @@ class References extends React.Component {
                       <img src={img} className='img-fluid rounded-circle' />
                     </div>
                     <div className='col-3'>
-                      <p className='pt-2'><b>{recommendation.name}</b></p>
-                      <p className='mb-1'><b>{recommendation.role[this.props.lang]}</b></p>
+                      <p className='mb-1'><b>{recommendation.name}</b></p>
+                      <p className='mb-1'>{recommendation.role[this.props.lang]}</p>
                       <p className='text-secondary'>{recommendation.date[this.props.lang]}</p>
                     </div>
                     <div className='col-lg-8 col-md-9 col-sm-9 col-9 pt-2'>
