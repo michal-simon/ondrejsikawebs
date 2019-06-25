@@ -14,6 +14,14 @@ import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
 import site from '@app/ansible-skoleni.cz/config';
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
+import kb from '@app/data/pictures/companies/kb.png';
+import fio from '@app/data/pictures/companies/fio.png';
+import o2 from '@app/data/pictures/companies/o2.png';
+import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
+import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
+import ansible from '@app/data/pictures/courses/ansible.png';
 
 const Index = () => (
   <div>
@@ -25,7 +33,7 @@ const Index = () => (
       websiteHeader="Školení Ansible"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.cz/?x_source=ansible-skoleni.cz"
-      logoUrl="/static/ansible.png"
+      logoUrl={ansible}
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/ansible/poptavka/?x_source=ansible-skoleni.cz">Nezávazně poptat školení</HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=ansible-skoleni.cz">Kontaktovat</HeaderLink>
@@ -79,14 +87,22 @@ Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklaruj
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondřej Šika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
 Jmenuji se Ondřej Šika, vyvíjím software pro Slush Pool a školím. Všechny kurzy vědu osobně. Ansible používám jako nástroj na správu serverů i osobních počítačů (těch s Linuxem, dříve jsem používal Puppet ale přešel jsem na Ansible). Krom toho se snažím Ansible používat na správu úplně všeho, od uživatelů v databázích po DNS záznamy na Cloudflare.
         `}/>
       </TextFrameWithImage>
 
-      <MyClients lang={site.lang}/>
+      <MyClients
+      lang={site.lang}
+      image1={aaaAuto}
+      image2={termoFisher}
+      image3={kb}
+      image4={fio}
+      image5={o2}
+      image6={ceskaPojistovna}
+      />
       <ThreeCol header="Reference"
         col1={
           <Recommendation id="bohemiaenergy" lang={site.lang}/>
