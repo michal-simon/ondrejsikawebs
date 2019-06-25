@@ -13,7 +13,15 @@ import Recommendation from '@app/course-landing/components/Recommendation'
 import Contact from '@app/course-landing/components/Contact'
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head'
-import site from '@app/gitlab-training.uk/config'
+import site from '@app/gitlab-training.uk/config';
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
+import kb from '@app/data/pictures/companies/kb.png';
+import fio from '@app/data/pictures/companies/fio.png';
+import o2 from '@app/data/pictures/companies/o2.png';
+import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
+import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
+import gitlab from '@app/data/pictures/courses/gitlab-ci.svg';
 
 const Index = () => (
   <div>
@@ -25,7 +33,7 @@ const Index = () => (
       websiteHeader="Gitlab CI Training"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.uk/?x_source=gitlab-training.uk"
-      logoUrl="/static/gitlab-ci.svg"
+      logoUrl={gitlab}
     >
       <HeaderLink url="https://ondrej-sika.uk/training/gitlab-ci/inquiry/?x_source=gitlab-training.uk">Request a training</HeaderLink>
       <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=gitlab-training.uk">Contact me</HeaderLink>
@@ -81,7 +89,7 @@ The course is primarily aimed at developers who are using Gitlab and are wanting
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondrej Sika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
 A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. The Gitlab CI course is the second most popular training after [Docker](https://ondrej-sika.uk/training/docker); the two are closely related. I lead all the courses myself. I am experienced in Gitlab CI from multiple projects and businesses. Almost all projects that I am working on are using Gitlab CI. Gitlab CI is making my work simpler and quicker - I don't have to worry about routine tasks such as deployment or application building, and I can spend time on tasks that generate profit.
@@ -90,7 +98,15 @@ Get in touch if you have any questions - happy hearing from you!
         `} escapeHtml={false}/>
       </TextFrameWithImage>
 
-      <MyClients HeaderClients="Moji nejvýznamější klienti"/>
+      <MyClients
+      lang={site.lang}
+      image1={aaaAuto}
+      image2={termoFisher}
+      image3={kb}
+      image4={fio}
+      image5={o2}
+      image6={ceskaPojistovna}
+      ></MyClients>
 
       <ThreeCol header="References"
         col1={
