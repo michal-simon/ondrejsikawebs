@@ -14,6 +14,14 @@ import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
 import site from '@app/docker-utbildning.se/config';
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
+import kb from '@app/data/pictures/companies/kb.png';
+import fio from '@app/data/pictures/companies/fio.png';
+import o2 from '@app/data/pictures/companies/o2.png';
+import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
+import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
+import docker from '@app/data/pictures/courses/docker-w.svg';
 
 
 const Index = () => (
@@ -26,7 +34,7 @@ const Index = () => (
       websiteHeader="Docker Utbildning"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.uk/?x_source=docker-utbildning.se"
-      logoUrl="/static/docker-w.svg"
+      logoUrl={docker}
     >
       <HeaderLink url="https://ondrej-sika.se/utbildning/docker/forfragan/?x_source=docker-utbildning.se">Fråga efter en träning</HeaderLink>
       <HeaderLink url="https://ondrej-sika.se/kontakta/?x_source=docker-utbildning.se">Kontakta mig</HeaderLink>
@@ -81,7 +89,7 @@ Denna kurs är huvudsakligen inriktad på totala nybörjare som har ingen eller 
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondrej Sika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={ondrejsika}
         >
           <ReactMarkdown source={`
 En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
@@ -90,7 +98,15 @@ Om du har några frågor - hör gärna från dig!
 `} escapeHtml={false}/>
       </TextFrameWithImage>
 
-      <MyClients HeaderClients="My clients"/>
+      <MyClients
+      lang={site.lang}
+      image1={aaaAuto}
+      image2={termoFisher}
+      image3={kb}
+      image4={fio}
+      image5={o2}
+      image6={ceskaPojistovna}
+      ></MyClients>
 
       <ThreeCol header="References"
         col1={
