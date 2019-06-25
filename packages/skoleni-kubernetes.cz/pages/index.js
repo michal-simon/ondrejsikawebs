@@ -13,7 +13,15 @@ import Navigation from '@app/course-landing/components/Navigation';
 import Contact from '@app/course-landing/components/Contact'
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
-import site from '@app/skoleni-kubernetes.cz/config'
+import site from '@app/skoleni-kubernetes.cz/config';
+import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import kb from '@app/data/pictures/companies/kb.png';
+import fio from '@app/data/pictures/companies/fio.png';
+import o2 from '@app/data/pictures/companies/o2.png';
+import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
+import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
+import kubernetes from '@app/data/pictures/courses/kubernetes.png';
 
 const Index = () => (
   <div>
@@ -25,7 +33,7 @@ const Index = () => (
       websiteHeader="Školení Kubernetes"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-kubernetes.cz"
-      logoUrl="/static/kubernetes.png"
+      logoUrl={kubernetes}
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/kubernetes/poptavka/?x_source=skoleni-kubernetes.cz">Nezávazně poptat školení</HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz">Kontaktovat</HeaderLink>
@@ -81,13 +89,22 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondřej Šika"
-        imgUrl="/static/ondrejsika.jpg" >
+        imgUrl={ondrejsika}>
         Jmenuji se Ondřej Šika, vyvíjím software pro Slush Pool a školím. Kubernetes jsem školil ve firmách jako je CGI nebo Webglobe - Yegon. Školím převážně Docker, který s Kubernetes velmi úzce souvisí. Další školení naleznete na mém webu ondrej-sika.cz.
         <br /><br />
         Všechny kurzy vedu osobně. Kubernetes používám jako platformu pro většinu svých projektů a je to jeden z nejjednodušších způsobů jak provozovat Docker kontejnery.
       </TextFrameWithImage>
 
-      <MyClients lang={site.lang}/>
+      <MyClients
+      lang={site.lang}
+      image1={aaaAuto}
+      image2={termoFisher}
+      image3={kb}
+      image4={fio}
+      image5={o2}
+      image6={ceskaPojistovna}
+      ></MyClients>
+
       <ThreeCol header="Reference"
         col1={
           <Recommendation id="dimensiondata" lang={site.lang}/>
