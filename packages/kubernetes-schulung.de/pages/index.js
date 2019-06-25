@@ -13,7 +13,15 @@ import Contact from '@app/course-landing/components/Contact'
 import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
-import site from '@app/kubernetes-schulung.de/config'
+import site from '@app/kubernetes-schulung.de/config';
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
+import kb from '@app/data/pictures/companies/kb.png';
+import fio from '@app/data/pictures/companies/fio.png';
+import o2 from '@app/data/pictures/companies/o2.png';
+import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
+import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
+import kubernetes from '@app/data/pictures/courses/kubernetes.svg';
 
 const Index = () => (
   <div>
@@ -25,7 +33,7 @@ const Index = () => (
       websiteHeader="Kubernetes Schulung"
       byName="Sika Kraml GbR"
       byUrl="https://sika-kraml.de/kontakt/?x_source=kubernetes-schulung.de"
-      logoUrl="/static/kubernetes.png"
+      logoUrl={kubernetes}
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">Nezávazně poptat školení</HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">Kontaktovat</HeaderLink>
@@ -85,14 +93,22 @@ Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracova
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondřej Šika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
 Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu ondrej-sika.cz.
 Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušeností v rámci komerčního vývoje softwaru. Docker používám denně jak ve vývoji, tak i na produkci a práci bez něj nedovedu už ani představit.
         `}/>
       </TextFrameWithImage>
-      <MyClients HeaderClients="Moji nejvýznamější klienti"/>
+      <MyClients
+      lang={site.lang}
+      image1={aaaAuto}
+      image2={termoFisher}
+      image3={kb}
+      image4={fio}
+      image5={o2}
+      image6={ceskaPojistovna}
+      ></MyClients>
       <ThreeCol header="Reference"
         col1={
           <Recommendation id="dimensiondata" lang={site.lang}/>
