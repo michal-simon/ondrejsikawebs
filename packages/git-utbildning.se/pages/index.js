@@ -13,6 +13,14 @@ import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Recommendation from '@app/course-landing/components/Recommendation';
 import Head from 'next/head';
 import site from '@app/git-utbildning.se/config';
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
+import kb from '@app/data/pictures/companies/kb.png';
+import fio from '@app/data/pictures/companies/fio.png';
+import o2 from '@app/data/pictures/companies/o2.png';
+import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
+import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
+import git from '@app/data/pictures/courses/git-w.svg';
 
 const Index = () => (
   <div>
@@ -24,7 +32,7 @@ const Index = () => (
       websiteHeader="Git Utbildning"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.se/?x_source=git-utbildning.se"
-      logoUrl="/static/git.svg"
+      logoUrl={git}
     >
       <HeaderLink url="https://ondrej-sika.se/utbildning/git/forfragan/?x_source=git-utbildning.se">Ask for a training</HeaderLink>
       <HeaderLink url="https://ondrej-sika.se/kontakta/?x_source=git-utbildning.se">Contact me</HeaderLink>
@@ -84,7 +92,7 @@ This training course is primarily aimed at developers who don't do versioning or
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondrej Sika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={ondrejsika}
       >
         <ReactMarkdown source={`
 A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. I have more than 7 years of experience with Git on daily basis of software development. I can't imagine the day-to-day work without Git. Next to source codes, I also version configuration and infrastucture (yes, using Terraform). I train the topics surrounding versioning and software development for over five years. This course is the one that I started with and is still popular.
@@ -93,7 +101,15 @@ Get in touch if you have any questions - happy hearing from you!
 `} escapeHtml={false}/>
         </TextFrameWithImage>
 
-      <MyClients HeaderClients="References" />
+        <MyClients
+      lang={site.lang}
+      image1={aaaAuto}
+      image2={termoFisher}
+      image3={kb}
+      image4={fio}
+      image5={o2}
+      image6={ceskaPojistovna}
+      ></MyClients>
       <ThreeCol header="Reference"
         col1={
           <Recommendation id="NMS" lang={site.lang}/>
