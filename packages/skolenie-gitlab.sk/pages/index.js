@@ -14,6 +14,14 @@ import Contact from '@app/course-landing/components/Contact'
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head'
 import site from '@app/skolenie-gitlab.sk/config';
+import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
+import gitlab from '@app/data/pictures/courses/gitlab-ci.svg';
+import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import kb from '@app/data/pictures/companies/kb.png';
+import fio from '@app/data/pictures/companies/fio.png';
+import o2 from '@app/data/pictures/companies/o2.png';
+import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
 
 const Index = () => (
   <div>
@@ -25,7 +33,7 @@ const Index = () => (
       websiteHeader="Skolenie Gitlab CI"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-gitlab-ci.cz"
-      logoUrl="/static/gitlab-ci.svg"
+      logoUrl={gitlab}
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/?x_source=skoleni-gitlab-ci.cz">Nezávazně poptat školení</HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-gitlab-ci.cz">Kontaktovat</HeaderLink>
@@ -79,7 +87,7 @@ Na školení formou workshopu si vysvětlíme proč je dobré CI používat, uk�
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondřej Šika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
 Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu <a href="https://ondrej-sika.cz">ondrej-sika.cz</a>.<br /><br />
@@ -87,7 +95,15 @@ Všechny kurzy vedu osobně. S Gitlab CI mám zkušenosti z mnoha různých proj
         `} escapeHtml={false}/>
       </TextFrameWithImage>
 
-      <MyClients HeaderClients="Moji nejvýznamější klienti"/>
+      <MyClients
+      lang={site.lang}
+      image1={aaaAuto}
+      image2={termoFisher}
+      image3={kb}
+      image4={fio}
+      image5={o2}
+      image6={ceskaPojistovna}
+      />
 
       <ThreeCol header="Reference"
         col1={

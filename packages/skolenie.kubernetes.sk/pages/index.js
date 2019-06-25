@@ -104,6 +104,7 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
       image5={o2}
       image6={ceskaPojistovna}
       ></MyClients>
+
       <ThreeCol header="Reference"
         col1={
           <Recommendation id="dimensiondata" lang={site.lang}/>
