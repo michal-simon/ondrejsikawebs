@@ -111,16 +111,16 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
       image5={o2}
       image6={ceskaPojistovna}
       ></MyClients>
-      
+
       <ThreeCol header="Reference"
         col1={
-          <Recommendation id="vse" lang={site.lang}/>
+          <Recommendation id="bohemiaenergy" lang={site.lang}/>
         }
         col2={
-          <Recommendation id="spel" lang={site.lang}/>
+          <Recommendation id="vse" lang={site.lang}/>
         }
         col3={
-          <Recommendation id="vse" lang={site.lang}/>
+          <Recommendation id="sit" lang={site.lang}/>
         }
       />
 
