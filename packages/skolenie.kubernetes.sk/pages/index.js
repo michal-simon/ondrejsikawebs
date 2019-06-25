@@ -7,7 +7,7 @@ import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
 import ThreeCol from '@app/course-landing/components/ThreeCol';
-import Recommendation from '@app/course-landing/components/Recommendation';
+import References from '@app/course-landing/components/References';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import Contact from '@app/course-landing/components/Contact';
@@ -104,19 +104,7 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
       image5={o2}
       image6={ceskaPojistovna}
       ></MyClients>
-
-      <ThreeCol header="Reference"
-        col1={
-          <Recommendation id="dimensiondata" lang={site.lang}/>
-        }
-        col2={
-          <Recommendation id="webglobe-yegon" lang={site.lang}/>
-        }
-        col3={
-          <Recommendation id="sit" lang={site.lang}/>
-        }
-      />
-
+      <References ids={['webglobe-yegon', 'dimensiondata', 'sit']} lang={site.lang}/>
       <TextFrame>
         <ReactMarkdown source={`
 ### Mám zájem o školení

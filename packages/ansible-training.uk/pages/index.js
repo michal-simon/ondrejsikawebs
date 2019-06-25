@@ -9,7 +9,7 @@ import MyClients from '@app/course-landing/components/MyClients';
 import ThreeCol from '@app/course-landing/components/ThreeCol';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
-import Recommendation from '@app/course-landing/components/Recommendation';
+import References from '@app/course-landing/components/References';
 import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
@@ -107,17 +107,7 @@ A little bit of background about myself, I am a software engineer at Slush Pool 
       image5={o2}
       image6={ceskaPojistovna}
       />
-      <ThreeCol header="Reference"
-        col1={
-          <Recommendation id="bohemiaenergy" lang={site.lang}/>
-        }
-        col2={
-          <Recommendation id="sit" lang={site.lang}/>
-        }
-        col3={
-          <Recommendation id="vse" lang={site.lang}/>
-        }
-      />
+      <References ids={['bohemiaenergy', 'sit', 'vse']} lang={site.lang} />
       <TextFrame>
         <ReactMarkdown source={`
 ### Pricing

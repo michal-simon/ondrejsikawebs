@@ -14,7 +14,6 @@ import martinkylian from '@app/course-landing/components/References/martinkylian
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import ButtonOutline from '@app/course-landing/components/ButtonOutline';
-import Recommendation from '@app/course-landing/components/Recommendation'
 import Contact from '@app/course-landing/components/Contact'
 import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
@@ -112,17 +111,7 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
       image6={ceskaPojistovna}
       ></MyClients>
 
-      <ThreeCol header="Reference"
-        col1={
-          <Recommendation id="bohemiaenergy" lang={site.lang}/>
-        }
-        col2={
-          <Recommendation id="vse" lang={site.lang}/>
-        }
-        col3={
-          <Recommendation id="sit" lang={site.lang}/>
-        }
-      />
+      <References ids={['bohemiaenergy', 'vse', 'sit']} lang={site.lang}/>
 
       <TextFrame>
         <ReactMarkdown source={`

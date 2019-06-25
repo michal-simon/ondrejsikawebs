@@ -10,7 +10,7 @@ import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import ReactMarkdown from 'react-markdown';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
-import Recommendation from '@app/course-landing/components/Recommendation';
+import References from '@app/course-landing/components/References';
 import Head from 'next/head';
 import site from '@app/git-training.uk/config';
 import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
@@ -110,19 +110,7 @@ Get in touch if you have any questions - happy hearing from you!
       image5={o2}
       image6={ceskaPojistovna}
       ></MyClients>
-      
-      <ThreeCol header="Reference"
-        col1={
-          <Recommendation id="NMS" lang={site.lang}/>
-        }
-        col2={
-          <Recommendation id="bohemiaenergy" lang={site.lang}/>
-        }
-        col3={
-          <Recommendation id="fio" lang={site.lang}/>
-        }
-      />
-
+      <References ids={['bohemiaenergy', 'NMS', 'fio']} lang={site.lang}/>
       <TextFrame>
         <ReactMarkdown source={`
 ### Pricing

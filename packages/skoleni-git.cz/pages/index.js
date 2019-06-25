@@ -10,7 +10,7 @@ import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import ReactMarkdown from 'react-markdown'
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
-import Recommendation from '@app/course-landing/components/Recommendation';
+import References from '@app/course-landing/components/References';
 import Head from 'next/head';
 import site from '@app/skoleni-git.cz/config';
 import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
@@ -103,18 +103,7 @@ Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Všechny 
       image5={o2}
       image6={ceskaPojistovna}
       ></MyClients>
-
-      <ThreeCol header="Reference"
-        col1={
-          <Recommendation id="dimensiondata" lang={site.lang}/>
-        }
-        col2={
-          <Recommendation id="bohemiaenergy" lang={site.lang}/>
-        }
-        col3={
-          <Recommendation id="sit" lang={site.lang}/>
-        }
-      />
+      <References ids={['dimensiondata', 'bohemiaenergy', 'sit']} lang={site.lang}/>
       <TextFrame>
         <ReactMarkdown source={`
 ### Mám zájem o školení

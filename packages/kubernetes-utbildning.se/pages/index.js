@@ -7,7 +7,7 @@ import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
 import ThreeCol from '@app/course-landing/components/ThreeCol';
-import Recommendation from '@app/course-landing/components/Recommendation';
+import References from '@app/course-landing/components/References';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import Contact from '@app/course-landing/components/Contact';
@@ -106,18 +106,7 @@ Om du har några frågor - hör gärna från dig!
       image5={o2}
       image6={ceskaPojistovna}
       ></MyClients>
-      <ThreeCol header="References"
-        col1={
-          <Recommendation id="dimensiondata" lang={site.lang}/>
-        }
-        col2={
-          <Recommendation id="webglobe-yegon" lang={site.lang}/>
-        }
-        col3={
-          <Recommendation id="sit" lang={site.lang}/>
-        }
-      />
-
+      <References ids={['dimensiondata', 'webglobe-yegon', 'sit']} lang={site.lang}/>
       <TextFrame>
         <ReactMarkdown source={`
 ### Prissättning
