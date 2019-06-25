@@ -14,6 +14,14 @@ import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
 import site from '@app/docker-training.uk/config';
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
+import kb from '@app/data/pictures/companies/kb.png';
+import fio from '@app/data/pictures/companies/fio.png';
+import o2 from '@app/data/pictures/companies/o2.png';
+import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
+import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
+import docker from '@app/data/pictures/courses/docker-w.svg';
 
 
 const Index = () => (
@@ -26,7 +34,7 @@ const Index = () => (
       websiteHeader="Docker Training"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.uk/?x_source=docker-training.cz"
-      logoUrl="/static/docker-w.svg"
+      logoUrl={docker}
     >
       <HeaderLink url="https://ondrej-sika.uk/training/docker/inquiry/?x_source=kubernetes-training.uk">Request a training</HeaderLink>
       <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=kubernetes-training.uk">Contact me</HeaderLink>
@@ -80,7 +88,7 @@ This training course is primarily aimed at complete beginners who have either no
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondrej Sika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={ondrejsika}
         >
           <ReactMarkdown source={`
 A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. I lead mostly Docker courses and CI; they are both closely interrelated. I have four years of experience with Docker on the commercial development side. Other than that I use it daily for development, as well as production, and I cannot imagine working without it.
@@ -89,7 +97,15 @@ Get in touch if you have any questions - Happy to hearing from you!
 `} escapeHtml={false}/>
       </TextFrameWithImage>
 
-      <MyClients HeaderClients="My clients"/>
+      <MyClients
+      lang={site.lang}
+      image1={aaaAuto}
+      image2={termoFisher}
+      image3={kb}
+      image4={fio}
+      image5={o2}
+      image6={ceskaPojistovna}
+      ></MyClients>
 
       <ThreeCol header="References"
         col1={
