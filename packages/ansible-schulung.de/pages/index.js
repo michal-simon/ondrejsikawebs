@@ -1,5 +1,4 @@
 import '../css'
-
 import FooterSikaKraml from '@app/course-landing/components/FooterSikaKraml';
 import Header from '@app/course-landing/components/Header';
 import HeaderLink from '@app/course-landing/components/HeaderLink';
@@ -36,15 +35,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Ansible Schulung"
-      byName="Ondrej Sika"
-      byUrl="https://sika-kraml.de/kontakt/?x_source=ansible-schulung.de"
+      websiteHeader='Ansible Schulung'
+      byName='Ondrej Sika'
+      byUrl='https://sika-kraml.de/kontakt/?x_source=ansible-schulung.de'
       logoUrl={ansible}
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">Nezávazně poptat školení</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">Kontaktovat</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz'>Nezávazně poptat školení</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz'>Kontaktovat</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
         <ReactMarkdown source={`
 ### Co je to Ansible
@@ -92,7 +91,7 @@ Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracova
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondřej Šika"
+        header='Lektor: Ondřej Šika'
         imgUrl={ondrejsika}
       >
       <ReactMarkdown source={`
@@ -100,7 +99,6 @@ Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím 
 Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušeností v rámci komerčního vývoje softwaru. Docker používám denně jak ve vývoji, tak i na produkci a práci bez něj nedovedu už ani představit.
       `}/>
       </TextFrameWithImage>
-
       <MyClients
       lang={site.lang}
       image1={aaaAuto}
@@ -110,22 +108,22 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
       image5={o2}
       image6={ceskaPojistovna}
       />
+      <References ids={['vistag', 'oxyCTO']} lang={site.lang} />
 
-      <ThreeCol header="Reference"
+      {/* <ThreeCol header='Reference'
         col1={
-          <Recommendation id="bohemiaenergy" lang={site.lang}/>
+          <Recommendation id='bohemiaenergy' lang={site.lang}/>
         }
         col2={
-          <Recommendation id="vse" lang={site.lang}/>
+          <Recommendation id='vse' lang={site.lang}/>
         }
         col3={
-          <Recommendation id="sit" lang={site.lang}/>
+          <Recommendation id='sit' lang={site.lang}/>
         }
-      />
-
+      /> */}
       <TextFrame>
       <ReactMarkdown source={`
-### Mám zájem o školení">
+### Mám zájem o školení
 Pokud máte zájem o školení, neváhejte mě kontaktovat
         `}/>
         <ButtonOutline
@@ -133,11 +131,9 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat
           Nezávazně poptat školení
         </ButtonOutline>
       </TextFrame>
-
-
-      <TextFrame header="Cena">
-        Pokud máte zájem o školení u vás ve firmě, <a href="https://ondrej-sika.cz/skoleni/docker/poptavka/" className="btn btn-large mybutton-outline">nezávazně jej poptejte</a> nebo mi napište email na <a href="/cdn-cgi/l/email-protection#8de2e3e9ffe8e7cde2e3e9ffe8e7fee4e6eca3eee2e0">
-        <span className="__cf_email__" data-cfemail="2e41404a5c4b446e41404a5c4b445d47454f004d4143">ondrej@ondrejsika.com</span>
+      <TextFrame header='Cena'>
+        Pokud máte zájem o školení u vás ve firmě, <a href='https://ondrej-sika.cz/skoleni/docker/poptavka/' className='btn btn-large mybutton-outline'>nezávazně jej poptejte</a> nebo mi napište email na <a href='/cdn-cgi/l/email-protection#8de2e3e9ffe8e7cde2e3e9ffe8e7fee4e6eca3eee2e0'>
+        <span className='__cf_email__' data-cfemail='2e41404a5c4b446e41404a5c4b445d47454f004d4143'>ondrej@ondrejsika.com</span>
         </a>
         <br/>
         Otevřený termín (self funded): 9 999 CZK bez DPH<br />
