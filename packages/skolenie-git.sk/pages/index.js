@@ -13,6 +13,14 @@ import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Recommendation from '@app/course-landing/components/Recommendation';
 import Head from 'next/head';
 import site from '@app/skolenie-git.sk/config';
+import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import kb from '@app/data/pictures/companies/kb.png';
+import fio from '@app/data/pictures/companies/fio.png';
+import o2 from '@app/data/pictures/companies/o2.png';
+import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
+import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
+import git from '@app/data/pictures/courses/git-w.svg';
 
 const Index = () => (
   <div>
@@ -24,7 +32,7 @@ const Index = () => (
       websiteHeader="Skolenie Git"
       byName="Ondrej Sika"
       byUrl="https://ondrej-sika.cz/?x_source=skoleni-git.cz"
-      logoUrl="/static/git.svg"
+      logoUrl={git}
     >
       <HeaderLink url="https://ondrej-sika.cz/skoleni/kubernetes/poptavka/?x_source=skoleni-kubernetes.cz">Nezávazně poptat školení</HeaderLink>
       <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz">Kontaktovat</HeaderLink>
@@ -79,14 +87,22 @@ Na školení formou workshopu si vysvětlíme proč je dobré Git používat, ja
       </TextFrame>
       <TextFrameWithImage
         header="Lektor: Ondřej Šika"
-        imgUrl="/static/ondrejsika.jpg"
+        imgUrl={ondrejsika}
       >
-        <ReactMarkdown source={`
+      <ReactMarkdown source={`
 Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Všechny kurzy vedu osobně. S GITem mám více než 7 let zkušeností v rámci komerčního vývoje software. Práci bez Gitu si dnes nedokážu vůbec představit. Kromě zdrojových kódů verzuji konfiguraci, nastavení sertveru, …Problematiku kolem verzování a vývoje software obecně školím více než 3 roky. Git je kurz se, kterým jsem začínal a pořád je populární.
-        `}/>
-        </TextFrameWithImage>
+      `}/>
+      </TextFrameWithImage>
 
-      <MyClients HeaderClients="Moji nejvýznamější klienti" />
+      <MyClients
+      lang={site.lang}
+      image1={aaaAuto}
+      image2={termoFisher}
+      image3={kb}
+      image4={fio}
+      image5={o2}
+      image6={ceskaPojistovna}
+      ></MyClients>
       <ThreeCol header="Reference"
         col1={
           <Recommendation id="dimensiondata" lang={site.lang}/>
