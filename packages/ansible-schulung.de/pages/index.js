@@ -108,19 +108,7 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
       image5={o2}
       image6={ceskaPojistovna}
       />
-      <References ids={['vistag', 'oxyCTO']} lang={site.lang} />
-
-      {/* <ThreeCol header='Reference'
-        col1={
-          <Recommendation id='bohemiaenergy' lang={site.lang}/>
-        }
-        col2={
-          <Recommendation id='vse' lang={site.lang}/>
-        }
-        col3={
-          <Recommendation id='sit' lang={site.lang}/>
-        }
-      /> */}
+      <References ids={['bohemiaenergy', 'vse', 'sit']} lang={site.lang} />
       <TextFrame>
       <ReactMarkdown source={`
 ### Mám zájem o školení
