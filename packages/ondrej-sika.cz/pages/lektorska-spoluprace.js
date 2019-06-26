@@ -27,7 +27,7 @@ const Install = () => (
       }
     `}} />
 
-    <div className="container pt-4 pb-2 post-body">
+    <div className='container pt-4 pb-2 post-body'>
       <ReactMarkdown source={`
 Nabízím možnost spolupráce jako Váš externí lektor. Mohu pro Vás školit své stávající kurzy a workshopy, mohu pro Vás připravit kurz na přání nebo školit nějaký Váš stávající kurz.
 

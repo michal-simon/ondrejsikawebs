@@ -32,7 +32,7 @@ class BlogPost extends React.Component {
           MainBarHeader={post.title}>
         </MainBar>
 
-        <div className="container pt-4">
+        <div className='container pt-4'>
           <ReactMarkdown source={post.content} escapeHtml={false}/>
         </div>
       </div>

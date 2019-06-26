@@ -29,15 +29,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Docker Utbildning"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.uk/?x_source=docker-utbildning.se"
+      websiteHeader='Docker Utbildning'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.uk/?x_source=docker-utbildning.se'
       logoUrl={docker}
     >
-      <HeaderLink url="https://ondrej-sika.se/utbildning/docker/forfragan/?x_source=docker-utbildning.se">Fråga efter en träning</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.se/kontakta/?x_source=docker-utbildning.se">Kontakta mig</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.se/utbildning/docker/forfragan/?x_source=docker-utbildning.se'>Fråga efter en träning</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.se/kontakta/?x_source=docker-utbildning.se'>Kontakta mig</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
     <TextFrame>
         <ReactMarkdown source={`
 ### Vad är Docker?
@@ -50,7 +50,7 @@ Docker kan göra ditt liv enklare genom att förenkla processen för FoU, testni
 Under denna  två-dagars workshopen så kommer du att bli visad allt du behöver för att kunna använda Docker - från att skapa en anpassad containerbild till Swarm-utnyttjande. Kursen är väldigt praktisk, och du kommer att kunna använda allt du lär dig.
 `}/>
       </TextFrame>
-      <TextFrame header="">
+      <TextFrame header='>
         <ReactMarkdown source={`
 ### Kursplan
 - Teori-introduktion av containrar & Docker
@@ -62,7 +62,7 @@ Under denna  två-dagars workshopen så kommer du att bli visad allt du behöver
 - Förhandsvisning av distribuering till Kubernetes
 `}/>
       </TextFrame>
-      <TextFrame header="">
+      <TextFrame header='>
         <ReactMarkdown source={`
 
 ### Vem bör delta
@@ -86,7 +86,7 @@ Denna kurs är huvudsakligen inriktad på totala nybörjare som har ingen eller 
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Föreläsare: Ondrej Sika"
+        header='Föreläsare: Ondrej Sika'
         imgUrl={ondrejsika}
         >
           <ReactMarkdown source={`
@@ -121,8 +121,8 @@ Pris för två dagars hands-on docker-utbildning
 Om du är intresserad i vår Docker workshop eller om ni har några frågor, kontakta mig gärna.
 
 `}/>
-        <p className="text-center">
-          <a href="https://ondrej-sika.se/utbildning/docker/forfragan/?x_source=git-utbildning.se" className="btn btn-large btn-success">Frågor om Docker utbildning</a>
+        <p className='text-center'>
+          <a href='https://ondrej-sika.se/utbildning/docker/forfragan/?x_source=git-utbildning.se' className='btn btn-large btn-success'>Frågor om Docker utbildning</a>
         </p>
       </TextFrame>
       <TextFrame>

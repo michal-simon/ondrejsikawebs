@@ -28,15 +28,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Kuberneres Utbildning"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.se/?x_source=kubernetes-utbildning.se"
+      websiteHeader='Kuberneres Utbildning'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.se/?x_source=kubernetes-utbildning.se'
       logoUrl={kubernetes}
     >
-      <HeaderLink url="https://ondrej-sika.se/utbildning/kubernetes/forfragan/?x_source=kubernetes-utbildning.se">Fråga efter en träning</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.se/contact/?x_source=kubernetes-utbildning.se">Kontaka mig</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.se/utbildning/kubernetes/forfragan/?x_source=kubernetes-utbildning.se'>Fråga efter en träning</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.se/contact/?x_source=kubernetes-utbildning.se'>Kontaka mig</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
         <ReactMarkdown source={`
 ### Vad är Kubernetes?
@@ -86,7 +86,7 @@ Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina a
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Föreläsare: Ondrej Sika"
+        header='Föreläsare: Ondrej Sika'
         imgUrl={ondrejsika}>
         <ReactMarkdown source={`
 En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
@@ -122,8 +122,8 @@ Om du är intresserad i vår Kubernetes workshop eller om ni har några frågor,
 
 
 `}/>
-        <p className="text-center">
-          <a href="https://ondrej-sika.se/utbildning/kubernetes/forfragnan/?x_source=git-utbildning.se" className="btn btn-large btn-success">Frågor om Kubernetes utbildning</a>
+        <p className='text-center'>
+          <a href='https://ondrej-sika.se/utbildning/kubernetes/forfragnan/?x_source=git-utbildning.se' className='btn btn-large btn-success'>Frågor om Kubernetes utbildning</a>
         </p>
       </TextFrame>
       <TextFrame>

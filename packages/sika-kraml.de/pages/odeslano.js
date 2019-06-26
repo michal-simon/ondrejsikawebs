@@ -9,7 +9,7 @@ let site = {
 const Index = () => (
   <div>
     <MainBar MainBarHeader='Form was succesfully send'/>
-    <div className="container pt-4">
+    <div className='container pt-4'>
     <ReactMarkdown source={`
 I wiil contact you as soon as possible.
 

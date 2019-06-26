@@ -28,15 +28,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Školení Gitlab CI"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.cz/?x_source=skoleni-gitlab-ci.cz"
+      websiteHeader='Školení Gitlab CI'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.cz/?x_source=skoleni-gitlab-ci.cz'
       logoUrl={gitlab}
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/?x_source=skoleni-gitlab-ci.cz">Nezávazně poptat školení</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-gitlab-ci.cz">Kontaktovat</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/?x_source=skoleni-gitlab-ci.cz'>Nezávazně poptat školení</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/kontakt/?x_source=skoleni-gitlab-ci.cz'>Kontaktovat</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
       <ReactMarkdown source={`
 ### Popis technologie
@@ -84,11 +84,11 @@ Na školení formou workshopu si vysvětlíme proč je dobré CI používat, uk�
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondřej Šika"
+        header='Lektor: Ondřej Šika'
         imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
-Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu <a href="https://ondrej-sika.cz">ondrej-sika.cz</a>.<br /><br />
+Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Školím převážně Docker a CI, který s Dockerem velmi úzce souvisí. Další školení naleznete na mém webu <a href='https://ondrej-sika.cz'>ondrej-sika.cz</a>.<br /><br />
 Všechny kurzy vedu osobně. S Gitlab CI mám zkušenosti z mnoha různých projektů a firem. Téměř všechny projekty na kterých pracuji využívají Gitlab CI. Gitlab CI mi velmi ulehčuje a zrychluje práci - nemusím se starat o rutijni akce jako nasazování nebo build aplikace a mohu se věnovat vývoji a činnostem které mi přinášejí zisk.
         `} escapeHtml={false}/>
       </TextFrameWithImage>

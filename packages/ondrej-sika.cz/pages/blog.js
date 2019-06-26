@@ -26,7 +26,7 @@ class Blog extends React.Component {
           MainBarHeader='Blog'>
         </MainBar>
 
-        <div className="container">
+        <div className='container'>
           {
             posts.map((post, i) => {
               return (

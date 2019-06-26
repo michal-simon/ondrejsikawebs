@@ -27,15 +27,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Docker Training"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.uk/?x_source=docker-training.cz"
+      websiteHeader='Docker Training'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.uk/?x_source=docker-training.cz'
       logoUrl={docker}
     >
-      <HeaderLink url="https://ondrej-sika.uk/training/docker/inquiry/?x_source=kubernetes-training.uk">Request a training</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=kubernetes-training.uk">Contact me</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.uk/training/docker/inquiry/?x_source=kubernetes-training.uk'>Request a training</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.uk/contact/?x_source=kubernetes-training.uk'>Contact me</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
     <TextFrame>
         <ReactMarkdown source={`
 ### What is Docker?
@@ -48,7 +48,7 @@ Docker can make your life easier through simplifying the process of R&D, testing
 During the two-day workshop, you’ll be shown everything you need to know to be able to use Docker - from creating a custom container image to the Swarm utilisation. This course is very hands-on, and you will be able to practice everything you learn.
 `}/>
       </TextFrame>
-      <TextFrame header="">
+      <TextFrame header='>
         <ReactMarkdown source={`
 ### Course Outline
 - Theory introduction to containers & Docker
@@ -60,7 +60,7 @@ During the two-day workshop, you’ll be shown everything you need to know to be
 - Preview of deployment to Kubernetes
 `}/>
       </TextFrame>
-      <TextFrame header="">
+      <TextFrame header='>
         <ReactMarkdown source={`
 ### Who Should Attend
 This training course is primarily aimed at complete beginners who have either none or very little experience with Docker. Most of all, Developers and/or DevOps (Server Administrators), or those who want to use Docker in practice or want to find out more about its purpose and if it is something they can implement.
@@ -83,7 +83,7 @@ This training course is primarily aimed at complete beginners who have either no
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lecturer: Ondrej Sika"
+        header='Lecturer: Ondrej Sika'
         imgUrl={ondrejsika}
         >
           <ReactMarkdown source={`
@@ -117,8 +117,8 @@ Price for two days Docker training
 
 If you are interested in Docker workshop or have any questions, please let me know.
 `}/>
-        <p className="text-center">
-          <a href="https://ondrej-sika.uk/training/docker/inquiry/?x_source=git-training.uk" className="btn btn-large btn-success">Inquire Docker Training</a>
+        <p className='text-center'>
+          <a href='https://ondrej-sika.uk/training/docker/inquiry/?x_source=git-training.uk' className='btn btn-large btn-success'>Inquire Docker Training</a>
         </p>
       </TextFrame>
       <TextFrame>

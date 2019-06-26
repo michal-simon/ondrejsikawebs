@@ -13,7 +13,7 @@ const Index = () => (
       <title>Odesláno- Ondřej Šika</title>
     </Head>
     <MainBar MainBarHeader='Formulář byl úspěšně odeslán'/>
-    <div className="container pt-4">
+    <div className='container pt-4'>
     <ReactMarkdown source={`
 Brzy se Vám ozvu.
 

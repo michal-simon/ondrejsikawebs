@@ -27,15 +27,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Školení Git"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.cz/?x_source=skoleni-git.cz"
+      websiteHeader='Školení Git'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.cz/?x_source=skoleni-git.cz'
       logoUrl={git}
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/kubernetes/poptavka/?x_source=skoleni-kubernetes.cz">Nezávazně poptat školení</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz">Kontaktovat</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/skoleni/kubernetes/poptavka/?x_source=skoleni-kubernetes.cz'>Nezávazně poptat školení</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz'>Kontaktovat</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
         <ReactMarkdown source={`
 ### Co je to Git?
@@ -84,7 +84,7 @@ Na školení formou workshopu si vysvětlíme proč je dobré Git používat, ja
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondřej Šika"
+        header='Lektor: Ondřej Šika'
         imgUrl={ondrejsika}
       >
       <ReactMarkdown source={`
@@ -118,8 +118,8 @@ Pokud máte zájem o školení u vás ve firmě, [nezávazně jej poptejte](http
 - Firemní školení (ve firmě): 18 000 CZK bez DPH
         `}/>
       </TextFrame>
-      <TextFrame header="Navazující kurzy">
-        <a href="https://ondrej-sika.cz/skoleni/gitlab-ci">Gitlab CI</a>
+      <TextFrame header='Navazující kurzy'>
+        <a href='https://ondrej-sika.cz/skoleni/gitlab-ci'>Gitlab CI</a>
       </TextFrame>
     </div>
     <FooterOndrejSika />

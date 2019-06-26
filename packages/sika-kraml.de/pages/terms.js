@@ -17,7 +17,7 @@ const Index = () => (
     <Head>
     </Head>
     <Header websiteHeader='Public training - terms'/>
-    <div className="container">
+    <div className='container'>
       <UpcomingSessions lang={site.lang} />
     </div>
   </div>

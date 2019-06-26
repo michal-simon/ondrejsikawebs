@@ -21,7 +21,7 @@ const Install = () => (
       MainBarHeader='Instalace Kubernetes pro lokalni vyvoj'>
     </MainBar>
 
-    <div className="container pt-4 pb-2">
+    <div className='container pt-4 pb-2'>
       <ReactMarkdown source={`
 Navod mam popsany v [repozitari s kurzem](https://github.com/ondrejsika/kubernetes-training-examples#install).
 `} escapeHtml={false}/>

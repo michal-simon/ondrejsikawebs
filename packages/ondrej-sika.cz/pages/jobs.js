@@ -27,7 +27,7 @@ const Install = () => (
       }
     `}} />
 
-    <div className="container pt-4 pb-2 post-body">
+    <div className='container pt-4 pb-2 post-body'>
       <ReactMarkdown source={`
 FAQ: Je tato nabidka aktualni? Ano.
 

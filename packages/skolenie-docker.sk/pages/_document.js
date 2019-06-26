@@ -1,4 +1,4 @@
-import CourseLandingDocument from "@app/course-landing/document";
+import CourseLandingDocument from '@app/course-landing/document';
 import site from '../config';
 
 class Document extends CourseLandingDocument {

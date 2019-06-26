@@ -27,15 +27,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Kuberneres Training"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.uk/?x_source=kubernetes-training.uk"
+      websiteHeader='Kuberneres Training'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.uk/?x_source=kubernetes-training.uk'
       logoUrl={kubernetes}
     >
-      <HeaderLink url="https://ondrej-sika.uk/training/kubernetes/inquiry/?x_source=kubernetes-training.uk">Request training</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=kubernetes-training.uk">Contact me</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.uk/training/kubernetes/inquiry/?x_source=kubernetes-training.uk'>Request training</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.uk/contact/?x_source=kubernetes-training.uk'>Contact me</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
         <ReactMarkdown source={`
 ### What is Kubernetes?
@@ -85,7 +85,7 @@ This course is primarily aimed at people (developers & DevOps), who want to main
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Course Leader: Ondrej Sika"
+        header='Course Leader: Ondrej Sika'
         imgUrl={ondrejsika}>
         <ReactMarkdown source={`
 A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. I have trained Kubernetes in firms like CGI or Webglobe - Yergeon. I am specialised mostly in Docker training which is closely related to Kubernetes. I use Kubernetes as a platform for most of my projects. It is one of the simplest ways of running Docker containers.
@@ -120,8 +120,8 @@ Price for the two-day Kubernetes training
 If you are interested in Kubernetes workshop or have any questions, please let me know.
 
 `}/>
-        <p className="text-center">
-          <a href="https://ondrej-sika.uk/training/kubernetes/inquiry/?x_source=git-training.uk" className="btn btn-large btn-success">Inquire Kubernetes Training</a>
+        <p className='text-center'>
+          <a href='https://ondrej-sika.uk/training/kubernetes/inquiry/?x_source=git-training.uk' className='btn btn-large btn-success'>Inquire Kubernetes Training</a>
         </p>
       </TextFrame>
       <TextFrame>

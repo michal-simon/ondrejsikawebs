@@ -21,7 +21,7 @@ const Install = () => (
       MainBarHeader='Návody'>
     </MainBar>
 
-    <div className="container pt-4 pb-2">
+    <div className='container pt-4 pb-2'>
       <ReactMarkdown source={`
 ### Docker
 

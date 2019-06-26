@@ -29,15 +29,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Školení Kubernetes"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.cz/?x_source=skoleni-kubernetes.cz"
+      websiteHeader='Školení Kubernetes'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.cz/?x_source=skoleni-kubernetes.cz'
       logoUrl={kubernetes}
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/kubernetes/poptavka/?x_source=skoleni-kubernetes.cz">Nezávazně poptat školení</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz">Kontaktovat</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/skoleni/kubernetes/poptavka/?x_source=skoleni-kubernetes.cz'>Nezávazně poptat školení</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/kontakt/?x_source=skoleni-kubernetes.cz'>Kontaktovat</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
         <ReactMarkdown source={`
 ### Popis technologie
@@ -87,7 +87,7 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondřej Šika"
+        header='Lektor: Ondřej Šika'
         imgUrl={ondrejsika}>
         Jmenuji se Ondřej Šika, vyvíjím software pro Slush Pool a školím. Kubernetes jsem školil ve firmách jako je CGI nebo Webglobe - Yegon. Školím převážně Docker, který s Kubernetes velmi úzce souvisí. Další školení naleznete na mém webu ondrej-sika.cz.
         <br /><br />

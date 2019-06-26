@@ -28,15 +28,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Školení Dockeru"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.cz/?x_source=skoleni-docker.cz"
+      websiteHeader='Školení Dockeru'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.cz/?x_source=skoleni-docker.cz'
       logoUrl={docker}
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">Nezávazně poptat školení</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">Kontaktovat</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz'>Nezávazně poptat školení</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz'>Kontaktovat</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       {/* <UpcomingSessions lang={site.lang}/> */}
     <TextFrame>
         <ReactMarkdown source={`
@@ -51,7 +51,7 @@ Docker je dnes technologie, která proces vývoje, testování a provozování s
 Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracovat od vytvoření vlastního kontejnerů po jeho provozování ve Swarmu. Vše si prakticky vyzkoušíme a osaháme.
 `}/>
       </TextFrame>
-      <TextFrame header="">
+      <TextFrame header='>
         <ReactMarkdown source={`
 ### Co Vás naučím
 
@@ -64,7 +64,7 @@ Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracova
 - Ukázka deploymentu do Kubernetes
 `}/>
       </TextFrame>
-      <TextFrame header="">
+      <TextFrame header='>
         <ReactMarkdown source={`
 ### Pro koho je školení určeno
 
@@ -90,7 +90,7 @@ Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracova
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondřej Šika"
+        header='Lektor: Ondřej Šika'
         imgUrl={ondrejsika}
         >
           <ReactMarkdown source={`

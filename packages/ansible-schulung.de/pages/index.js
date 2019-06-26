@@ -107,8 +107,8 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
 ### Mám zájem o školení
 Pokud máte zájem o školení, neváhejte mě kontaktovat
         `}/>
-        <span className="text-center">
-          <a href='https://ondrej-sika.cz/skoleni/ansible/poptavka/' className="btn btn-large btn-success">Nezávazně poptat školení</a>
+        <span className='text-center'>
+          <a href='https://ondrej-sika.cz/skoleni/ansible/poptavka/' className='btn btn-large btn-success'>Nezávazně poptat školení</a>
         </span>
         {/* <ButtonOutline
           btnUrl='https://ondrej-sika.cz/skoleni/ansible/poptavka/'>

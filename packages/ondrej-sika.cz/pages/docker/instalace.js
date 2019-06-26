@@ -21,7 +21,7 @@ const Install = () => (
       MainBarHeader='Instalace Dockeru'>
     </MainBar>
 
-    <div className="container pt-4 pb-2">
+    <div className='container pt-4 pb-2'>
       <ReactMarkdown source={`
 Budeme používat Docker CE (Community Edition). Pro mě školení i drtivou většinou práce stačí.
 

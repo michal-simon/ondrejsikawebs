@@ -27,15 +27,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location} />
     <Header
-      websiteHeader="Git Training"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.uk/?x_source=git-training.uk"
+      websiteHeader='Git Training'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.uk/?x_source=git-training.uk'
       logoUrl={git}
     >
-      <HeaderLink url="https://ondrej-sika.uk/training/git/inquiry/?x_source=git-training.uk">Request a training</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=git-training.uk">Contact me</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.uk/training/git/inquiry/?x_source=git-training.uk'>Request a training</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.uk/contact/?x_source=git-training.uk'>Contact me</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
         <ReactMarkdown source={`
 ### What is Git?
@@ -89,7 +89,7 @@ This training course is primarily aimed at developers who don't do versioning or
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondrej Sika"
+        header='Lektor: Ondrej Sika'
         imgUrl={ondrejsika}
       >
       <ReactMarkdown source={`
@@ -126,8 +126,8 @@ Price for one day hands-on Git training
 If you are interested in Git workshop or have any questions, please let me know.
 
 `}/>
-        <p className="text-center">
-          <a href="https://ondrej-sika.uk/training/git/inquiry/?x_source=git-training.uk" className="btn btn-large btn-success">Inquire Git Training</a>
+        <p className='text-center'>
+          <a href='https://ondrej-sika.uk/training/git/inquiry/?x_source=git-training.uk' className='btn btn-large btn-success'>Inquire Git Training</a>
         </p>
       </TextFrame>
       <TextFrame>

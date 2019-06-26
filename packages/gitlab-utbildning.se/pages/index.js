@@ -27,15 +27,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Gitlab CI Utbildning"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.se/?x_source=gitlab-utbildning.se"
+      websiteHeader='Gitlab CI Utbildning'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.se/?x_source=gitlab-utbildning.se'
       logoUrl={gitlab}
     >
-      <HeaderLink url="https://ondrej-sika.se/utbildning/gitlab-ci/forfragan/?x_source=gitlab-utbildning.se">Fråga efter en träning</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.se/kontakta/?x_source=gitlab-utbildning.se">Kontaka mig</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.se/utbildning/gitlab-ci/forfragan/?x_source=gitlab-utbildning.se'>Fråga efter en träning</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.se/kontakta/?x_source=gitlab-utbildning.se'>Kontaka mig</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
       <ReactMarkdown source={`
 ### Vad är Cl?
@@ -88,7 +88,7 @@ Kursen riktar sig främst till utvecklare som använder Gitlab och vill börja a
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Föreläsare: Ondrej Sika"
+        header='Föreläsare: Ondrej Sika'
         imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
@@ -126,8 +126,8 @@ Pris för två dagars hands-on Git-utbildning
 Om du är intresserad i vår Gitlab CI workshop eller om ni har några frågor, kontakta mig gärna.
 
 `}/>
-        <p className="text-center">
-          <a href="https://ondrej-sika.se/utbildning/gitlab-ci/forfragan/?x_source=git-utbildning.se" className="btn btn-large btn-success">Inquire Gitlab CI training</a>
+        <p className='text-center'>
+          <a href='https://ondrej-sika.se/utbildning/gitlab-ci/forfragan/?x_source=git-utbildning.se' className='btn btn-large btn-success'>Inquire Gitlab CI training</a>
         </p>
       </TextFrame>
       <TextFrame>

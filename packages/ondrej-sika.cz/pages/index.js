@@ -57,13 +57,13 @@ const Index = () => (
     NumberOfLecturesHeader='Počet uskutečněných školení'
     />
 
-    <div className="container">
+    <div className='container'>
       <LectureOuterLg LectureImgHeader='Kurzy co školím'>
-        <LectureInnerLg link="/schulung/docker" title="DOCKER" background={dockerBackground} image={docker}/>
-        <LectureInnerLg link="/schulung/git" title="GIT" background={gitBackground} image={git} />
-        <LectureInnerLg link="/schulung/kubernetes" title="KUBERNETES" background={kubernetesBackground} image={kubernetes} />
-        <LectureInnerLg link="/schulung/ansible" title="ANSIBLE" background={ansibleBackground} image={ansible} />
-        <LectureInnerLg link="/schulung/gitlab-ci" title="GITLAB-CI" background={gitlabBackground} image={gitlab} />
+        <LectureInnerLg link='/schulung/docker' title='DOCKER' background={dockerBackground} image={docker}/>
+        <LectureInnerLg link='/schulung/git' title='GIT' background={gitBackground} image={git} />
+        <LectureInnerLg link='/schulung/kubernetes' title='KUBERNETES' background={kubernetesBackground} image={kubernetes} />
+        <LectureInnerLg link='/schulung/ansible' title='ANSIBLE' background={ansibleBackground} image={ansible} />
+        <LectureInnerLg link='/schulung/gitlab-ci' title='GITLAB-CI' background={gitlabBackground} image={gitlab} />
       </LectureOuterLg>
       <LectureImgSm
       LectureImgHeader='Kurzy co školím'/>

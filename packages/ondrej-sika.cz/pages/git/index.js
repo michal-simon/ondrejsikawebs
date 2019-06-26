@@ -22,7 +22,7 @@ const Install = () => (
       MainBarHeader='Git'>
     </MainBar>
 
-    <div className="container pt-4 pb-2">
+    <div className='container pt-4 pb-2'>
       <ReactMarkdown source={`
 - [Instalace](/git/instalace)
 - [Rebase](/git/rebase)

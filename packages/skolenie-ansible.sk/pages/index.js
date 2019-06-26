@@ -28,15 +28,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Skolenie Ansible"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.cz/?x_source=ansible-skoleni.cz"
+      websiteHeader='Skolenie Ansible'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.cz/?x_source=ansible-skoleni.cz'
       logoUrl={ansible}
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/ansible/poptavka/?x_source=ansible-skoleni.cz">Nezávazně poptat školení</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=ansible-skoleni.cz">Kontaktovat</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/skoleni/ansible/poptavka/?x_source=ansible-skoleni.cz'>Nezávazně poptat školení</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/kontakt/?x_source=ansible-skoleni.cz'>Kontaktovat</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
         <ReactMarkdown source={`
 ### Popis technologie
@@ -84,7 +84,7 @@ Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklaruj
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondřej Šika"
+        header='Lektor: Ondřej Šika'
         imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`

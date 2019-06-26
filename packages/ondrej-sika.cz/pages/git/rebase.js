@@ -27,7 +27,7 @@ const Install = () => (
       }
     `}} />
 
-    <div className="container pt-4 pb-2 post-body">
+    <div className='container pt-4 pb-2 post-body'>
       <ReactMarkdown source={`
 Mam 2 vetve, vetev master a experiment. Stav repozitare vypada takto:
 

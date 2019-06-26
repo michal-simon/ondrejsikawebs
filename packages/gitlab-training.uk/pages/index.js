@@ -27,15 +27,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Gitlab CI Training"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.uk/?x_source=gitlab-training.uk"
+      websiteHeader='Gitlab CI Training'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.uk/?x_source=gitlab-training.uk'
       logoUrl={gitlab}
     >
-      <HeaderLink url="https://ondrej-sika.uk/training/gitlab-ci/inquiry/?x_source=gitlab-training.uk">Request a training</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=gitlab-training.uk">Contact me</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.uk/training/gitlab-ci/inquiry/?x_source=gitlab-training.uk'>Request a training</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.uk/contact/?x_source=gitlab-training.uk'>Contact me</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
       <ReactMarkdown source={`
 ### What is CI?
@@ -85,7 +85,7 @@ The course is primarily aimed at developers who are using Gitlab and are wanting
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondrej Sika"
+        header='Lektor: Ondrej Sika'
         imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
@@ -124,8 +124,8 @@ Price for one day hands-on Git training
 If you are interested in Gitlab CI workshop or have any questions, please let me know.
 
 `}/>
-        <p className="text-center">
-          <a href="https://ondrej-sika.uk/training/gitlab-ci/inquiry/?x_source=git-training.uk" className="btn btn-large btn-success">Inquire Gitlab CI Training</a>
+        <p className='text-center'>
+          <a href='https://ondrej-sika.uk/training/gitlab-ci/inquiry/?x_source=git-training.uk' className='btn btn-large btn-success'>Inquire Gitlab CI Training</a>
         </p>
       </TextFrame>
       <TextFrame>

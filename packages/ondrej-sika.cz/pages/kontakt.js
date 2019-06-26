@@ -10,8 +10,8 @@ import ButtonOutline from '@app/course-landing/components/ButtonOutline';
 import Recommendation from '@app/course-landing/components/Recommendation';
 import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
-import Former2 from "@app/common/components/Former2";
-import site from "@app/ondrej-sika.cz/config";
+import Former2 from '@app/common/components/Former2';
+import site from '@app/ondrej-sika.cz/config';
 import Head from 'next/head';
 
 const Index = () => (
@@ -19,7 +19,7 @@ const Index = () => (
     <Head>
       <title>Kontakty - Ondrej Sika</title>
     </Head>
-    <div className="bar-header">
+    <div className='bar-header'>
       <div className='container'>
         <div className='pt-4 pb-4'>
           <h1 className='text-white pt-3 pb-2'>Kontakt</h1>
@@ -31,11 +31,11 @@ const Index = () => (
       <div className='row'>
         <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
           <p className=''>
-        <a href="tel:+420773452376">+420 773 452 376</a> (<a href="https://t.me/ondrejsika">Telegram</a>)
-        <br /><a href="mailto:ondrej@ondrejsika.com?subject=Poptavka skoleni">ondrej@ondrejsika.com</a> (<a href="/pgp">PGP</a>)
+        <a href='tel:+420773452376'>+420 773 452 376</a> (<a href='https://t.me/ondrejsika'>Telegram</a>)
+        <br /><a href='mailto:ondrej@ondrejsika.com?subject=Poptavka skoleni'>ondrej@ondrejsika.com</a> (<a href='/pgp'>PGP</a>)
       </p>
       <p className='pb-4'>
-        <a href="https://linkedin.com/in/ondrejsika">linkedin.com/in/ondrejsika</a>
+        <a href='https://linkedin.com/in/ondrejsika'>linkedin.com/in/ondrejsika</a>
       </p>
         </div>
         <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
@@ -43,7 +43,7 @@ const Index = () => (
           <p>Klatovská třída 1532/71<br/>
           301 00 Plzeň<br/>
           Česká Republika</p>
-          <table class="contact-table table-borderless">
+          <table class='contact-table table-borderless'>
             <tbody>
               <tr>
                 <td>IČ:</td>
@@ -62,7 +62,7 @@ const Index = () => (
         </div>
         <div className='col-lg-4 col-md-9 col-sm-12 col-12'>
         <h4 className='pt-4 pt-md-0'>Platební údaje</h4>
-          <table class="contact-table table-borderless">
+          <table class='contact-table table-borderless'>
             <tbody>
               <tr>
                 <td >ČR (CZK):</td>
@@ -82,7 +82,7 @@ const Index = () => (
               </tr>
             </tbody>
           </table>
-          <p className="mt-3"><b>Adresa Banky</b><br/>
+          <p className='mt-3'><b>Adresa Banky</b><br/>
           Fio banka, a.s.,<br/>
           V Celnici 1028/10,<br/>
           Praha 1,<br/>

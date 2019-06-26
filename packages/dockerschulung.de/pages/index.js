@@ -22,7 +22,6 @@ import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
 import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
 import docker from '@app/data/pictures/courses/docker-w.svg';
 
-
 const Index = () => (
   <div>
     <Head>
@@ -30,15 +29,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Docker Schulung"
-      byName="Ondrej Sika"
-      byUrl="https://sika-kraml.de/kontakt/?x_source=dockerschulung.de"
+      websiteHeader='Docker Schulung'
+      byName='Ondrej Sika'
+      byUrl='https://sika-kraml.de/kontakt/?x_source=dockerschulung.de'
       logoUrl={docker}>
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz">Nezávazně poptat školení</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz">Kontaktovat</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz'>Nezávazně poptat školení</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz'>Kontaktovat</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
         <ReactMarkdown source={`
 ## Co je to Docker
@@ -86,7 +85,7 @@ Na školení Úvod do práce s Dockerem si ukážeme vše jak s Dockerem pracova
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondřej Šika"
+        header='Lektor: Ondřej Šika'
         imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
@@ -118,9 +117,9 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat
         </ButtonOutline>
       </TextFrame>
 
-      <TextFrame header="Cena">
-        Pokud máte zájem o školení u vás ve firmě, <a href="https://ondrej-sika.cz/skoleni/docker/poptavka/" className="btn btn-large mybutton-outline">nezávazně jej poptejte</a> nebo mi napište email na <a href="/cdn-cgi/l/email-protection#8de2e3e9ffe8e7cde2e3e9ffe8e7fee4e6eca3eee2e0">
-        <span className="__cf_email__" data-cfemail="2e41404a5c4b446e41404a5c4b445d47454f004d4143">ondrej@ondrejsika.com</span>
+      <TextFrame header='Cena'>
+        Pokud máte zájem o školení u vás ve firmě, <a href='https://ondrej-sika.cz/skoleni/docker/poptavka/' className='btn btn-large mybutton-outline'>nezávazně jej poptejte</a> nebo mi napište email na <a href='/cdn-cgi/l/email-protection#8de2e3e9ffe8e7cde2e3e9ffe8e7fee4e6eca3eee2e0'>
+        <span className='__cf_email__' data-cfemail='2e41404a5c4b446e41404a5c4b445d47454f004d4143'>ondrej@ondrejsika.com</span>
         </a>
         <br/>
         Otevřený termín (self funded): 9 999 CZK bez DPH<br />

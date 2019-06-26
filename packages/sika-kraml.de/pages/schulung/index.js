@@ -20,7 +20,7 @@ const Index = () => (
     <MainBar
       MainBarHeader='Nabídka Školení'
     />
-    <div className="container">
+    <div className='container'>
       <LectureImgMdLg
         LectureImgHeader='Kurzy co školím'/>
       <LectureImgSm

@@ -37,9 +37,9 @@ class OndrejSikaDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta charSet="utf-8"/>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-          <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet"/>
+          <meta charSet='utf-8'/>
+          <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+          <link href='https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather' rel='stylesheet'/>
         </Head>
         <body>
           <DevelopmentBar />
@@ -65,7 +65,7 @@ class OndrejSikaDocument extends Document {
           <Newsletter></Newsletter>
           <Footer
             col4_NewsHeader='Subscribe for a Newsletter?'
-            col4_NewsText="NEJAKY ZAJIMAVY TEXT TYPU : Odebírejte nas newsletter a budte v obraze!"
+            col4_NewsText='NEJAKY ZAJIMAVY TEXT TYPU : Odebírejte nas newsletter a budte v obraze!'
             NewsletterBtn='Subscribe'
 
             linkedinImg={linkedin}
