@@ -113,8 +113,11 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
       <TextFrame>
         <ReactMarkdown source={`
 ### Mám zájem o školení
-Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/docker/poptavka/)
+Pokud máte zájem o školení, neváhejte mě kontaktovat.
 `}/>
+        <p className='text-center'>
+          <a href='https://ondrej-sika.cz/skoleni/docker/poptavka/' className='btn btn-large btn-success'>Nezávazně poptat školení</a>
+        </p>
       </TextFrame>
 
       <TextFrame>
