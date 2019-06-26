@@ -1,5 +1,4 @@
 import '../css'
-import FooterSikaKraml from '@app/course-landing/components/FooterSikaKraml';
 import Header from '@app/course-landing/components/Header';
 import HeaderLink from '@app/course-landing/components/HeaderLink';
 import TextFrame from '@app/course-landing/components/TextFrame';
@@ -38,8 +37,7 @@ const Index = () => (
       websiteHeader='Ansible Schulung'
       byName='Ondrej Sika'
       byUrl='https://sika-kraml.de/kontakt/?x_source=ansible-schulung.de'
-      logoUrl={ansible}
-    >
+      logoUrl={ansible}>
       <HeaderLink url='https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz'>Nezávazně poptat školení</HeaderLink>
       <HeaderLink url='https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz'>Kontaktovat</HeaderLink>
     </Header>
@@ -114,15 +112,18 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
 ### Mám zájem o školení
 Pokud máte zájem o školení, neváhejte mě kontaktovat
         `}/>
-        <ButtonOutline
+        <span className="text-center">
+          <a href='https://ondrej-sika.cz/skoleni/ansible/poptavka/' className="btn btn-large btn-success">Nezávazně poptat školení</a>
+        </span>
+        {/* <ButtonOutline
           btnUrl='https://ondrej-sika.cz/skoleni/ansible/poptavka/'>
           Nezávazně poptat školení
-        </ButtonOutline>
+        </ButtonOutline> */}
       </TextFrame>
       <TextFrame header='Cena'>
-        Pokud máte zájem o školení u vás ve firmě, <a href='https://ondrej-sika.cz/skoleni/docker/poptavka/' className='btn btn-large mybutton-outline'>nezávazně jej poptejte</a> nebo mi napište email na <a href='/cdn-cgi/l/email-protection#8de2e3e9ffe8e7cde2e3e9ffe8e7fee4e6eca3eee2e0'>
-        <span className='__cf_email__' data-cfemail='2e41404a5c4b446e41404a5c4b445d47454f004d4143'>ondrej@ondrejsika.com</span>
-        </a>
+        <span>Pokud máte zájem o školení u vás ve firmě, <a href='https://ondrej-sika.cz/skoleni/docker/poptavka/' className=''>nezávazně jej poptejte</a> nebo mi napište email na
+        <a href='mailto:ondrej@ondrejsika.com'> ondrej@ondrejsika.com</a></span>
+
         <br/>
         Otevřený termín (self funded): 9 999 CZK bez DPH<br />
         Otevřený termín (company funded): 14 999 CZK bez DPH<br />
