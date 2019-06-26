@@ -1,12 +1,10 @@
 import '../css'
-
 import ReactMarkdown from 'react-markdown'
 import Header from '@app/course-landing/components/Header'
 import HeaderLink from '@app/course-landing/components/HeaderLink'
 import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
-import ThreeCol from '@app/course-landing/components/ThreeCol';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import References from '@app/course-landing/components/References';
@@ -28,17 +26,17 @@ const Index = () => (
     <Head>
         <title>Ansible Utbildning, Ondrej Sika - ansible-utbildning.se</title>
     </Head>
-    <Navigation location={site.location} />
+    <Navigation location={site.location}/>
     <Header
-      websiteHeader="Ansible Utbildning"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.se/?x_source=ansible-utbildning.se"
+      websiteHeader='Ansible Utbildning'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.se/?x_source=ansible-utbildning.se'
       logoUrl={ansible}
     >
-      <HeaderLink url="https://ondrej-sika.se/utbildning/ansible/inquiry/?x_source=ansible-utbildning.se">Fråga efter en träning</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.se/kontakta/?x_source=ansible-utbildning.se">Kontakta mig</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.se/utbildning/ansible/inquiry/?x_source=ansible-utbildning.se'>Fråga efter en träning</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.se/kontakta/?x_source=ansible-utbildning.se'>Kontakta mig</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
         <ReactMarkdown source={`
 ### Vad är Ansible?
@@ -91,14 +89,13 @@ Denna utbildning riktar sig främst till administratörer och DevOps som vill b�
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondrej Sika"
+        header='Lektor: Ondrej Sika'
         imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
 En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.
         `}/>
       </TextFrameWithImage>
-
       <MyClients
       lang={site.lang}
       image1={aaaAuto}
@@ -120,7 +117,6 @@ Pris för två dagars hands-on Ansibleträning
 - Utbildning på plats (på plats): 3000 GBP exkl. MOMS
 `} escapeHtml={false}/>
       </TextFrame>
-
       <TextFrame>
       <ReactMarkdown source={`
 ### Kontakt
@@ -131,7 +127,6 @@ Pris för två dagars hands-on Ansibleträning
 <br>[+420 773 452 376](tel:+420773452376)
 `} escapeHtml={false}/>
       </TextFrame>
-
       <TextFrame>
         <ReactMarkdown source={`
 
@@ -140,8 +135,8 @@ Pris för två dagars hands-on Ansibleträning
 Om du är intresserad i vår Ansible workshop eller om ni har några frågor, kontakta mig gärna.
 
 `}/>
-        <p className="text-center">
-          <a href="https://ondrej-sika.se/utbildning/ansible/forfragan/?x_source=ansible-utbildning.se" className="btn btn-large btn-success">Frågor om Ansible utbildning</a>
+        <p className='text-center'>
+          <a href='https://ondrej-sika.se/utbildning/ansible/forfragan/?x_source=ansible-utbildning.se' className='btn btn-large btn-success'>Frågor om Ansible utbildning</a>
         </p>
       </TextFrame>
       <TextFrame>
