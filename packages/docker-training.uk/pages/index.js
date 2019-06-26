@@ -1,15 +1,12 @@
 import '../css'
-
 import Header from '@app/course-landing/components/Header'
 import HeaderLink from '@app/course-landing/components/HeaderLink'
 import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
-import ThreeCol from '@app/course-landing/components/ThreeCol';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import References from '@app/course-landing/components/References';
-import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
@@ -22,7 +19,6 @@ import o2 from '@app/data/pictures/companies/o2.png';
 import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
 import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
 import docker from '@app/data/pictures/courses/docker-w.svg';
-
 
 const Index = () => (
   <div>
@@ -87,7 +83,7 @@ This training course is primarily aimed at complete beginners who have either no
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondrej Sika"
+        header="Lecturer: Ondrej Sika"
         imgUrl={ondrejsika}
         >
           <ReactMarkdown source={`
@@ -96,7 +92,6 @@ A little bit of background about myself, I am a software engineer at Slush Pool 
 Get in touch if you have any questions - Happy to hearing from you!
 `} escapeHtml={false}/>
       </TextFrameWithImage>
-
       <MyClients
       lang={site.lang}
       image1={aaaAuto}
@@ -105,8 +100,7 @@ Get in touch if you have any questions - Happy to hearing from you!
       image4={fio}
       image5={o2}
       image6={ceskaPojistovna}
-      ></MyClients>
-
+      />
       <References ids={['bohemiaenergy', 'vse', 'sit']} lang={site.lang}/>
       <TextFrame>
         <ReactMarkdown source={`
@@ -122,7 +116,6 @@ Price for two days Docker training
 ### I Want the Docker Training
 
 If you are interested in Docker workshop or have any questions, please let me know.
-
 `}/>
         <p className="text-center">
           <a href="https://ondrej-sika.uk/training/docker/inquiry/?x_source=git-training.uk" className="btn btn-large btn-success">Inquire Docker Training</a>
