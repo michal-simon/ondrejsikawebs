@@ -105,8 +105,11 @@ Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Všechny 
       <TextFrame>
         <ReactMarkdown source={`
 ### Mám zájem o školení
-Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/git/poptavka/)
+Pokud máte zájem o školení, neváhejte mě kontaktovat.
 `}/>
+        <p className='text-center'>
+          <a href='https://ondrej-sika.cz/skoleni/git/poptavka/' className='btn btn-large btn-success'>Nezávazně poptat školení</a>
+        </p>
       </TextFrame>
 
       <TextFrame>
