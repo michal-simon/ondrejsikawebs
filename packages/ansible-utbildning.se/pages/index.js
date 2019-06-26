@@ -89,7 +89,7 @@ Denna utbildning riktar sig främst till administratörer och DevOps som vill b�
         />
       </TextFrame>
       <TextFrameWithImage
-        header='Lektor: Ondrej Sika'
+        header='Föreläsare: Ondrej Sika'
         imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`

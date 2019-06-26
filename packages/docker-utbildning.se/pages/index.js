@@ -88,7 +88,7 @@ Denna kurs är huvudsakligen inriktad på totala nybörjare som har ingen eller 
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondrej Sika"
+        header="Föreläsare: Ondrej Sika"
         imgUrl={ondrejsika}
         >
           <ReactMarkdown source={`

@@ -88,7 +88,7 @@ Kursen riktar sig främst till utvecklare och devOps som vill underhålla sina a
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondrej Sika"
+        header="Föreläsare: Ondrej Sika"
         imgUrl={ondrejsika}>
         <ReactMarkdown source={`
 En liten bit av min bakgrund; jag är en mjukvaruingenjör hos Slush Pool samt DevOps-konsult, arkitekt och föreläsare. Jag använder Ansible som ett verktyg för serveradministration. Jag försöker använda Ansible för administrationen av allt jag kan - från databasanvändare till DNS-hantering på Cloudflare.

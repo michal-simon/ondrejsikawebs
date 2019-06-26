@@ -91,7 +91,7 @@ This training course is primarily aimed at developers who don't do versioning or
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondrej Sika"
+        header="Föreläsare: Ondrej Sika"
         imgUrl={ondrejsika}
       >
         <ReactMarkdown source={`

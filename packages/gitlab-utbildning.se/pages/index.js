@@ -91,7 +91,7 @@ Kursen riktar sig främst till utvecklare som använder Gitlab och vill börja a
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondrej Sika"
+        header="Föreläsare: Ondrej Sika"
         imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
