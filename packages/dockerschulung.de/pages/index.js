@@ -111,16 +111,14 @@ Všechny kurzy vedu osobně. S Dockerem mám více než čtyři roky zkušenost�
 ### Mám zájem o školení
 Pokud máte zájem o školení, neváhejte mě kontaktovat
         `}/>
-        <ButtonOutline
-          btnUrl='https://ondrej-sika.cz/skoleni/docker/poptavka/'>
-          Nezávazně poptat školení
-        </ButtonOutline>
+        <span className='text-center'>
+          <a href='https://ondrej-sika.cz/skoleni/docker/poptavka/' className='btn btn-large btn-success'>Nezávazně poptat školení</a>
+        </span>
       </TextFrame>
 
       <TextFrame header='Cena'>
-        Pokud máte zájem o školení u vás ve firmě, <a href='https://ondrej-sika.cz/skoleni/docker/poptavka/' className='btn btn-large mybutton-outline'>nezávazně jej poptejte</a> nebo mi napište email na <a href='/cdn-cgi/l/email-protection#8de2e3e9ffe8e7cde2e3e9ffe8e7fee4e6eca3eee2e0'>
-        <span className='__cf_email__' data-cfemail='2e41404a5c4b446e41404a5c4b445d47454f004d4143'>ondrej@ondrejsika.com</span>
-        </a>
+      <span>Pokud máte zájem o školení u vás ve firmě,<a href='https://ondrej-sika.cz/skoleni/docker/poptavka/'> nezávazně jej poptejte</a> nebo mi napište email na
+        <a href='mailto:ondrej@ondrejsika.com'> ondrej@ondrejsika.com</a></span>
         <br/>
         Otevřený termín (self funded): 9 999 CZK bez DPH<br />
         Otevřený termín (company funded): 14 999 CZK bez DPH<br />
