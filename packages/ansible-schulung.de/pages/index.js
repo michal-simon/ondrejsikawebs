@@ -110,10 +110,6 @@ Pokud máte zájem o školení, neváhejte mě kontaktovat
         <span className='text-center'>
           <a href='https://ondrej-sika.cz/skoleni/ansible/poptavka/' className='btn btn-large btn-success'>Nezávazně poptat školení</a>
         </span>
-        {/* <ButtonOutline
-          btnUrl='https://ondrej-sika.cz/skoleni/ansible/poptavka/'>
-          Nezávazně poptat školení
-        </ButtonOutline> */}
       </TextFrame>
       <TextFrame header='Cena'>
         <span>Pokud máte zájem o školení u vás ve firmě, <a href='https://ondrej-sika.cz/skoleni/docker/poptavka/' className=''>nezávazně jej poptejte</a> nebo mi napište email na
