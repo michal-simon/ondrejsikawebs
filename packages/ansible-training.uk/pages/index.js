@@ -1,16 +1,13 @@
 import '../css'
-
 import ReactMarkdown from 'react-markdown';
 import Header from '@app/course-landing/components/Header';
 import HeaderLink from '@app/course-landing/components/HeaderLink';
 import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
-import ThreeCol from '@app/course-landing/components/ThreeCol';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import References from '@app/course-landing/components/References';
-import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
 import site from '@app/ansible-training.uk/config';
@@ -23,7 +20,6 @@ import ceskaPojistovna from '@app/data/pictures/companies/ceska_pojistovna.jpg';
 import ondrejsika from '@app/data/pictures/ondrejsika.jpg';
 import ansible from '@app/data/pictures/courses/ansible.png';
 
-
 const Index = () => (
   <div>
     <Head>
@@ -31,15 +27,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Ansible Training"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.uk/?x_source=ansible-training.uk"
+      websiteHeader='Ansible Training'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.uk/?x_source=ansible-training.uk'
       logoUrl={ansible}
     >
-      <HeaderLink url="https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-skoleni.uk">Request training</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.uk/contact/?x_source=ansible-training.uk">Contact me</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-skoleni.uk'>Request training</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.uk/contact/?x_source=ansible-training.uk'>Contact me</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
         <ReactMarkdown source={`
 ### What is Ansible?
@@ -90,14 +86,13 @@ This training is primarily aimed at admins and DevOps who want to start using An
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondrej Sika"
+        header='Lektor: Ondrej Sika'
         imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
 A little bit of background about myself, I am a software engineer at Slush Pool and DevOps consultant, architect & lecturer. I use Ansible as a tool for server administration. I try to use Ansible for the administration of everything I can - from database users to DNS records on Cloudflare.
         `}/>
       </TextFrameWithImage>
-
       <MyClients
       lang={site.lang}
       image1={aaaAuto}
@@ -119,9 +114,8 @@ Price for the two-day hands-on Ansible training
 - On-site training (on-site): 3000 GBP excl. VAT
 `} escapeHtml={false}/>
       </TextFrame>
-
       <TextFrame>
-      <ReactMarkdown source={`
+        <ReactMarkdown source={`
 ### Contact
 
 #### Ondrej Sika
@@ -138,8 +132,8 @@ Price for the two-day hands-on Ansible training
 If you are interested in Ansible workshop or have any questions, please let me know.
 
 `}/>
-        <p className="text-center">
-          <a href="https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-training.uk" className="btn btn-large btn-success">Inquire Ansible Training</a>
+        <p className='text-center'>
+          <a href='https://ondrej-sika.uk/training/ansible/inquiry/?x_source=ansible-training.uk' className='btn btn-large btn-success'>Inquire Ansible Training</a>
         </p>
       </TextFrame>
       <TextFrame>
