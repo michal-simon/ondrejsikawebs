@@ -86,7 +86,7 @@ This training is primarily aimed at admins and DevOps who want to start using An
         />
       </TextFrame>
       <TextFrameWithImage
-        header='Lektor: Ondrej Sika'
+        header='Lecturer: Ondrej Sika'
         imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
