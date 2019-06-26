@@ -106,8 +106,11 @@ Všechny kurzy vedu osobně. S Gitlab CI mám zkušenosti z mnoha různých proj
       <TextFrame>
         <ReactMarkdown source={`
 ### Mám zájem o školení
-Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/)
+Pokud máte zájem o školení, neváhejte mě kontaktovat.
 `}/>
+        <span className='text-center'>
+          <a href='https://ondrej-sika.cz/skoleni/gitlab-ci/poptavka/' className='btn btn-large btn-success'>Nezávazně poptat školení</a>
+        </span>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
