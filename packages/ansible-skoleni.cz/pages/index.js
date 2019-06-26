@@ -1,12 +1,10 @@
 import '../css'
-
 import ReactMarkdown from 'react-markdown';
 import Header from '@app/course-landing/components/Header';
 import HeaderLink from '@app/course-landing/components/HeaderLink';
 import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
-import ThreeCol from '@app/course-landing/components/ThreeCol';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import References from '@app/course-landing/components/References';
@@ -30,15 +28,15 @@ const Index = () => (
     </Head>
     <Navigation location={site.location}/>
     <Header
-      websiteHeader="Školení Ansible"
-      byName="Ondrej Sika"
-      byUrl="https://ondrej-sika.cz/?x_source=ansible-skoleni.cz"
+      websiteHeader='Školení Ansible'
+      byName='Ondrej Sika'
+      byUrl='https://ondrej-sika.cz/?x_source=ansible-skoleni.cz'
       logoUrl={ansible}
     >
-      <HeaderLink url="https://ondrej-sika.cz/skoleni/ansible/poptavka/?x_source=ansible-skoleni.cz">Nezávazně poptat školení</HeaderLink>
-      <HeaderLink url="https://ondrej-sika.cz/kontakt/?x_source=ansible-skoleni.cz">Kontaktovat</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/skoleni/ansible/poptavka/?x_source=ansible-skoleni.cz'>Nezávazně poptat školení</HeaderLink>
+      <HeaderLink url='https://ondrej-sika.cz/kontakt/?x_source=ansible-skoleni.cz'>Kontaktovat</HeaderLink>
     </Header>
-    <div className="container container-width">
+    <div className='container container-width'>
       <TextFrame>
         <ReactMarkdown source={`
 ### Popis technologie
@@ -86,14 +84,13 @@ Ansible je nástroj na hromadnou správu konfiguraci a nasazování. Vy deklaruj
         />
       </TextFrame>
       <TextFrameWithImage
-        header="Lektor: Ondřej Šika"
+        header='Lektor: Ondřej Šika'
         imgUrl={ondrejsika}
         >
         <ReactMarkdown source={`
 Jmenuji se Ondřej Šika, vyvíjím software pro Slush Pool a školím. Všechny kurzy vědu osobně. Ansible používám jako nástroj na správu serverů i osobních počítačů (těch s Linuxem, dříve jsem používal Puppet ale přešel jsem na Ansible). Krom toho se snažím Ansible používat na správu úplně všeho, od uživatelů v databázích po DNS záznamy na Cloudflare.
         `}/>
       </TextFrameWithImage>
-
       <MyClients
       lang={site.lang}
       image1={aaaAuto}
@@ -104,7 +101,6 @@ Jmenuji se Ondřej Šika, vyvíjím software pro Slush Pool a školím. Všechny
       image6={ceskaPojistovna}
       />
       <References ids={['bohemiaenergy', 'vse', 'sit']} lang={site.lang}/>
-
       <TextFrame>
         <ReactMarkdown source={`
 ### Mám zájem o školení
