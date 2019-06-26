@@ -105,8 +105,11 @@ Jmenuji se Ondřej Šika, vyvíjím software pro Slush Pool a školím. Všechny
       <TextFrame>
         <ReactMarkdown source={`
 ### Mám zájem o školení
-Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/ansible/poptavka/)
+Pokud máte zájem o školení, neváhejte mě kontaktovat.
 `}/>
+        <p className='text-center'>
+          <a href='https://ondrej-sika.cz/skoleni/ansible/poptavka/' className='btn btn-large btn-success'>Nezávazně poptat školení</a>
+        </p>
       </TextFrame>
       <TextFrame>
         <ReactMarkdown source={`
