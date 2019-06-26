@@ -4,7 +4,6 @@ import HeaderLink from '@app/course-landing/components/HeaderLink';
 import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
-import ThreeCol from '@app/course-landing/components/ThreeCol';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import ReactMarkdown from 'react-markdown';
@@ -106,8 +105,11 @@ Jmenuji se Ondřej Sika, vyvíjím software pro Slush Pool a školím. Všechny 
       <TextFrame>
         <ReactMarkdown source={`
 ### Mám zájem o školení
-Pokud máte zájem o školení, neváhejte mě kontaktovat - [Nezávazně poptat školení](https://ondrej-sika.cz/skoleni/git/poptavka/)
+Pokud máte zájem o školení, neváhejte mě kontaktovat.
 `}/>
+        <p className='text-center'>
+          <a href='https://ondrej-sika.cz/skoleni/git/poptavka/' className='btn btn-large btn-success'>Nezávazně poptat školení</a>
+        </p>
       </TextFrame>
 
       <TextFrame>
