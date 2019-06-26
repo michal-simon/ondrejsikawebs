@@ -1,19 +1,16 @@
 import '../css'
-
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Header from '@app/course-landing/components/Header';
 import HeaderLink from '@app/course-landing/components/HeaderLink';
 import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
-import ThreeCol from '@app/course-landing/components/ThreeCol';
 import References from '@app/course-landing/components/References';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
-import Contact from '@app/course-landing/components/Contact';
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
-import site from '@app/kubernetes-training.uk/config'
+import site from '@app/kubernetes-training.uk/config';
 import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
 import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
 import kb from '@app/data/pictures/companies/kb.png';

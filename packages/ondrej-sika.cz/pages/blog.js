@@ -1,7 +1,7 @@
 import '@app/ondrej-sika.cz/css'
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
-import Link from 'next/link'
-import Head from 'next/head'
+import Link from 'next/link';
+import Head from 'next/head';
 
 let site = {
   lang: 'cs'

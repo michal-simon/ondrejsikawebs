@@ -1,13 +1,11 @@
-import '@app/sika-kraml.de/css'
-
-import ReactMarkdown from 'react-markdown'
+import '@app/sika-kraml.de/css';
+import ReactMarkdown from 'react-markdown';
 import TextArea from '@app/ondrej-sika.cz/components/TextArea';
 import TwoCol from '@app/ondrej-sika.cz/components/TwoCol';
 import References from '@app/ondrej-sika.cz/components/References';
 import Price from '@app/ondrej-sika.cz/components/Price';
 import Form from '@app/ondrej-sika.cz/components/Form';
-import Head from 'next/head'
-
+import Head from 'next/head';
 import Header from '@app/ondrej-sika.cz/components/Header';
 import docker from '@app/data/pictures/courses/docker.svg';
 

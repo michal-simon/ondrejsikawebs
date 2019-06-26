@@ -1,17 +1,15 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import Gauges from '@app/common/components/Gauges';
 import GoogleAnalytics from '@app/common/components/GoogleAnalytics';
-
 import Navbar from '@app/ondrej-sika.cz/components/Navbar';
 import Footer from '@app/ondrej-sika.cz/components/Footer';
 import BootstrapJS from '@app/common/components/BootstrapJS';
-import linkedin from '@app/data/pictures/social-networks/linkedin-hex.svg'
-import twitter from '@app/data/pictures/social-networks/twitter-hex.svg'
-import github from '@app/data/pictures/social-networks/github-hex.svg'
-import instagram from '@app/data/pictures/social-networks/instagram-hex.svg'
-import facebook from '@app/data/pictures/social-networks/fb-hex.svg'
-import mail from '@app/data/pictures/social-networks/mail-hex.svg'
-import ond from '@app/data/pictures/ond.jpg'
+import linkedin from '@app/data/pictures/social-networks/linkedin-hex.svg';
+import twitter from '@app/data/pictures/social-networks/twitter-hex.svg';
+import github from '@app/data/pictures/social-networks/github-hex.svg';
+import instagram from '@app/data/pictures/social-networks/instagram-hex.svg';
+import facebook from '@app/data/pictures/social-networks/fb-hex.svg';
+import mail from '@app/data/pictures/social-networks/mail-hex.svg';
 import site from '../config';
 
 let DevelopmentBar = ()=> {

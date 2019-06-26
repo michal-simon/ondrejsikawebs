@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import ReactMarkdown from 'react-markdown';
 import Gauges from '@app/common/components/Gauges';
 import GoogleAnalytics from '@app/common/components/GoogleAnalytics';
 import Navbar from '@app/sika-kraml.de/components/Navbar';
@@ -8,7 +7,6 @@ import Newsletter from '@app/sika-kraml.de/components/Newsletter';
 import BootstrapJS from '@app/common/components/BootstrapJS';
 import site from '../config';
 import React from 'react';
-
 import linkedin from '@app/data/pictures/social-networks/linkedin.svg';
 import twitter from '@app/data/pictures/social-networks/twitter.svg';
 import facebook from '@app/data/pictures/social-networks/facebook.svg';

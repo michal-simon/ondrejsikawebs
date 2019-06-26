@@ -1,12 +1,10 @@
-import '../css'
-
-import ReactMarkdown from 'react-markdown'
-import Header from '@app/course-landing/components/Header'
-import HeaderLink from '@app/course-landing/components/HeaderLink'
+import '../css';
+import ReactMarkdown from 'react-markdown';
+import Header from '@app/course-landing/components/Header';
+import HeaderLink from '@app/course-landing/components/HeaderLink';
 import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
-import ThreeCol from '@app/course-landing/components/ThreeCol';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import References from '@app/course-landing/components/References';

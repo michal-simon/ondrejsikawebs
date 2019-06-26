@@ -1,11 +1,9 @@
-import '../css'
-
+import '../css';
 import Header from '@app/course-landing/components/Header';
 import HeaderLink from '@app/course-landing/components/HeaderLink';
 import TextFrame from '@app/course-landing/components/TextFrame';
 import TextFrameWithImage from '@app/course-landing/components/TextFrameWithImage';
 import MyClients from '@app/course-landing/components/MyClients';
-import ThreeCol from '@app/course-landing/components/ThreeCol';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import References from '@app/course-landing/components/References';
@@ -14,7 +12,6 @@ import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
 import site from '@app/skoleni-docker.cz/config';
-import UpcomingSessions from '@app/course-landing/components/UpcomingSessions'
 import termoFisher from '@app/data/pictures/companies/thermo_fish.jpg';
 import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
 import kb from '@app/data/pictures/companies/kb.png';

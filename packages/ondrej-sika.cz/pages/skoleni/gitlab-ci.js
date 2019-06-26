@@ -1,7 +1,6 @@
-import '@app/ondrej-sika.cz/css'
-
-import ReactMarkdown from 'react-markdown'
-import Header from '@app/ondrej-sika.cz/components/Header'
+import '@app/ondrej-sika.cz/css';
+import ReactMarkdown from 'react-markdown';
+import Header from '@app/ondrej-sika.cz/components/Header';
 import TextArea from '@app/ondrej-sika.cz/components/TextArea';
 import TwoCol from '@app/ondrej-sika.cz/components/TwoCol';
 import References from '@app/ondrej-sika.cz/components/References';
@@ -9,7 +8,6 @@ import Price from '@app/ondrej-sika.cz/components/Price';
 import Form from '@app/ondrej-sika.cz/components/Form';
 import gitlab from '@app/data/pictures/courses/gitlab-ci.svg';
 import Head from 'next/head'
-
 
 let site = {
   lang: 'cs'

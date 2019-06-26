@@ -1,5 +1,4 @@
 import '@app/ondrej-sika.cz/css'
-
 import LectureInnerLg from '@app/ondrej-sika.cz/components/LectureInnerLg';
 import LectureOuterLg from '@app/ondrej-sika.cz/components/LectureOuterLg';
 import LectureImgSm from '@app/ondrej-sika.cz/components/LectureImgSm';
@@ -7,27 +6,25 @@ import MainBar from '@app/ondrej-sika.cz/components/MainBar';
 import TextWithImg from '@app/ondrej-sika.cz/components/TextWithImg';
 import StatisticBar from '@app/ondrej-sika.cz/components/StatisticBar';
 import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
-
 import docker from '@app/data/pictures/courses/docker-w.svg';
 import git from '@app/data/pictures/courses/git-w.svg';
 import kubernetes from '@app/data/pictures/courses/kubernetes.svg';
 import gitlab from '@app/data/pictures/courses/gitlab-ci.svg';
 import ansible from '@app/data/pictures/courses/ansible-w.svg';
 import Head from 'next/head'
-
-import webglobeYegon from '@app/data/pictures/companies/webglobe-yegon-sq.png'
-import eltodo from '@app/data/pictures/companies/eltodo-sq.png'
-import eon from '@app/data/pictures/companies/eon-sq.jpg'
-import kb from '@app/data/pictures/companies/kb-sq.jpg'
-import dimensionData from '@app/data/pictures/companies/dimension-data-sq.png'
-import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png'
-import linkedin from '@app/data/pictures/social-networks/linkedin-hex.svg'
-import twitter from '@app/data/pictures/social-networks/twitter-hex.svg'
-import github from '@app/data/pictures/social-networks/github-hex.svg'
-import instagram from '@app/data/pictures/social-networks/instagram-hex.svg'
-import facebook from '@app/data/pictures/social-networks/fb-hex.svg'
-import mail from '@app/data/pictures/social-networks/mail-hex.svg'
-import ond from '@app/data/pictures/ond.jpg'
+import webglobeYegon from '@app/data/pictures/companies/webglobe-yegon-sq.png';
+import eltodo from '@app/data/pictures/companies/eltodo-sq.png';
+import eon from '@app/data/pictures/companies/eon-sq.jpg';
+import kb from '@app/data/pictures/companies/kb-sq.jpg';
+import dimensionData from '@app/data/pictures/companies/dimension-data-sq.png';
+import aaaAuto from '@app/data/pictures/companies/aaa-auto-sq.png';
+import linkedin from '@app/data/pictures/social-networks/linkedin-hex.svg';
+import twitter from '@app/data/pictures/social-networks/twitter-hex.svg';
+import github from '@app/data/pictures/social-networks/github-hex.svg';
+import instagram from '@app/data/pictures/social-networks/instagram-hex.svg';
+import facebook from '@app/data/pictures/social-networks/fb-hex.svg';
+import mail from '@app/data/pictures/social-networks/mail-hex.svg';
+import ond from '@app/data/pictures/ond.jpg';
 
 let site = {
   lang: 'cs'

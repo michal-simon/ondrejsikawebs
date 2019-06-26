@@ -4,19 +4,14 @@ import LectureInnerLg from '@app/sika-kraml.de/components/LectureInnerLg';
 import LectureSectionLg from '@app/sika-kraml.de/components/LectureSectionLg';
 import MainBar from '@app/sika-kraml.de/components/MainBar';
 import TextWithImg from '@app/sika-kraml.de/components/TextWithImg';
-// import CompaniesBar from '@app/ondrej-sika.cz/components/CompaniesBar';
-// import CompaniesBar1 from '@app/ondrej-sika.cz/static/webglobe-yegon-sq.png';
 import site from '@app/ondrej-sika.cz/config';
 import Head from 'next/head';
-
 import docker_img from '@app/data/pictures/courses/docker.svg';
 import git_img from '@app/data/pictures/courses/git.svg';
 import kubernetes_img from '@app/data/pictures/courses/kubernetes.svg';
 import gitlab_img from '@app/data/pictures/courses/gitlab-ci.svg';
 import ansible_img from '@app/data/pictures/courses/ansible.svg';
 import sikaKraml from '@app/data/pictures/it.jpg';
-
-
 // import LectureSectionMdSm from '@app/sika-kraml.de/components/LectureSectionMdSm';
 // import LectureInnerMdSm from '@app/sika-kraml.de/components/LectureInnerMdSm';
 

@@ -1,9 +1,7 @@
-import '@app/sika-kraml.de/css'
+import '@app/sika-kraml.de/css';
 import Header from '@app/ondrej-sika.cz/components/Header';
-import UpcomingSessions from '@app/ondrej-sika.cz/components/UpcomingSessions'
-
-
-import Head from 'next/head'
+import UpcomingSessions from '@app/ondrej-sika.cz/components/UpcomingSessions';
+import Head from 'next/head';
 
 let site = {
   lang: 'de'

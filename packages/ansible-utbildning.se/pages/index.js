@@ -8,7 +8,6 @@ import MyClients from '@app/course-landing/components/MyClients';
 import TwoCol from '@app/course-landing/components/TwoCol';
 import Navigation from '@app/course-landing/components/Navigation';
 import References from '@app/course-landing/components/References';
-import Contact from '@app/course-landing/components/Contact';
 import FooterOndrejSika from '@app/course-landing/components/FooterOndrejSika';
 import Head from 'next/head';
 import site from '@app/ansible-utbildning.se/config';

@@ -1,6 +1,6 @@
-import '@app/sika-kraml.de/css'
+import '@app/sika-kraml.de/css';
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from 'react-markdown';
 
 let site = {
   lang: 'cs'

@@ -1,8 +1,7 @@
-import '@app/ondrej-sika.cz/css'
+import '@app/ondrej-sika.cz/css';
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
-import ReactMarkdown from 'react-markdown'
-
-import Head from 'next/head'
+import ReactMarkdown from 'react-markdown';
+import Head from 'next/head';
 
 let site = {
   lang: 'cs'
