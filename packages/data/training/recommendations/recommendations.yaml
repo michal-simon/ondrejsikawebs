@@ -18,8 +18,11 @@
     de: |
       neco nemecky
   date:
-    cs: 7. kvetna 2019
-- id: spel
+    cs: 14.dubna 2019
+    en: April 14, 2019
+    se: 14.4.2019
+    de: 14.4.2019
+- id: vistag
   name: Tomáš Havlín
   role:
     en: CTO
@@ -28,9 +31,10 @@
   company: SPEL a.s.
   photo: img/person.svg
   date:
-    en: 7.5.2019
-    se: 7.6.2019
-    de: 7.5.2019
+    cs: 1.října 2017
+    en: October 1, 2017
+    se: 1.10.2017
+    de: 1.10.2017
   text:
     cs: |
       Ondřej u nás školil Docker/Docker-compose/Swarm dva dny. Úvod do teoerie včetně vysvětlení. Ondřej srozumitelně ukazuje na praktických příkladech formou workshopu, který je dle mě nejlepším možným způsobem, jak se můžete něco nového naučit. Je vidět, že Ondra má se všemi technologiemi a jejich nasazením praktické zkušenosti, okamžitě na naše dotazy reagoval s možným způsobem řešení, což bylo pro nás zvlášť důležité. Rád bych také ocenil přátelský přístup, za mě nejlepší školení za několik posledních let.
@@ -47,10 +51,10 @@
       Neco nemecky
   company: Bohemia Energy
   date:
-    cs: 7. kvetna 2019
-    en: 7.6.2019
-    se: 7.6.2019
-    de: 7.6.2019
+    cs: 21.června 2018
+    en: June 21, 2018
+    se: 21.6.2018
+    de: 21.6.2018
   photo: img/jurajboldis.jpg
   text:
     cs: |
@@ -69,9 +73,9 @@
     cs: System Administrator team leader
   company: oXy Online
   date:
-    cs: 7.kvetna 2019
-    en: 7.5.2019
-    se: 7.6.2019
+    cs: 7.května 2019
+    en: May 7, 2019
+    se: 7.5.2019
     de: 7.5.2019
   photo: img/ivokasparek.jpg
   text:
@@ -89,10 +93,10 @@
     cs: Service System Innovation Senior Manager
   company: Dimension Data
   date:
-    cs: 7.kvetna 2019
-    en: 7.5.2019
-    se: 7.6.2019
-    de: 7.5.2019
+    cs: 17.listopadu 2018
+    en: November 17, 2018
+    se: 17.11.2018
+    de: 17.11.2018
   photo: img/person.svg
   text:
     cs: |
@@ -111,10 +115,10 @@
     cs: Co-owner Webglobe-Yegon
   company: Webglobe-Yegon
   date:
-    cs: 7.kvetna 2019
-    en: 7.5.2019
-    se: 7.6.2019
-    de: 7.5.2019
+    cs: 18.říjen 2018
+    en: October 18, 2018
+    se: 18.10.2018
+    de: 18.10.2018
   photo: img/jurajhantak.jpg
   text:
     cs: |
@@ -138,9 +142,9 @@
   photo: img/martinkylian.jpg
   date:
     cs: 4. června 2018
-    se: 4.6.2019
+    en: June 4, 2018
     de: 4.6.2019
-    en: 4.6.2019
+    se: 4.6.2019
   text:
     cs: |
       Ondřej nám přijet školit Git a Docker, školení bylo perfektní. Ondřej má velmi dobrou znalost devops. Velmi doporučuji jeho školení, pomohl nám automatizovat každodenní rutinní procesy.
@@ -158,10 +162,10 @@
     cs: Head of IT FIO Prague
   company: FIO
   date:
-    cs: 4. června 2018
-    se: 4.6.2019
-    de: 4.6.2019
-    en: 4.6.2019
+    cs: 7.11.2018
+    en: November 7, 2018
+    de: 7.11.2018
+    se: 7.11.2018
   photo: img/person.svg
   text:
     cs: |
@@ -182,10 +186,10 @@
     cs: Software Development Manager
   company: NMS Market Research
   date:
-    cs: 4. června 2018
-    se: 4.6.2019
-    de: 4.6.2019
-    en: 4.6.2019
+    cs: 11.prosince 2017
+    en: December 11, 2017
+    de: 11.12.2017
+    se: 11.12.2017
   photo: img/frantisekvodslon.jpg
   text:
     cs: |
@@ -201,7 +205,7 @@
     de: |
       Neco nemecky
 - id: vistag
-  name: Tomas Ruzicka
+  name: Tomas Růžička
   role:
     en: Vistag project CTO
     cs: Vistag project CTO
@@ -209,7 +213,7 @@
   photo: img/tomasruzicka.jpg
   date:
     cs: 1. říjen 2017
-    en: 1.10.2019
+    en: October 1, 2017
     se: 1.10.2019
     de: 1.10.2019
   text:
@@ -228,8 +232,8 @@
   photo: img/marekkudlacek.jpg
   date:
     cs: 6. května 2019
+    en: May 6, 2017
     se: 6.5.2019
-    en: 6.5.2019
     de: 6.5.2019
   text:
     cs: |
@@ -237,43 +241,3 @@
     en:
     se:
     de:
-- id: oxyCTO
-  name: Ivo Kašpárek
-  role:
-    en: Vistag project CTO
-    cs: System Administrator team leader
-  company: oXy SHOP
-  photo: img/ivokasparek.jpg
-  date:
-    cs: 7. května 2019
-    en: 7.5.2019
-    se: 7.5.2019
-    de: 7.5.2019
-  text:
-    cs: |
-      Školení bylo moc fajn, především šité na míru našim potřebám. Ondra byl připravený a ochotný zodpovědět všechny naše dotazy ať už ohledně gitu, dockeru a kubernetes.
-    se:
-    en:
-    de: |
-      Neco nemecky
-- id: CMS
-  name: František Vodsloň
-  role:
-    en: Software Development Manager at NMS Market Research
-    cs: Software Development Manager at NMS Market Research
-  company: NMS Market Research
-  photo: img/frantisekvodslon.jpg
-  date:
-    cs: 11. prosince 2017
-    se: 11.12.2017
-    en: 11.12.2017
-    de: 11.12.2017
-  text:
-    cs: |
-      Ondru jsme si pozvali na konzultace do naší firmy ohledně začlenění Gitlab CI do našeho vývojového procesu. I přes naši neznalost problematiky jsme velmi rychle našli společnou řeč, a během krátkého času jsme z Ondry vytěžili maximum jeho znalostí a zkušeností.
-      Ondrovy zkušenosti mají veliký přesah do všech oblastí vývoje a provozu software - zabrousili jsme na téma dockeru, load balancingu, bezpečnosti, git workflow, monitoringu atd.
-      Jeho konzultace byly pro náš tým velikým přínosem a díky nim jsme se vyhnuli spoustě práce při tápání "na slepo".
-    se: |
-    en: |
-    de: |
-      Neco nemecky
