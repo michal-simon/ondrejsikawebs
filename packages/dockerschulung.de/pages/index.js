@@ -33,7 +33,6 @@ const Index = () => (
       byName='Ondrej Sika'
       byUrl='https://sika-kraml.de/kontakt/?x_source=dockerschulung.de'
       logoUrl={docker}>
-    >
       <HeaderLink url='https://ondrej-sika.cz/skoleni/docker/poptavka/?x_source=skoleni-docker.cz'>Nezávazně poptat školení</HeaderLink>
       <HeaderLink url='https://ondrej-sika.cz/kontakt/?x_source=skoleni-docker.cz'>Kontaktovat</HeaderLink>
     </Header>
