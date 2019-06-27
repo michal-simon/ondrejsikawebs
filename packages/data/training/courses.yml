@@ -10,13 +10,8 @@
     de: Kubernetes Schulung
 - id: git
   name:
-    cs: Skoleni Gitu
     en: Git Training
-    de: Git Schulung
-- id: gitlab-ci
-  name:
     cs: Skoleni Gitlab CI
-    en: Gitlab CI Training
     de: Gitlab CI Schulung
 - id: ansible
   name:
