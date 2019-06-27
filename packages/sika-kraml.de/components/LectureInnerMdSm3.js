@@ -7,7 +7,7 @@ var img = {
   display: 'inherit',
 }
 
-class LectureInnerMdSm extends React.Component {
+class LectureInnerMdSm extends React.component {
   render() {
     var box = {
       flex: '0 0 20%',

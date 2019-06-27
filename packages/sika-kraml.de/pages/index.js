@@ -12,8 +12,8 @@ import kubernetes_img from '@app/data/pictures/courses/kubernetes.svg';
 import gitlab_img from '@app/data/pictures/courses/gitlab-ci.svg';
 import ansible_img from '@app/data/pictures/courses/ansible.svg';
 import sikaKraml from '@app/data/pictures/it.jpg';
-// import LectureSectionMdSm from '@app/sika-kraml.de/components/LectureSectionMdSm';
-// import LectureInnerMdSm from '@app/sika-kraml.de/components/LectureInnerMdSm';
+import LectureSectionMdSm from '@app/sika-kraml.de/components/LectureSectionMdSm';
+import LectureInnerMdSm from '@app/sika-kraml.de/components/LectureInnerMdSm';
 
 let style = {
   fontSize: '1.4em',
@@ -45,13 +45,13 @@ const Index = () => (
         <LectureInnerLg link='/schulung/ansible' title='ANSIBLE' image={ansible_img} />
         <LectureInnerLg link='/schulung/gitlab-ci' title='GITLAB-CI' image={gitlab_img} />
       </LectureSectionLg>
-      {/* <LectureSectionMdSm LectureImgHeader='Unsere Schulungen'>
+      <LectureSectionMdSm LectureImgHeader='Unsere Schulungen'>
         <LectureInnerMdSm link='/schulung/docker' title='DOCKER' image={docker_img} text=''/>
         <LectureInnerMdSm link='/schulung/git' title='GIT' image={git_img} text=''/>
         <LectureInnerMdSm link='/schulung/kubernetes' title='KUBERNETES' image={kubernetes_img} text=''/>
         <LectureInnerMdSm link='/schulung/ansible' title='ANSIBLE' image={ansible_img} text=''/>
         <LectureInnerMdSm link='/schulung/gitlab-ci' title='GITLAB-CI' image={gitlab_img} text='' last={true}/>
-      </LectureSectionMdSm> */}
+      </LectureSectionMdSm>
       <ReactMarkdown source={`
 #### Schulung
 All courses are perform as workshops (hands-on). They are build on my long-term knowledge and experience in developing, testing and running software projects. All courses are perform as workshops (hands-on). They are build on my long-term knowledge and experience in developing, testing and running software projects.
