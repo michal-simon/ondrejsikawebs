@@ -5,7 +5,7 @@ import MainBar from '@app/ondrej-sika.cz/components/MainBar';
 import Head from 'next/head'
 
 let site = {
-  lang: 'cs'
+  lang: 'de'
 }
 
 let style = {

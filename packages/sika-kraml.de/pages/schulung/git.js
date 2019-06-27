@@ -10,7 +10,7 @@ import Head from 'next/head';
 import git from '@app/data/pictures/courses/git.svg';
 
 let site = {
-  lang: 'en'
+  lang: 'de'
 }
 
 const Index = () => (
