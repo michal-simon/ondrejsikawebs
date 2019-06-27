@@ -38,16 +38,14 @@ const Index = () => (
     >
     </MainBar>
     <div className='container'>
-      <LectureSectionLg
-      LectureImgHeader='Unsere Schulungen'>
+      <LectureSectionLg LectureImgHeader='Unsere Schulungen'>
         <LectureInnerLg link='/schulung/docker' title='DOCKER' image={docker_img} first={true}/>
         <LectureInnerLg link='/schulung/git' title='GIT' image={git_img} />
         <LectureInnerLg link='/schulung/kubernetes' title='KUBERNETES' image={kubernetes_img} />
         <LectureInnerLg link='/schulung/ansible' title='ANSIBLE' image={ansible_img} />
         <LectureInnerLg link='/schulung/gitlab-ci' title='GITLAB-CI' image={gitlab_img} />
       </LectureSectionLg>
-      {/* <LectureSectionMdSm
-      LectureImgHeader='Unsere Schulungen'>
+      {/* <LectureSectionMdSm LectureImgHeader='Unsere Schulungen'>
         <LectureInnerMdSm link='/schulung/docker' title='DOCKER' image={docker_img} text=''/>
         <LectureInnerMdSm link='/schulung/git' title='GIT' image={git_img} text=''/>
         <LectureInnerMdSm link='/schulung/kubernetes' title='KUBERNETES' image={kubernetes_img} text=''/>
