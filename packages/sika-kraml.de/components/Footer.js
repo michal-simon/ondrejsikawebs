@@ -29,7 +29,7 @@ const Footer = (props) => (
             </div>
           </div>
           <div className='col-4' style={borderLeft}>
-            <h3 className='text-white'>Skkolime:</h3>
+            <h3 className='text-white'>Skolime:</h3>
             {
               props.lecture_links.map((link, l) => {
                 if (typeof link[0] == 'string') {
