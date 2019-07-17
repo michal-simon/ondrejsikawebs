@@ -58,7 +58,7 @@ Kubernetes jsou dnes nejrozšířenější platformou na hostování Docker kont
         }
       />
     </div>
-    <References ids={[ 'oxy', 'oxyCTO']} lang={site.lang} />
+    <References ids={[ 'oxy', 'webglobe-yegon']} lang={site.lang} />
     <Price
       PriceHeader='Cena za školení'
       PriceBtn='Nezávazně poptat školení'>

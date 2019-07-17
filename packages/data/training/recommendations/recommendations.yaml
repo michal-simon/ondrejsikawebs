@@ -66,26 +66,6 @@
       I consulted with Ondrej topics including Blockchain, GIT and development standards. I appreciate Ondrej's knowledge and experience in these areas. Ondrej is open minded person and discussions with him I found very fruitful.
     de: |
       Neco nemecky
-- id: oxyshop
-  name: Ivo Kašpárek
-  role:
-    en: System Administrator team leader
-    se: Systemadministratörsteamledare
-    cs: System Administrator team leader
-  company: oXy Online
-  date:
-    cs: 7.května 2019
-    en: May 7, 2019
-    se: 7.5.2019
-    de: 7.5.2019
-  photo: img/ivokasparek.jpg
-  text:
-    cs: |
-      Školení bylo moc fajn, především šité na míru našim potřebám. Ondra byl připravený a ochotný zodpovědět všechny naše dotazy ať už ohledně gitu, dockeru a kubernetes.
-    se: |
-      Utbildningen var väldigt trevlig, och bra anpassat till våra behov. Ondra var redo och villig att svara på alla våra frågor, oavsett om det gäller Git, Docker, eller Kubernetes.
-    de: |
-      neco nemecky
 - id: dimensiondata
   name: Jan Šafka
   role:

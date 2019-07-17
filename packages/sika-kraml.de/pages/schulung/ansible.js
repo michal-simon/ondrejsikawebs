@@ -7,15 +7,12 @@ import References from '@app/ondrej-sika.cz/components/References';
 import Price from '@app/ondrej-sika.cz/components/Price';
 import Form from '@app/ondrej-sika.cz/components/Form';
 import Head from 'next/head';
-import ansible from '@app/data/pictures/courses/ansible.svg';
+import ansible from '@app/data/pictures/courses/ansible-w.svg';
 
 let site = {
   lang: 'de'
 }
 
-const H3 = (props) => (
-  <h3 className='pt-4 pb-2'>{props.children}</h3>
-)
 
 const Index = () => (
   <div>
@@ -70,7 +67,7 @@ This training is primarily aimed at admins and DevOps who want to start using An
   />
 
   </div>
-    <References ids={['oxy','oxyCTO']} lang={site.lang} />
+    <References ids={['oxy','oxyshop']} lang={site.lang} />
     <Price
       PriceHeader='Pricing'
       PriceBtn='Ask for training'>

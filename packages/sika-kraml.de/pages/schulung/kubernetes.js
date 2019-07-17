@@ -73,7 +73,7 @@ Die Schulung richtet sich an Entwickler und DevOps-Ingenieure, die ihre Dockeran
         }
       />
     </div>
-    <References ids={[ 'oxy', 'oxyCTO']} lang={site.lang} />
+    <References ids={[ 'oxy', 'oxyshop']} lang={site.lang} />
     <Price
       PriceHeader='Preis'
       PriceBtn='Ask for training'>

@@ -57,7 +57,7 @@ Na školení formou workshopu si vysvětlíme proč je dobré Git používat, ja
         }
       />
     </div>
-    <References ids={['vistag', 'oxyCTO']} lang={site.lang} />
+    <References ids={['vistag', 'sit']} lang={site.lang} />
     <Price
       PriceHeader='Cena za školení'
       PriceBtn='Nezávazně poptat školení'>

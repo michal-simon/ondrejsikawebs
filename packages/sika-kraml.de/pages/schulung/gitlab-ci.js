@@ -69,7 +69,7 @@ Die Schulung ist vorranging für Entwickler gedacht, die bereits Gitlab nutzen u
         }
       />
     </div>
-    <References ids={['CMS', 'vse']} lang={site.lang} />
+    <References ids={['NMS', 'vse']} lang={site.lang} />
     <Price
       PriceHeader='Preis'
       PriceBtn='Ask for a training'>

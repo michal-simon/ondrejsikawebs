@@ -1,6 +1,6 @@
 import '@app/ondrej-sika.cz/css';
 import LectureOuterLg from '@app/ondrej-sika.cz/components/LectureOuterLg';
-import LectureImgMdLg from '@app/ondrej-sika.cz/components/LectureImgMdLg';
+import LectureInnerLg from '@app/ondrej-sika.cz/components/LectureInnerLg';
 import LectureImgSm from '@app/ondrej-sika.cz/components/LectureImgSm';
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
 import Head from 'next/head';
@@ -30,8 +30,8 @@ const Index = () => (
         <LectureInnerLg link='/schulung/ansible' title='ANSIBLE' background={ansibleBackground} image={ansible} />
         <LectureInnerLg link='/schulung/gitlab-ci' title='GITLAB-CI' background={gitlabBackground} image={gitlab} />
       </LectureOuterLg>
-      {/* <LectureImgSm
-        LectureImgHeader='Kurzy co školím' /> */}
+      <LectureImgSm
+        LectureImgHeader='Kurzy co školím' />
     </div>
 
   </div>

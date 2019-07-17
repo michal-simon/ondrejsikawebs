@@ -60,7 +60,7 @@ This training course is primarily aimed at developers who don't do versioning or
         }
       />
     </div>
-    <References ids={['vistag', 'oxyCTO']} lang={site.lang} />
+    <References ids={['vistag', 'oxy']} lang={site.lang} />
     <Price
       PriceHeader='Preis'
       PriceBtn='Ask for a training'>

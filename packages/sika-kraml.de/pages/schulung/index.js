@@ -1,6 +1,8 @@
 import '@app/sika-kraml.de/css';
-import LectureImgMdLg from '@app/ondrej-sika.cz/components/LectureImgMdLg';
-import LectureImgSm from '@app/ondrej-sika.cz/components/LectureImgSm';
+import LectureSectionLg from '@app/ondrej-sika.cz/components/LectureSectionLg';
+import LectureInnerLg from '@app/ondrej-sika.cz/components/LectureInnerLg';
+import LectureSectionMdSm from '@app/ondrej-sika.cz/components/LectureSectionMdSm';
+import LectureInnerMdSm from '@app/ondrej-sika.cz/components/LectureInnerMdSm';
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
 import Head from 'next/head'
 
@@ -21,10 +23,20 @@ const Index = () => (
       MainBarHeader='Nabídka Školení'
     />
     <div className='container'>
-      <LectureImgMdLg
-        LectureImgHeader='Kurzy co školím'/>
-      <LectureImgSm
-      LectureImgHeader='Kurzy co školím'/>
+      <LectureSectionLg LectureImgHeader='Unsere Schulungen'>
+        <LectureInnerLg link='/schulung/docker' title='DOCKER' image={docker_img} first={true} />
+        <LectureInnerLg link='/schulung/git' title='GIT' image={git_img} />
+        <LectureInnerLg link='/schulung/kubernetes' title='KUBERNETES' image={kubernetes_img} />
+        <LectureInnerLg link='/schulung/ansible' title='ANSIBLE' image={ansible_img} />
+        <LectureInnerLg link='/schulung/gitlab-ci' title='GITLAB-CI' image={gitlab_img} />
+      </LectureSectionLg>
+      <LectureSectionMdSm LectureImgHeader='Unsere Schulungen'>
+        <LectureInnerMdSm link='/schulung/docker' title='DOCKER' image={docker_img} text='' />
+        <LectureInnerMdSm link='/schulung/git' title='GIT' image={git_img} text='' />
+        <LectureInnerMdSm link='/schulung/kubernetes' title='KUBERNETES' image={kubernetes_img} text='' />
+        <LectureInnerMdSm link='/schulung/ansible' title='ANSIBLE' image={ansible_img} text='' />
+        <LectureInnerMdSm link='/schulung/gitlab-ci' title='GITLAB-CI' image={gitlab_img} text='' last={true} />
+      </LectureSectionMdSm>
     </div>
 
   </div>

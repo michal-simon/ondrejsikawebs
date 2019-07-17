@@ -72,7 +72,7 @@ Ansible si společně nainstalujeme a popíšeme si jak pracuje a základní kon
   />
 
   </div>
-    <References ids={['oxy','oxyCTO']} lang={site.lang} />
+    <References ids={['oxy','fio']} lang={site.lang} />
     <Price
       PriceHeader='Cena za školení'
       PriceBtn='Nezávazně poptat školení'>

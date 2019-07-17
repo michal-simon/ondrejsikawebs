@@ -56,7 +56,7 @@ Na školení formou workshopu si vysvětlíme proč je dobré CI používat, uk�
         }
       />
     </div>
-    <References ids={['CMS', 'vse']} lang={site.lang} />
+    <References ids={['NMS', 'vse']} lang={site.lang} />
     <Price
       PriceHeader='Cena za školení'
       PriceBtn='Nezávazně poptat školení'>
