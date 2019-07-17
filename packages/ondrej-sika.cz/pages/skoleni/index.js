@@ -5,6 +5,12 @@ import LectureImgSm from '@app/ondrej-sika.cz/components/LectureImgSm';
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
 import Head from 'next/head';
 
+import docker from '@app/data/pictures/courses/docker-w.svg';
+import git from '@app/data/pictures/courses/git-w.svg';
+import kubernetes from '@app/data/pictures/courses/kubernetes.svg';
+import gitlab from '@app/data/pictures/courses/gitlab-ci.svg';
+import ansible from '@app/data/pictures/courses/ansible-w.svg';
+
 let site = {
   lang: 'cs'
 }
@@ -13,6 +19,11 @@ let style = {
   fontSize: '1.4em',
   fontWeight: 'bold',
 }
+var dockerBackground = 'blue'
+var gitBackground = '#EA4F33'
+var kubernetesBackground = '#52ABE3'
+var gitlabBackground = '#6F3BBC'
+var ansibleBackground = '#2c2c2a'
 
 const Index = () => (
   <div>

@@ -1,8 +1,8 @@
 import '@app/sika-kraml.de/css';
-import LectureSectionLg from '@app/ondrej-sika.cz/components/LectureSectionLg';
-import LectureInnerLg from '@app/ondrej-sika.cz/components/LectureInnerLg';
-import LectureSectionMdSm from '@app/ondrej-sika.cz/components/LectureSectionMdSm';
-import LectureInnerMdSm from '@app/ondrej-sika.cz/components/LectureInnerMdSm';
+import LectureSectionLg from '@app/sika-kraml.de/components/LectureSectionLg';
+import LectureInnerLg from '@app/sika-kraml.de/components/LectureInnerLg';
+import LectureSectionMdSm from '@app/sika-kraml.de/components/LectureSectionMdSm';
+import LectureInnerMdSm from '@app/sika-kraml.de/components/LectureInnerMdSm';
 import MainBar from '@app/ondrej-sika.cz/components/MainBar';
 import Head from 'next/head'
 
