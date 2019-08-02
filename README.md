@@ -12,7 +12,7 @@
 
 ### Locations of Sites Sources
 
-Those links also works in VS Code
+Those links also work in VS Code
 
 #### UK
 
