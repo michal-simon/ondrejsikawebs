@@ -12,5 +12,8 @@
   },
   "dependencies": {
     "@app/ondrej-sika.cz": "^0.0.0"
+  },
+  "devDependencies": {
+    "common-tags": "~1.8.0"
   }
 }
