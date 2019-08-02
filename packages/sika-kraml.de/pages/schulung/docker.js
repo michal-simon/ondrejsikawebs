@@ -87,14 +87,14 @@ Die Schulung ist vorranging für Teilnehmer gedacht, die mit Docker keine oder n
         <Form
           course='Docker'
           FormName='Name *'
-          FromNamePlaceholder='xx xx'
-          FormCompany='Company'
-          FormCompanyPlaceholder='xx'
-          FormEmail='E-mail *'
-          FormEmailPlaceholder='xx@xx.com'
-          FormPhone='Phone *'
-          FormPhonePlaceholder='+420111222333'
-          FormSent='Sent'
+          FromNamePlaceholder='Max Mustermann'
+          FormCompany='Firma'
+          FormCompanyPlaceholder='Muster GmbH'
+          FormEmail='E-Mail *'
+          FormEmailPlaceholder='mm@muster.de'
+          FormPhone='Telefon *'
+          FormPhonePlaceholder='0176 0000000'
+          FormSent='Absenden'
         />
       </TextArea>
     </div>

@@ -85,14 +85,14 @@ This training is primarily aimed at admins and DevOps who want to start using An
         <Form
           course='Ansible'
           FormName='Name *'
-          FromNamePlaceholder='xx xx'
-          FormCompany='Company'
-          FormCompanyPlaceholder='xx'
-          FormEmail='E-mail *'
-          FormEmailPlaceholder='xx@xx.com'
-          FormPhone='Phone *'
-          FormPhonePlaceholder='+420111222333'
-          FormSent='Sent'
+          FromNamePlaceholder='Max Mustermann'
+          FormCompany='Firma'
+          FormCompanyPlaceholder='Muster GmbH'
+          FormEmail='E-Mail *'
+          FormEmailPlaceholder='mm@muster.de'
+          FormPhone='Telefon *'
+          FormPhonePlaceholder='0176 0000000'
+          FormSent='Absenden'
         />
       </TextArea>
 

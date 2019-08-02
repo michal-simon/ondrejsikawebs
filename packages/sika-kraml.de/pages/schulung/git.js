@@ -78,14 +78,14 @@ This training course is primarily aimed at developers who don't do versioning or
         <Form
           course='Git'
           FormName='Name *'
-          FromNamePlaceholder='xx xx'
-          FormCompany='Company'
-          FormCompanyPlaceholder='xx'
-          FormEmail='E-mail *'
-          FormEmailPlaceholder='xx@xx.uk'
-          FormPhone='Phone *'
-          FormPhonePlaceholder='+420111222333'
-          FormSent='Sent'
+          FromNamePlaceholder='Max Mustermann'
+          FormCompany='Firma'
+          FormCompanyPlaceholder='Muster GmbH'
+          FormEmail='E-Mail *'
+          FormEmailPlaceholder='mm@muster.de'
+          FormPhone='Telefon *'
+          FormPhonePlaceholder='0176 0000000'
+          FormSent='Absenden'
         />
       </TextArea>
 
