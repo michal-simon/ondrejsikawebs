@@ -18,15 +18,15 @@ import LectureInnerMdSm from '@app/sika-kraml.de/components/LectureInnerMdSm';
 let style = {
   fontSize: '1.4em',
   fontWeight: 'bold',
-}
+};
 
 var white = {
   color: 'white',
-}
+};
 
 var colorText = {
   color: '#09AEAB',
-}
+};
 
 const Index = () => (
   <div>
@@ -90,6 +90,6 @@ All courses are perform as workshops (hands-on). They are build on my long-term 
     </div>
   </div>
 
-)
+);
 
 export default Index

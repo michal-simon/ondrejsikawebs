@@ -7,7 +7,7 @@ import Head from 'next/head';
 
 let site = {
   lang: 'de'
-}
+};
 
 const Index = () => (
   <div>
@@ -36,6 +36,6 @@ const Index = () => (
       </TextArea>
     </div>
   </div>
-)
+);
 
 export default Index

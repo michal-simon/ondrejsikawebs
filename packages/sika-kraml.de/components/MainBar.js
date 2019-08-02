@@ -1,10 +1,10 @@
 var mainBar = {
   background: '#00212C',
-}
+};
 
 var colorText = {
   color: '#09AEAB',
-}
+};
 
 const MainBar = (props) => (
   <div>
@@ -16,6 +16,6 @@ const MainBar = (props) => (
       </div>
     </div>
   </div>
-)
+);
 
 export default MainBar

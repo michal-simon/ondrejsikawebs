@@ -11,7 +11,7 @@ import docker from '@app/data/pictures/courses/docker.svg';
 
 let site = {
   lang: 'de'
-}
+};
 
 const Index = () => (
   <div>
@@ -99,6 +99,6 @@ Die Schulung ist vorranging für Teilnehmer gedacht, die mit Docker keine oder n
       </TextArea>
     </div>
   </div>
-)
+);
 
 export default Index

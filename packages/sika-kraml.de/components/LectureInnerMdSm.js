@@ -5,14 +5,14 @@ var img = {
   margin: 'auto',
   padding: '15px',
   display: 'inherit',
-}
+};
 
 class LectureInnerMdSm extends React.Component {
   render() {
     var box = {
       flex: '0 0 20%',
       maxWidth: '20%',
-    }
+    };
     if (! this.props.last) {
       box.borderLeft = '1px solid #51AFAB'
     }

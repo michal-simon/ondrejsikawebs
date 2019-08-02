@@ -10,6 +10,6 @@ const TextWithImg = (props) => (
       </div>
     </div>
   </div>
-)
+);
 
 export default TextWithImg

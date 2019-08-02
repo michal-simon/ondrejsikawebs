@@ -1,7 +1,7 @@
 var Align = {
   textAlign: 'center',
   fontSize: '35px',
-}
+};
 
 const LectureImg = (props) => (
   <div className='d-none d-md-block d-lg-none'>
@@ -14,6 +14,6 @@ const LectureImg = (props) => (
       </div>
     </div>
   </div>
-)
+);
 
 export default LectureImg

@@ -11,7 +11,7 @@ import git from '@app/data/pictures/courses/git.svg';
 
 let site = {
   lang: 'de'
-}
+};
 
 const Index = () => (
   <div>
@@ -92,6 +92,6 @@ This training course is primarily aimed at developers who don't do versioning or
 
     </div>
   </div>
-)
+);
 
 export default Index

@@ -11,7 +11,7 @@ import kubernetes from '@app/data/pictures/courses/kubernetes.svg';
 
 let site = {
   lang: 'de'
-}
+};
 
 const Index = () => (
   <div>
@@ -103,6 +103,6 @@ Die Schulung richtet sich an Entwickler und DevOps-Ingenieure, die ihre Dockeran
       </TextArea>
     </div>
   </div>
-)
+);
 
 export default Index

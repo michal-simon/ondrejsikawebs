@@ -2,7 +2,7 @@ import Former2 from "@app/common/components/Former2"
 import site from "@app/sika-kraml.de/config"
 var color = {
   background: '#4EA9A6',
-}
+};
 
 const IntroBar = (props) => (
   <div style={ color } >
@@ -25,6 +25,6 @@ const IntroBar = (props) => (
       </div>
     </div>
   </div>
-)
+);
 
 export default IntroBar

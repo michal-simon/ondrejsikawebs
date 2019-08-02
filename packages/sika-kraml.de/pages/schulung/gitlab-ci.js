@@ -11,7 +11,7 @@ import gitlab from '@app/data/pictures/courses/gitlab-ci.svg';
 
 let site = {
   lang: 'de'
-}
+};
 
 const Index = () => (
   <div>
@@ -101,6 +101,6 @@ Die Schulung ist vorranging für Entwickler gedacht, die bereits Gitlab nutzen u
 
     </div>
   </div>
-)
+);
 
 export default Index

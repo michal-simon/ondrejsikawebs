@@ -11,7 +11,7 @@ import ansible from '@app/data/pictures/courses/ansible-w.svg';
 
 let site = {
   lang: 'de'
-}
+};
 
 
 const Index = () => (
@@ -99,6 +99,6 @@ This training is primarily aimed at admins and DevOps who want to start using An
 
     </div>
   </div>
-)
+);
 
 export default Index

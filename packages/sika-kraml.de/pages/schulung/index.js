@@ -8,12 +8,12 @@ import Head from 'next/head'
 
 let site = {
   lang: 'de'
-}
+};
 
 let style = {
   fontSize: '1.4em',
   fontWeight: 'bold',
-}
+};
 
 const Index = () => (
   <div>
@@ -40,6 +40,6 @@ const Index = () => (
     </div>
 
   </div>
-)
+);
 
 export default Index

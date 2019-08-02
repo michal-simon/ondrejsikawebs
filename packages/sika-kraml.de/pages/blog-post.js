@@ -6,23 +6,23 @@ import Head from 'next/head'
 
 let site = {
   lang: 'cs'
-}
+};
 
 let style = {
   fontSize: '1.4em',
   fontWeight: 'bold',
-}
+};
 
 import posts from '@app/ondrej-sika.cz/data/blog-posts.yaml'
 
-let posts_id_map = {}
+let posts_id_map = {};
 posts.map((element, i) => {
   posts_id_map[element.id] = i
-})
+});
 
 class BlogPost extends React.Component {
   render() {
-    let post = posts[posts_id_map[this.props.router.query.post_id]]
+    let post = posts[posts_id_map[this.props.router.query.post_id]];
     return (
       <div>
         <Head>

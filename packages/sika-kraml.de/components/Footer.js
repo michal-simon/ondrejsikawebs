@@ -3,13 +3,13 @@ import site from '@app/sika-kraml.de/config'
 
 var styleFooter = {
   background: '#00212C',
-}
+};
 var colorText = {
   color: '#09AEAB',
-}
+};
 var borderLeft = {
   borderLeft: '1px solid #51AFAB',
-}
+};
 
 const Footer = (props) => (
   <div>
@@ -69,7 +69,7 @@ const Footer = (props) => (
       </div>
     </div>
   </div>
-)
+);
 
 export default Footer
 

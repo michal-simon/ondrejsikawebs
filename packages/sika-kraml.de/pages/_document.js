@@ -26,7 +26,7 @@ let DevelopmentBar = ()=> {
   else {
     return <></>
   }
-}
+};
 
 class OndrejSikaDocument extends Document {
   static getInitialProps(ctx) {
