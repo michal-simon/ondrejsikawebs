@@ -29,7 +29,7 @@ const Footer = (props) => (
             </div>
           </div>
           <div className='col-4' style={borderLeft}>
-            <h3 className='text-white'>Skolime:</h3>
+            <h3 className='text-white'>Unsere Schulungen:</h3>
             {
               props.lecture_links.map((link, l) => {
                 if (typeof link[0] == 'string') {
@@ -48,8 +48,8 @@ const Footer = (props) => (
               <a href='tel:+4901773586458' className='a-underline' style={colorText}>+49 (0) 177 358658</a></p>
             <div className='row'>
               <a href='https://www.linkedin.com/in/ji%C5%99%C3%AD-kraml-60ba51b4/' className='a-underline pl-3' style={colorText}><img src={props.linkedinImg} /></a>
-              <a href='' className='a-underline' style={colorText}><img src={props.githubImg} /></a>
-              <a href='https://www.facebook.com/jirka.kraml' className='a-underline' style={colorText}><img src={props.facebookImg} /></a>
+              <!-- TODO icon won't display, fix that -->
+              <!--<a href='https://www.xing.com/profile/Jiri_Kraml' className='a-underline' style={colorText}><img src={props.xingImg} /></a>-->
             </div>
           </div>
         </div>

@@ -12,6 +12,7 @@ import twitter from '@app/data/pictures/social-networks/twitter.svg';
 import facebook from '@app/data/pictures/social-networks/facebook.svg';
 import github from '@app/data/pictures/social-networks/github.svg';
 import instagram from '@app/data/pictures/social-networks/instagram.svg';
+import xing from '@app/data/pictures/social-networks/xing.svg';
 
 let DevelopmentBar = ()=> {
   if (process.env.NODE_ENV == 'development') {
@@ -73,6 +74,7 @@ class OndrejSikaDocument extends Document {
             instagramImg={instagram}
             githubImg={github}
             twitterImg={twitter}
+            xingImg={xing}
 
             lecture_links={[
               ['Docker','/schulung/docker'],
