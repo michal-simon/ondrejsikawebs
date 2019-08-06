@@ -63,11 +63,10 @@ class OndrejSikaDocument extends Document {
           <div className='content'>
             <Main />
           </div>
-          <Newsletter></Newsletter>
+          <Newsletter NewsletterBtn='Subscribe'/>
           <Footer
             col4_NewsHeader='Subscribe for a Newsletter?'
             col4_NewsText='NEJAKY ZAJIMAVY TEXT TYPU : Odebírejte nas newsletter a budte v obraze!'
-            NewsletterBtn='Subscribe'
 
             linkedinImg={linkedin}
             facebookImg={facebook}
