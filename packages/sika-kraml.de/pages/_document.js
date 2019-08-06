@@ -56,7 +56,7 @@ class OndrejSikaDocument extends Document {
                 ['KUBERNETES', '/schulung/kubernetes'],
                 ['ANSIBLE', '/schulung/ansible'],
               ]],
-              ['TERMINY', '/terms'],
+              ['TERMINE', '/dates'],
               ['KONTAKT', '/contact'],
             ]}
           />
@@ -65,9 +65,6 @@ class OndrejSikaDocument extends Document {
           </div>
           <Newsletter NewsletterBtn='Subscribe'/>
           <Footer
-            col4_NewsHeader='Subscribe for a Newsletter?'
-            col4_NewsText='NEJAKY ZAJIMAVY TEXT TYPU : Odebírejte nas newsletter a budte v obraze!'
-
             linkedinImg={linkedin}
             facebookImg={facebook}
             instagramImg={instagram}
