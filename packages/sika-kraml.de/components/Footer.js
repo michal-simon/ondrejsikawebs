@@ -48,8 +48,8 @@ const Footer = (props) => (
               <a href='tel:+4901773586458' className='a-underline' style={colorText}>+49 (0) 177 358658</a></p>
             <div className='row'>
               <a href='https://www.linkedin.com/in/ji%C5%99%C3%AD-kraml-60ba51b4/' className='a-underline pl-3' style={colorText}><img src={props.linkedinImg} /></a>
-              <!-- TODO icon won't display, fix that -->
-              <!--<a href='https://www.xing.com/profile/Jiri_Kraml' className='a-underline' style={colorText}><img src={props.xingImg} /></a>-->
+              {/*TODO icon won't display, fix that*/}
+              {/*<a href='https://www.xing.com/profile/Jiri_Kraml' className='a-underline' style={colorText}><img src={props.xingImg} /></a>*/}
             </div>
           </div>
         </div>
