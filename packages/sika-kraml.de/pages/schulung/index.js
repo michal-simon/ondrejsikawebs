@@ -10,6 +10,8 @@ let site = {
   lang: 'de'
 };
 
+{/* TODO translate */}
+
 let style = {
   fontSize: '1.4em',
   fontWeight: 'bold',

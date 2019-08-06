@@ -6,6 +6,8 @@ let site = {
   lang: 'cs'
 };
 
+{/* TODO translate */}
+
 const Index = () => (
   <div>
     <MainBar MainBarHeader='Form was succesfully send'/>
