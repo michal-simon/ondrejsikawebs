@@ -8,12 +8,14 @@ import Price from '@app/ondrej-sika.cz/components/Price';
 import Form from '@app/ondrej-sika.cz/components/Form';
 import Head from 'next/head';
 import ansible from '@app/data/pictures/courses/ansible-w.svg';
+import {stripIndent} from 'common-tags'
 
 let site = {
   lang: 'de'
 };
 
-{/* TODO translate */}
+{/* TODO translate */
+}
 
 const Index = () => (
   <div>
@@ -25,60 +27,61 @@ const Index = () => (
       logo={ansible}>
     </Header>
     <div className='container course-page'>
-    <ReactMarkdown source={`
+      <ReactMarkdown source={stripIndent`
+      ### What is Ansible?
+      Ansible is a tool for mass configuration and deployment management. You declare the desired state of the server and services and Ansible will do the execution. You don't have to worry about the state the current server or applications are in now; Ansible turns it into desired state. The entire configuration is versioned using Git, and you will never lose view of where everything is being deployed or miss any critical steps during the process. Ansible will help you with application deployment and quicker and safer server administration.
+      
+      ### Course Description
+      The training is ran as a two-day hands-on workshop, where you can try what you learn in practice. We will install Ansible together and describe how it works and introduce the basic concepts. We will see how to configure a server (tester on DigitalOcean) and deploy an application from the beginning to the end. Starting with the installation of system packages, application download from Git, creation of templates for configuration scripts, and secrets setup (e.g., passwords). After this course, you will be able to use Ansible on a daily basis and simplify deployment and configuration routines.
+      
+      ### Course Outline
+      - Basic insights into automation
+      - Basic insights into Ansible
+      - Ansible installation (for those who did not install at home)
+      - Basic Ansible controls
+      - Playbooks
+      - Templates
+      - Secrets
+      - Writing own modules
+      - Ansible & CI/CD (Gitlab CI)
+      
+      ### Who Should Attend
+      This training is primarily aimed at admins and DevOps who want to start using Ansible. At the same time,developers who deploy their applications (even into test environments) and want to simplify this process, will also find it useful.
+      `}
+      />
 
-### What is Ansible?
-Ansible is a tool for mass configuration and deployment management. You declare the desired state of the server and services and Ansible will do the execution. You don't have to worry about the state the current server or applications are in now; Ansible turns it into desired state. The entire configuration is versioned using Git, and you will never lose view of where everything is being deployed or miss any critical steps during the process. Ansible will help you with application deployment and quicker and safer server administration.
+      <TwoCol
+        col1={
+          <ReactMarkdown source={stripIndent`
+            #### Skill Requirements
+            - Basic Linux knowledge
+            - Basic Terminal knowledge
+            `} escapeHtml={false}
+          />
+        }
+        col2={
+          <ReactMarkdown source={stripIndent`
+            #### Technical Requirements
+            - Have Ansible installed, instructions: [here](/ansible/instructions)
+            - Access to the internet (https, ssh) - better without corporate proxy
+            `} escapeHtml={false}
+          />
+        }
+      />
 
-### Course Description
-The training is ran as a two-day hands-on workshop, where you can try what you learn in practice. We will install Ansible together and describe how it works and introduce the basic concepts. We will see how to configure a server (tester on DigitalOcean) and deploy an application from the beginning to the end. Starting with the installation of system packages, application download from Git, creation of templates for configuration scripts, and secrets setup (e.g., passwords). After this course, you will be able to use Ansible on a daily basis and simplify deployment and configuration routines.
-
-### Course Outline
-- Basic insights into automation
-- Basic insights into Ansible
-- Ansible installation (for those who did not install at home)
-- Basic Ansible controls
-- Playbooks
-- Templates
-- Secrets
-- Writing own modules
-- Ansible & CI/CD (Gitlab CI)
-
-### Who Should Attend
-This training is primarily aimed at admins and DevOps who want to start using Ansible. At the same time,developers who deploy their applications (even into test environments) and want to simplify this process, will also find it useful.
-`}/>
-
-  <TwoCol
-    col1={
-      <ReactMarkdown source={`
-
-#### Skill Requirements
-- Basic Linux knowledge
-- Basic Terminal knowledge
-      `} escapeHtml={false}/>
-    }
-    col2={
-      <ReactMarkdown source={`
-
-#### Technical Requirements
-- Have Ansible installed, instructions: [here](/ansible/instructions)
-- Access to the internet (https, ssh) - better without corporate proxy
-      `} escapeHtml={false}/>
-    }
-  />
-
-  </div>
+    </div>
     {/* TODO references is broken, try to fix it */}
-    {/*<References ids={['oxy','oxyshop']} lang={site.lang} />*/ }
+    {/*<References ids={['oxy','oxyshop']} lang={site.lang} />*/}
     <Price
       PriceHeader='Pricing'
       PriceBtn='Ask for training'>
       Price for the two-day hands-on Ansible training<br/><br/>
-      <ReactMarkdown source={`
-- Open to public (self-funded): 800 GBP excl. VAT
-- Open to public (company-funded): 1000 GBP excl. VAT
-- On-site training (on-site): 3000 GBP excl. VAT
-`} escapeHtml={false}/>
+      <ReactMarkdown source={stripIndent`
+        - Open to public (self-funded): 800 GBP excl. VAT
+        - Open to public (company-funded): 1000 GBP excl. VAT
+        - On-site training (on-site): 3000 GBP excl. VAT
+        `} escapeHtml={false}
+      />
     </Price>
     <div className='container'>
       <TextArea
@@ -97,8 +100,6 @@ This training is primarily aimed at admins and DevOps who want to start using An
           FormSent='Absenden'
         />
       </TextArea>
-
-
     </div>
   </div>
 );

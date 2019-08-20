@@ -59,11 +59,12 @@ const Index = () => (
         <LectureInnerMdSm link='/schulung/gitlab-ci' title='GITLAB-CI' image={gitlab_img} text='' last={true}/>
       </LectureSectionMdSm>
       <ReactMarkdown source={stripIndent`
-      #### Schulung
-      Alle Kurse werden als Hands-On-Workshops durchgeführt.
-      Sie basieren auf unserem tiefgründigen Verständnis der jeweiligen Technologien und 
-      unserer langjährigen Erfahrung mit Entwicklung, Test und Betrieb von Softwareprojekten.
-      `} escapeHtml={false}/>
+        #### Schulung
+        Alle Kurse werden als Hands-On-Workshops durchgeführt.
+        Sie basieren auf unserem tiefgründigen Verständnis der jeweiligen Technologien und 
+        unserer langjährigen Erfahrung mit Entwicklung, Test und Betrieb von Softwareprojekten.
+        `} escapeHtml={false}
+      />
     </div>
     <div style={{background: '#4EA9A5'}}>
       <div className='d-flex flex-row container pt-3 pb-3'>
