@@ -14,7 +14,7 @@ import ansible_img from '@app/data/pictures/courses/ansible.svg';
 import sikaKraml from '@app/data/pictures/it.jpg';
 import LectureSectionMdSm from '@app/sika-kraml.de/components/LectureSectionMdSm';
 import LectureInnerMdSm from '@app/sika-kraml.de/components/LectureInnerMdSm';
-import {stripIndent} from "common-tags/es";
+import {stripIndent} from 'common-tags'
 
 let style = {
   fontSize: '1.4em',
