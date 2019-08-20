@@ -68,7 +68,8 @@ This training is primarily aimed at admins and DevOps who want to start using An
   />
 
   </div>
-    <References ids={['oxy','oxyshop']} lang={site.lang} />
+    {/* TODO references is broken, try to fix it */}
+    {/*<References ids={['oxy','oxyshop']} lang={site.lang} />*/ }
     <Price
       PriceHeader='Pricing'
       PriceBtn='Ask for training'>

@@ -75,7 +75,8 @@ Die Schulung richtet sich an Entwickler und DevOps-Ingenieure, die ihre Dockeran
         }
       />
     </div>
-    <References ids={[ 'oxy', 'oxyshop']} lang={site.lang} />
+    {/* TODO references is broken, try to fix it */}
+    {/*<References ids={[ 'oxy', 'oxyshop']} lang={site.lang} />*/}
     <Price
       PriceHeader='Preis'
       PriceBtn='Ask for training'>
