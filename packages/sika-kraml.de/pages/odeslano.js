@@ -4,19 +4,19 @@ import ReactMarkdown from 'react-markdown';
 import {stripIndent} from 'common-tags'
 
 let site = {
-  lang: 'cs'
+  lang: 'de'
 };
 
-{/* TODO translate */}
+// TODO can we rename this file to "sent.js"?
 
 const Index = () => (
   <div>
-    <MainBar MainBarHeader='Form was succesfully send'/>
+    <MainBar MainBarHeader='Anfrage abgesendet'/>
     <div className='container pt-4'>
       <ReactMarkdown source={stripIndent`
-        I will contact you as soon as possible.
+        Wir werden Sie zum frühesmöglichen Zeitpunkt kontaktieren.
         
-        If you have any questions write me on <ondrej@ondrejsika.com>.
+        Fall Sie noch Fragen haben, kontaktieren Sie uns unter <ondrej@ondrejsika.com>.
         `}
       />
       <div style={{height: '100px'}}></div>
