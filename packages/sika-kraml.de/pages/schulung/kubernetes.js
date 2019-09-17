@@ -14,9 +14,6 @@ let site = {
   lang: 'de'
 };
 
-{/* TODO translate */
-}
-
 const Index = () => (
   <div>
     <Head>
@@ -36,24 +33,19 @@ const Index = () => (
         
         ### Ondrej Sika (englisch)
         
-        My name is Ondřej Šika, I develop software at Slush Pool and hold workshops. I've held Kubernetes workshops at companies like CGI or Webglobe - Yergeon. I mostly teach Docker which is very closely related to Kubernetes.
+        My name is Ondřej Šika, I develop software at Slush Pool and hold workshops.
+        I've held Kubernetes workshops at companies like CGI or Webglobe - Yergeon.
+        I mostly teach Docker which is very closely related to Kubernetes.
         
         Kubernetes is the platform of choice for most of my projects, as it's one of the easiest ways of running Docker applications.
         
-        ### Jiri Kraml (deutch)
-        
-        xxx
-        xxx
-        xxx
-        xxx
-        
         ### Inhalt
-        - Teoretische Einführung in Kubernetes
+        - Theoretische Einführung in Kubernetes
         - Installation von Minikube und kubectl (für die, die es nicht schon zu Hause installiert haben)
         - Beschreibung der Kubernetes Komponenten
         - Deployment in Kubernetes
         - Rechteverwaltung im Kubernetes Cluster
-        - Teoretische Einführung in Helm Pakete
+        - Theoretische Einführung in Helm Pakete
         - Installation und Deployment mit Helm
         - Schreiben eingener Helm Pakete
         

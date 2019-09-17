@@ -14,9 +14,6 @@ let site = {
   lang: 'de'
 };
 
-{/* TODO translate */
-}
-
 const Index = () => (
   <div>
     <Head>
