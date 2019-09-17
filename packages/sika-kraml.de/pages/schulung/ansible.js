@@ -14,56 +14,65 @@ let site = {
   lang: 'de'
 };
 
-{/* TODO translate */
-}
-
 const Index = () => (
   <div>
     <Head>
     </Head>
     <Header
       websiteHeader='Ansible Training'
-      inquiryBtn='Ask for training'
+      inquiryBtn='Anfragen'
       logo={ansible}>
     </Header>
     <div className='container course-page'>
       <ReactMarkdown source={stripIndent`
-      ### What is Ansible?
-      Ansible is a tool for mass configuration and deployment management. You declare the desired state of the server and services and Ansible will do the execution. You don't have to worry about the state the current server or applications are in now; Ansible turns it into desired state. The entire configuration is versioned using Git, and you will never lose view of where everything is being deployed or miss any critical steps during the process. Ansible will help you with application deployment and quicker and safer server administration.
+      ### Was ist Ansible?
+      Ansible ermöglicht eine deklarative Beschreibung von Serverkonfigurationen und Deploymentprozessen.
+      Sie beschreiben den gewünschten Zielzustand und Ansible erledigt den Rest.
+      Dadurch behalten Sie stets die Übersicht und vergessen keine kritischen Prozessschritte.
+      Zudem lässt sich die textbasierte Konfiguration hervorragend mit Git versionieren. 
+      Ansible hilft Ihnen, Anwendung schneller zu deployen und Server sicherer zu administieren.
       
-      ### Course Description
-      The training is ran as a two-day hands-on workshop, where you can try what you learn in practice. We will install Ansible together and describe how it works and introduce the basic concepts. We will see how to configure a server (tester on DigitalOcean) and deploy an application from the beginning to the end. Starting with the installation of system packages, application download from Git, creation of templates for configuration scripts, and secrets setup (e.g., passwords). After this course, you will be able to use Ansible on a daily basis and simplify deployment and configuration routines.
+      ### Kursbeschreibung
+      Der Kurs wird als zweitägiger Workshop abgehalten, damit Sie das Gelernte auch gleich praktisch ausprobieren können.
+      Wir installieren Ansible und erläutern die grundlegenden Konzepte.
+      Wir werden sehen, wie man einen Server konfiguriert (eine Test-VM bei DigitalOcean) und deployen eine Anwendung von Anfang bis Ende.
+      Dies beinhaltet die Installation von Systempaketen, das Runterladen der Anwedung mit Git,
+      das Erstellen von Konfiurationsdateien aus Templates und das einrichten von Credential (z.B. Passwörtern).
+      Nach diesem Kurs werden Sie in der Lage sein, Ansible im täglichen Betrieb zu nutzen und Ihre Konfigurations- und Deploymentvorgänge zu vereinfachen.
       
-      ### Course Outline
-      - Basic insights into automation
-      - Basic insights into Ansible
-      - Ansible installation (for those who did not install at home)
-      - Basic Ansible controls
+      ### Stichpunkte
+      - Einführung in die Automatisierung
+      - Einführung in Ansible
+      - Ansible Installation (für jene, die es nicht schon vorher installiert haben)
+      - Grundlegende Bedienung von Ansible
       - Playbooks
       - Templates
       - Secrets
-      - Writing own modules
+      - Eigene Module schreiben
       - Ansible & CI/CD (Gitlab CI)
       
-      ### Who Should Attend
-      This training is primarily aimed at admins and DevOps who want to start using Ansible. At the same time,developers who deploy their applications (even into test environments) and want to simplify this process, will also find it useful.
+      ### Für wen der Kurs bestimmt ist
+      Der Kurs ist in erster Linie für Admins und DevOps gedacht, die in Ansible einsteigen wollen.
+      Entwickler, die ihre eigenen Anwendungen deployen (auch in Testumgebungen) und diesen Vorgang vereinfachen wollen,
+      werden diesen Kurs ebenfalls nützlich finden.
       `}
       />
 
       <TwoCol
         col1={
           <ReactMarkdown source={stripIndent`
-            #### Skill Requirements
-            - Basic Linux knowledge
-            - Basic Terminal knowledge
+            #### Notwendige Vorkenntnisse
+            - Grundlagenwissen Linux 
+            - Vertrautheit mit der Kommandozeile
             `} escapeHtml={false}
           />
         }
         col2={
+          /* TODO where are the ansible instructions? we need to translate them to German too */
           <ReactMarkdown source={stripIndent`
-            #### Technical Requirements
-            - Have Ansible installed, instructions: [here](/ansible/instructions)
-            - Access to the internet (https, ssh) - better without corporate proxy
+            #### Technische Vorraussetzungen
+            - Ansibleinstallation, Anleitung [hier](/ansible/instructions)
+            - Internetzugang (https, ssh) - vorzugsweise ohne Proxy
             `} escapeHtml={false}
           />
         }
@@ -73,20 +82,20 @@ const Index = () => (
     {/* TODO references is broken, try to fix it */}
     {/*<References ids={['oxy','oxyshop']} lang={site.lang} />*/}
     <Price
-      PriceHeader='Pricing'
-      PriceBtn='Ask for training'>
-      Price for the two-day hands-on Ansible training<br/><br/>
+      PriceHeader='Preis'
+      PriceBtn='Anfragen'>
+      Preis für den zweitägigen Ansible Hands-On-Workshop<br/><br/>
       <ReactMarkdown source={stripIndent`
-        - Open to public (self-funded): 800 GBP excl. VAT
-        - Open to public (company-funded): 1000 GBP excl. VAT
-        - On-site training (on-site): 3000 GBP excl. VAT
+        - Öffentlicher Termin (Privatkunde): _ € zzgl. MwSt.
+        - Öffentlicher Termin (Unternehmenskunde): _ € zzgl. MwSt.
+        - On-Premise Schulung: _ € zzgl. MwSt.
         `} escapeHtml={false}
       />
     </Price>
     <div className='container'>
       <TextArea
-        TextHeader='Ask for company training on Ansible'
-        TextParagraph='Fields marked with * are required.'>
+        TextHeader='Workshop anfragen'
+        TextParagraph='Pflichfelder sind mit * markiert..'>
         <Form
           course='Ansible'
           FormName='Name *'
