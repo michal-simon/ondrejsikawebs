@@ -10,7 +10,7 @@ let site = {
   lang: 'de'
 };
 
-{/* TODO translate */}
+{/* TODO how do we get to this page? can we delete it? */}
 
 let style = {
   fontSize: '1.4em',

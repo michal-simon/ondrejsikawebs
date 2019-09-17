@@ -85,8 +85,8 @@ const Index = () => (
     {/*<References ids={[ 'oxy', 'oxyshop']} lang={site.lang} />*/}
     <Price
       PriceHeader='Preis'
-      PriceBtn='Ask for training'>
-      Price for the two-day Kubernetes training
+      PriceBtn='Schulung anfragen'>
+      Preis für die zweitägige Kubernetesschulung
       <ReactMarkdown source={stripIndent`
         - Öffentlicher Termin (Privatkunde): _____ € zzgl. MwSt.
         - Öffentlicher Termin (Unternehmenskunde): _____ € zzgl. MwSt.
@@ -96,8 +96,8 @@ const Index = () => (
     </Price>
     <div className='container'>
       <TextArea
-        TextHeader='Ask for company training of Kubernetes'
-        TextParagraph='Fields marked with * are required.'>
+        TextHeader='Workshop anfragen'
+        TextParagraph='Pflichtfelder sind mit * markiert.'>
         <Form
           course='Kubernetes'
           FormName='Name *'

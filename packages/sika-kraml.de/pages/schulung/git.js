@@ -71,8 +71,8 @@ const Index = () => (
     <References ids={['vistag', 'oxy']} lang={site.lang}/>
     <Price
       PriceHeader='Preis'
-      PriceBtn='Ask for a training'>
-      Price for one day hands-on Git training<br/><br/>
+      PriceBtn='Workshop anfragen'>
+      Preis für den eintägigen Git Hands-On-Workshop<br/><br/>
       <ReactMarkdown source={stripIndent`
         - Öffentlicher Termin (Privatkunde): _____ € zzgl. MwSt.
         - Öffentlicher Termin (Unternehmenskunde): _____ € zzgl. MwSt.
@@ -82,8 +82,8 @@ const Index = () => (
     </Price>
     <div className='container'>
       <TextArea
-        TextHeader='Ask for company training on Git'
-        TextParagraph='Fields marked with * are required.'>
+        TextHeader='Workshop anfragen'
+        TextParagraph='Pflichtfelder sind mit * markiert.'>
         <Form
           course='Git'
           FormName='Name *'

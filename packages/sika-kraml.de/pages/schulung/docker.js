@@ -78,9 +78,9 @@ const Index = () => (
     </div>
     <References ids={['sit', 'vse']} lang={site.lang}/>
     <Price
-      PriceHeader='Pricing'
-      PriceBtn='Asf for a training'>
-      Price for two days Docker training<br/><br/>
+      PriceHeader='Preis'
+      PriceBtn='Anfragen'>
+      Preis für die zweitägige Dockerschulung<br/><br/>
       <ReactMarkdown source={stripIndent`
         - Öffentlicher Termin (Privatkunde): _____ € zzgl. MwSt.
         - Öffentlicher Termin (Unternehmenskunde): _____ € zzgl. MwSt.
@@ -90,8 +90,8 @@ const Index = () => (
     </Price>
     <div className='container'>
       <TextArea
-        TextHeader='Ask for company training on Docker'
-        TextParagraph='Fields marked with * are required.'>
+        TextHeader='Schulung anfragen'
+        TextParagraph='Pflichtfelder sind mit * markiert.'>
         <Form
           course='Docker'
           FormName='Name *'

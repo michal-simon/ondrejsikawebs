@@ -95,7 +95,7 @@ const Index = () => (
     <div className='container'>
       <TextArea
         TextHeader='Workshop anfragen'
-        TextParagraph='Pflichfelder sind mit * markiert..'>
+        TextParagraph='Pflichtfelder sind mit * markiert.'>
         <Form
           course='Ansible'
           FormName='Name *'
